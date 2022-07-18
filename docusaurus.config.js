@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Fedimint Wiki",
   tagline: "A non-technical overview of the fedimint project",
-  url: "https://github.com", // FLAG Set up for github pages
+  url: "https://humansinstitute.github.io", // FLAG Set up for github pages
   baseUrl: "/wiki_fedimint/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
