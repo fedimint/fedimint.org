@@ -1,0 +1,13 @@
+{
+  "position": 3,
+  "label": "Definitions & Terms",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Definitions & Terms"
+  },
+  "customProps": {
+    "description": "A guide to the definitions and terms used throughout the project."
+  }
+}

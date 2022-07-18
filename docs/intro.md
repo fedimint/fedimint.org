@@ -2,46 +2,51 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Fedimint Overview
 
-Let's discover **Docusaurus in less than 5 minutes**.
+The purpose of these notes is to explore in a wiki format, how Fedimint works. 
 
-## Getting Started
+---
 
-Get started by **creating a new site**.
+[[Fedimint Q&A]]
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Fedimint is a new way of custodying bitcoin that enables communities of Bitcoiners to form communal lightning network aware and privacy preserving wallets that are run by the community for the community. 
 
-### What you'll need
+It is still in the early stages of development and on this documentation site we will explore how it is designed, some of the interesting use casers (along with their trade offs) and how to get started. 
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+You could think of Fedimint as a protocoll for scalable custody in bitcoin that interfaces with the lightning network.  
 
-## Generate a new site
+It takes advantage of very clever technology and the very human circles of trust that we all possess, to provide a solution to custody that is more convenient than holding Bitcoin on a 3rd party exchange and less expensive and complex than most self-custody solutions. 
 
-Generate a new Docusaurus site using the **classic template**.
+Whilst there is a trade off in the custody of coins, it also provides a framework for backups, inheritance process which can be difficult to impleemnt correctly in self custody. 
 
-The classic template will automatically be added to your project after you run the command:
+It has the added bonuses of improving user privacy, scaling Bitcoin and the Lightning network, lowering on-chain usage fees and can provide a non-exchange Bitcoin custody solution that is equally viable for people in the western world as well as the rest of the world.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+Where to start:
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+- [[What is a Fedimint]]
+- [[How does a Fedimint work]]
+- [[What are the trust relationships?]]
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+Some ofthe frequently asked questions:
 
-## Start your site
+- [[Can you explain how hte back up works? ]]
+- [[How does the LN integration work?]]
 
-Run the development server:
+Once, you've got an appreciation of the context lets explore some use cases:
 
-```bash
-cd my-website
-npm run start
-```
+- [[Payment - Mint to LN Merchant]]
+- [[Payment trampolines]]
+- [[Hodl Mints]]
+- [[Fedis + Taro - Routable Computing]]
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+Some of the terms you'll hear:
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- Chaumian eCash
+- FediSats
+- Gaurdians
+
+The things that Pete wants tot understand better!
+
+- [[Where do the DBCs live?]] - Is there an account relationship on the 

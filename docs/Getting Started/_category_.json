@@ -1,0 +1,13 @@
+{
+  "position": 2,
+  "label": "Getting Started",
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "A quick guide to getting started"
+  },
+  "customProps": {
+    "description": "A quick guide to getting started and understanding the basic concepts"
+  }
+}

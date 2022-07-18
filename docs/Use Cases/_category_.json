@@ -1,0 +1,13 @@
+{
+  "position": 4,
+  "label": "Use Cases",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Definitions & Terms"
+  },
+  "customProps": {
+    "description": "Some example use cases demonstrating capabilities of fedimints and what could be built."
+  }
+}
