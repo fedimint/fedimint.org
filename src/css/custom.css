@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
+  --ifm-color-primary: #170022;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -15,10 +15,13 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --header-font-color: #170022;
+  --body-background: #e8fff2;
+  --body-font-color: #170022;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -28,3 +31,96 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/** Copy of Fedimint Site CSS as a reference
+
+
+:root {
+    --header-background: #E8FFF2;
+    --header-font-color: #170022;
+
+    --body-background: #E8FFF2;
+    --body-font-color: #170022;
+
+    --accent-color: rgba(23, 0, 34, 0.05);
+    --accent-color-lite: rgba(23, 0, 34, 0.05);
+}
+
+:root,
+:root[color-mode="light"] {
+    --header-background: #E8FFF2;
+    --header-font-color: #170022;
+
+    --body-background: #E8FFF2;
+    --body-font-color: #170022;
+
+    --accent-color: rgba(23, 0, 34, 0.05);
+    --accent-color-lite: rgba(23, 0, 34, 0.05);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --header-background: #E8FFF2;
+        --header-font-color: #170022;
+
+        --body-background: #E8FFF2;
+        --body-font-color: #170022;
+
+        --accent-color: rgba(23, 0, 34, 0.05);
+        --accent-color-lite: rgba(23, 0, 34, 0.05);
+    }
+}
+
+:root[color-mode="dark"] {
+    --header-background: #170022;
+    --header-font-color: #E8FFF2;
+
+    --body-background: #170022;
+    --body-font-color: #E8FFF2;
+
+    --accent-color: rgba(232, 255, 221, 0.1);
+    --accent-color-lite: rgba(232, 255, 221, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --header-background: #170022;
+        --header-font-color: #E8FFF2;
+
+        --body-background: #170022;
+        --body-font-color: #E8FFF2;
+
+        --accent-color: rgba(232, 255, 221, 0.1);
+        --accent-color-lite: rgba(232, 255, 221, 0.1);
+    }
+
+    .gdoc-brand_img{
+        content:url("fedimint-mark-light.svg");
+    }
+}
+
+.gdoc-brand_img{
+    margin-right: 1rem;
+    height: 2rem
+}
+
+:root[color-mode="dark"] .gdoc-brand_img{
+    content:url("fedimint-mark-light.svg");
+}
+
+:root[color-mode="light"] .gdoc-brand_img{
+    content:url("fedimint-mark.svg");
+}
+
+.gdoc-search__input {
+    background: transparent;
+    border: 2px solid rgba(23, 0, 34, 0.2);
+    border-radius: 4px;
+}
+
+:root[color-mode="dark"] .gdoc-search__input {
+    background: transparent;
+    border: 2px solid rgba(232, 255, 221, 0.2);
+    border-radius: 4px;
+}
+**/
