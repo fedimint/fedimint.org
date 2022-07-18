@@ -9,7 +9,7 @@ const config = {
   title: "Fedimint Wiki",
   tagline: "A non-technical overview of the fedimint project",
   url: "https://github.com", // FLAG Set up for github pages
-  baseUrl: "/wiki-fedimint/",
+  baseUrl: "/wiki_fedimint/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
@@ -17,7 +17,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "humansinstitute", // Usually your GitHub org/user name. FLAG
-  projectName: "wiki-fedimint", // Usually your repo name. FLAG
+  projectName: "wiki_fedimint", // Usually your repo name. FLAG
   deploymentBranch: "gh-pages",
   trailingSlash: false, //FLAG
   // Even if you don't use internalization, you can use this field to set useful
