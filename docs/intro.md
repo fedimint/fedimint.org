@@ -10,7 +10,7 @@ It takes advantage of very clever technology and the very human circles of trust
 
 ---
 
-#### [Getting Started](./category/getting-started)
+#### Getting Started
 
 A quick overview of the key concepts in Fedimint and how they hang together.
 
