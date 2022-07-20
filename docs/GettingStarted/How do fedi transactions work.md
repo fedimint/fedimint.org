@@ -13,5 +13,4 @@ TODO
 - [ ] Drill in on diargam transaction
 - [ ] Walk through the steps of different styles
 - [ ] Withing Mint,
-- [ ] Mint to Mint,
-- [ ] Mint to LN
+- [ ] Mint to Mint,- [ ] Mint to LN
