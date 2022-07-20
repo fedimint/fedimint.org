@@ -1,0 +1,13 @@
+{
+  "position": 3,
+  "label": "Trade Offs",
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "An overview of the trade offs and common critiques of the fedimint system."
+  },
+  "customProps": {
+    "description": "An overview of the trade offs and common critiques of the fedimint system."
+  }
+}

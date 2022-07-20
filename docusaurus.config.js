@@ -23,10 +23,7 @@ const config = {
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
-  },
+  // i18n: { cale: "en", locales: ["en"] },
 
   presets: [
     [
@@ -103,7 +100,7 @@ const config = {
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "https://twitter.com/fedimint",
               },
             ],
           },

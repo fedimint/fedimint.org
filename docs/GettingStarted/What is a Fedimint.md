@@ -1,11 +1,72 @@
-# What is a Fedimint
-[[Fedimint - Wiki]] - [[Fedimint notes]]
-
 ---
+sidebar_position: 1
+---
+# What is a Fedimint
 
-Fedimint - or "Federated Mint" is an implementaiton of Chaumian eCash, which utilises a federation of gaurdians to custoody funds instead of a centraliised actor. 
+Fedimint - or "Federated Mint" is an implementation of [Chaumian eCash](../CommonTerms/Chaumian%20eCash), which utilizes a federation of guardians to custody funds instead of a centralized actor. 
 
-The system needs to be considered across three elements. 
+It is anticipated there will be multiple federated mints deployed globally in both small and larger community instances. 
+
+The protocol is flexible enough to support federations of local family members looking to formalize their custody and anonymous federations to support human rights groups in high threat environments. 
+
+:::note
+It is up to the federation guardians to consider the legal and regulatory implications of the deployment considered. 
+:::
+
+A common framework for considering Fedimints is that of a community bank which integrates to the bitcoin lightning network.
+
+It enables communities of Bitcoiners to come together at their own discretion, assist each other with their custody and backup arrangements and make lightning payments through a privacy preserving wallet. Run by the community for the community.
+
+It is still in the early stages of development and on this documentation site we will explore how it is designed, some of the interesting use cases (along with their trade offs) and how to get started.
+
+## Logical Structure
+A Fedimint has several core components as shown in the figure below.
+
+![High level logical model of a fedimint](/img/Fedimint-HLpng)
+
+### Federation Guardians
+Federation guardians are responsible for setting up and running the Fedimint.
+
+They coordinate using a ::consensus protocol:: which is part of the Fedimint software deployed on personal servers.
+
+They have a number of responsibilities including:
+
+- Manage deposits and custody of on-chain bitcoin.
+- Mint new "Fedi" coins to be used for transactions in the Fedimint and for redemption of on-chain bitcoin.   
+- Sign and coordinate p2p transactions inside the Fedimint. 
+- Backup "shards" (individual parts of a full key) of user keys in order to restore accounts.  
+
+The federation guardians are specific roles within the system that can only be added or removed with consensus of the existing set of guardians.  
+
+### Fedimint Users
+
+The users of the Fedimint, utilize wallet applications in order to interact with the Fedimint. 
+
+They have no specific responsibilities, however, they may interact with a Fedimint in the following way:   
+
+- Ensure they are happy with the reputation of the chosen mint.
+- Register an account with the mint. 
+- Deposit on chain bitcoin in exchange for "Fedis".
+- Deposit via Lightning Network for "Fedis" (via LSP).
+- Conduct p2p transactions in Fedis or via LSPs to the lightning network. 
+- Backup Fedimint wallet to the Federation.
+
+In principle anyone can become a Fedimint user as long as they have access to the on boarding link / QR code. 
+
+The user holds "fedis" which are "digital bearer certificates" stored on the users phone. These are not account balances but equivalent to digital banknotes of specific set values. As these are digital, they can be encrypted and backed up by the federation. 
+
+### Lightning Service Providers (LSPs)
+
+The Lighting Service Provider  
+
+Fedimint users can trtansact
+
+:::caution
+
+This section is currently being worked on.
+
+:::
+
 
 The first element to consider is that Fedimint is designed to be used by pre-existing groups where members already have high levels of trust in each other. 
 

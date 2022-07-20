@@ -1,52 +1,46 @@
 ---
 sidebar_position: 1
 ---
+# Fedimint - Getting Started
 
-# Fedimint Overview
+Fedimint is an open source protocol to custody and transact bitcoin in a community context, built on a strong foundation of privacy.
 
-The purpose of these notes is to explore in a wiki format, how Fedimint works. 
+It takes advantage of very clever technology and the very human circles of trust, to provide a solution to custody that is more convenient than holding Bitcoin on a 3rd party exchange and less expensive and complex than many self-custody solutions.
 
 ---
 
-[[Fedimint Q&A]]
+#### [Getting Started](./category/getting-started) 
+A quick overview of the key concepts in Fedimint and how they hang together.
 
-Fedimint is a new way of custodying bitcoin that enables communities of Bitcoiners to form communal lightning network aware and privacy preserving wallets that are run by the community for the community. 
-
-It is still in the early stages of development and on this documentation site we will explore how it is designed, some of the interesting use casers (along with their trade offs) and how to get started. 
-
-You could think of Fedimint as a protocoll for scalable custody in bitcoin that interfaces with the lightning network.  
-
-It takes advantage of very clever technology and the very human circles of trust that we all possess, to provide a solution to custody that is more convenient than holding Bitcoin on a 3rd party exchange and less expensive and complex than most self-custody solutions. 
-
-Whilst there is a trade off in the custody of coins, it also provides a framework for backups, inheritance process which can be difficult to impleemnt correctly in self custody. 
-
-It has the added bonuses of improving user privacy, scaling Bitcoin and the Lightning network, lowering on-chain usage fees and can provide a non-exchange Bitcoin custody solution that is equally viable for people in the western world as well as the rest of the world.
-
-Where to start:
-
-- [[What is a Fedimint]]
-- [[How does a Fedimint work]]
+- **[What is a Fedimint?](GettingStarted/What%20is%20a%20Fedimint):** What are the logical components of a fedimint and how to think about them. 
+- **[How does a Fedimint work](GettingStarted/How%20does%20a%20Fedimint%20work):** A high level overview of a 
 - [[What are the trust relationships?]]
 
-Some ofthe frequently asked questions:
+#### [What are the trade offs](./category/trade-offs)
+A catalog of the common critiques and trade offs associated with the Fedimint protocol.
+- **[Custody Trust Model](Trade%20Offs/Custody%20Trust%20Model):** Fedimint utilizes a community custody model. What is the trust inherent in each of the parties.
+- **[Privacy from LSPs](Trade%20Offs/Privacy%20from%20LSPs):** Can Lightning Services Providers spy on my payments?
 
-- [[Can you explain how hte back up works? ]]
-- [[How does the LN integration work?]]
-
-Once, you've got an appreciation of the context lets explore some use cases:
+#### Explore some use cases:
 
 - [[Payment - Mint to LN Merchant]]
 - [[Payment trampolines]]
 - [[Hodl Mints]]
 - [[Fedis + Taro - Routable Computing]]
 
-
-Some of the terms you'll hear:
-
+#### Common Terms
+A dictionary of common terms you will need to understand to 
 - Chaumian eCash
 - FediSats
 - Gaurdians
 
-The things that Pete wants tot understand better!
+#### Frequently Asked Questions
 
-- [[Where do the DBCs live?]] - Is there an account relationship on the 
+- Can you explain how hte back up works?
+- How does the LN integration work?
+
+- [[Where do the DBCs live?]] - Is there an account relationship on the
+
+---
+
+The purpose of these docs is to how Fedimint works, in a manner that is more easily digestible by a non technical audience. Inspired by the bitcoin.org wiki.
