@@ -15,7 +15,7 @@ It takes advantage of very clever technology and the very human circles of trust
 A quick overview of the key concepts in Fedimint and how they hang together.
 
 - **[What is a Fedimint?](GettingStarted/What%20is%20a%20Fedimint):** What are the logical components of a fedimint and how to think about them.
-- **[How does a Fedimint work](GettingStarted/How%20does%20a%20Fedimint%20work):** A high level overview of a
+- **How does a Fedimint work:** A high level overview of a
 - [[What are the trust relationships?]]
 
 #### [What are the trade offs](./category/trade-offs)
