@@ -57,9 +57,19 @@ The user holds "fedis" which are "digital bearer certificates" stored on the use
 
 ### Lightning Service Providers (LSPs)
 
-The Lighting Service Provider  
+The Lighting Service Provider allows Fedimint users to interact with the broader lighting network outside of the mint. 
 
-Fedimint users can trtansact
+:::note
+A lightning service provider is actually a special case of a federation user, who will accept Fedis in payment for paying and generating lightning invoices.
+:::
+
+The responsibilities of a lightning service provider are: 
+
+- Conduct due diligence on the reputation of the chosen mint.
+- Generate lighting receive invoices in exchange for fedis.
+- Pay lightning invoices, in exchange for fedis.
+- Deposit and withdraw on chain bitcoin to manage balance and channels.
+
 
 :::caution
 
@@ -75,6 +85,8 @@ This would include families, close friends, small villages, community groups, et
 This is in contrast to the distant third party relationships offered by an exchange or the first party relationship afforded by self custody.  
 
 This setup also has the added advantage of often being exempt from most regulatory considerations as the 2nd party relationships and lack of profit would mean this is considered a non-commercial activity.
+
+You could think of this as "Be your mates bank".  
 
 The second element is to break the custody challenge into two components. 
 

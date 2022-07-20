@@ -1,0 +1,13 @@
+{
+  "position": 4,
+  "label": "Frequently Asked Questions",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Frequently Asked Questions"
+  },
+  "customProps": {
+    "description": "Answers to common questions about the project."
+  }
+}

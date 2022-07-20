@@ -1,11 +1,11 @@
 {
   "position": 2,
-  "label": "Getting Started",
+  "label": "Overview",
   "collapsible": true,
   "collapsed": false,
   "link": {
     "type": "generated-index",
-    "title": "A quick guide to getting started"
+    "title": "An overview of the Fedimint System"
   },
   "customProps": {
     "description": "A quick guide to getting started and understanding the basic concepts"
