@@ -55,10 +55,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Fedimint Wiki", // FLAG
+        title: "Fedimint", // FLAG
         logo: {
-          alt: "My Site Logo",
-          src: "img/fedimint-icon.png",
+          alt: "Fedimint Full Logo",
+          src: "img/Fedimint-Full.png",
         },
         items: [
           {

@@ -6,6 +6,7 @@ This Guide is being actively worked on!
 
 Frequently asked questions on why you may want to consider fedimints.
 
+What  Problem Statement?
 
 ## Why is the Fedimint protocol important?
 

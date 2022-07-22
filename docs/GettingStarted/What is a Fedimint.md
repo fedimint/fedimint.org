@@ -46,28 +46,28 @@ They have no specific responsibilities, however, they may interact with a Fedimi
 
 - Ensure they are happy with the reputation of the chosen mint.
 - Register an account with the mint. 
-- Deposit on chain bitcoin in exchange for "Fedis".
-- Deposit via Lightning Network for "Fedis" (via LSP).
-- Conduct p2p transactions in Fedis or via LSPs to the lightning network. 
+- Deposit on chain bitcoin in exchange for "fm-BTC".
+- Deposit via Lightning Network for "fm-BTC" (via LSP).
+- Conduct p2p transactions in fm-BTC or via LSPs to the lightning network. 
 - Backup Fedimint wallet to the Federation.
 
 In principle anyone can become a Fedimint user as long as they have access to the on boarding link / QR code. 
 
-The user holds "fedis" which are "digital bearer certificates" stored on the users phone. These are not account balances but equivalent to digital banknotes of specific set values. As these are digital, they can be encrypted and backed up by the federation. 
+The user holds "fm-BTC" which are "digital bearer certificates" stored on the users phone. These are not account balances but equivalent to digital banknotes of specific set values. As these are digital, they can be encrypted and backed up by the federation. 
 
 ### Lightning Service Providers (LSPs)
 
 The Lighting Service Provider allows Fedimint users to interact with the broader lighting network outside of the mint. 
 
 :::note
-A lightning service provider is actually a special case of a federation user, who will accept Fedis in payment for paying and generating lightning invoices.
+A lightning service provider is actually a special case of a federation user, who will accept fm-BTC in payment for paying and generating lightning invoices.
 :::
 
 The responsibilities of a lightning service provider are: 
 
 - Conduct due diligence on the reputation of the chosen mint.
-- Generate lighting receive invoices in exchange for fedis.
-- Pay lightning invoices, in exchange for fedis.
+- Generate lighting receive invoices in exchange for fm-BTC.
+- Pay lightning invoices, in exchange for fm-BTC.
 - Deposit and withdraw on chain bitcoin to manage balance and channels.
 
 

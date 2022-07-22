@@ -13,6 +13,16 @@ These are used to redeem federation tokens for bitcoin on chain.
 
 This is possible in theory but the most practical implementations would require the introduction of some form of account based system, which would not be compatible with the Chaumian mint protocol.  One potential option would be to have the potential to keep a proportion of funds in an account based system where withdrawal thresholds can be enforced while a user’s remaining balance is held in chaumian e-cash tokens.
 
+## Can the federation guardians collude and steal from me?
+
+Guardian collusion is prevented by the configuration of the federation and the selection of its guardians. The federation uses an asynchronous bft consensus, e.g. 3/5 or 7/13 that would require a majority to collude to steal your coins. Within fedimint you are explicitly trusting that the federation will not collude, their incentive not to is 2nd degree social connections so a fedimint user should know in person who at least 1 of their federation guardians are and be capable of directly interacting with them.
+
+## Can guardians prevent me from pegging out? 
+
+Yes. If enough guardians collude they can prevent you from pegging out of the federation and receiving bitcoin. Of course if the same amount of guardians collude they can simply steal the coins. 
+
+This is why "knowing your federation is so important".
+
 ## If it uses multisig custodians, what is the fundamental difference to a DPoS blockchain? 
 
 ([Originally asked on Twitter](https://twitter.com/ricardoplopes/status/1531659058607964167?t=PUTMcNfA6fYbJ7wZsVPzPw&s=19))
