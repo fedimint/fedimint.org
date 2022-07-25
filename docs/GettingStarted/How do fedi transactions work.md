@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# How do Fedimint transactions work?
+# How does a Fedimint work?
 
 :::caution
 This Guide is being actively worked on!
@@ -10,12 +10,10 @@ This Guide is being actively worked on!
 
 TODO
 
-- [ ] Drill in on diargam transaction
-- [ ] Walk through the steps of different styles
-- [ ] Withing Mint
-- [ ] Mint to Mint
-- [ ] Mint to LN
-
+- [ ] Drill into Custody
+- [ ] Drill into spend in mint
+- [ ] Drill into spend Mint to LN
+- [ ] Drill into spend mint to mint (special case Mint to LN)
 
 User = fedimint user
 Gateway = lightning node running the fedimint core lightning plugin

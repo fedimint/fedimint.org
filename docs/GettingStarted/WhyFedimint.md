@@ -1,40 +1,60 @@
-# Why Fedimints? 
+---
+sidebar_position: 1
+---
+# Why Fedimint
 
 :::caution
 This Guide is being actively worked on!
 :::
 
-Frequently asked questions on why you may want to consider fedimints.
+Bitcoin is a powerful human rights technology that enables anybody in the world to **be their own bank**.
 
-What  Problem Statement?
+It provides an open financial network that asks for nothing more than users to follow some simple rules and provide a large random number in order to transact. 
 
-## Why is the Fedimint protocol important?
+The reality however is that this requires a level of technical understanding, learning and comfort that takes time to build. 
 
-What does the infamous Mt. Gox exchange and the latest cryptocurrency restrictions agreed by the world's regulators have in common?
+Whilst many bitcoiners have proven to be more than comfortable with this trade off a large percentage have not. 
 
-The answer is Bitcoin custody (how and where you secure your bitcoin) - how it was, how it will be if nothing changes, and how it can evolve for the better if we take appropriate action. To understand why, we need to go back to the rise of Bitcoin custodial services.
+The simple convenient solution has therefore been for new users to simply purchase and store bitcoin on centralized exchanges, sacrificing the properties of bitcoin (private open banking) in favor of convenience and ease of use. 
 
-Back in 2013, the Bitcoin exchange space was dominated by [Mt. Gox](https://en.wikipedia.org/wiki/Mt._Gox), the exchange colossus based out of Tokyo, Japan and headed up by one Mark Karpeles.
+Fedimint is an open protocol for community custody that seeks to address the risks of centralization of bitcoin (see [Why Community Custody](../FAQs/WhyCommunityCustody)).
 
-Many people held their bitcoin on Mt. Gox until one day, it all vanished.  Users could no longer gain access to their hard earned or purchased bitcoin. Due to reasons that are still not fully clear, much of the capital custodied with the platform had disappeared and to this day, the subset that has been recovered is yet to be returned to its rightful owners.
+Put simply it allows you to **be your mum's bank**, so that she doesn't have to. 
 
-In response to the Mt. Gox drama, many exchanges were set up that aimed to bring back trust to the exchange space and make holding bitcoin on an exchange safe. But their success has created a different risk for the exchange customers’ coins.
+Fedimint has also been design to interoperate with the bitcoin lightning network ([more here](../FAQs/WhyLN)). 
 
-This is because immediately after Mt. Gox, no one trusted exchanges. Users would buy their bitcoin and promptly withdraw it from exchanges as quickly as they could, making self custody was the norm. Today user trust in exchanges is strong. Ironically, as a result, the percentage of Bitcoin holders custodying their bitcoin on exchanges is at all time highs.
+This allows Fedimint users to remain part of the wider lightning network merchants, making instant payments and moving between Fedimints without managing additional complexity.
 
-You might think that this is not an issue but this is where the world's regulators, through an organisation called the FATF, come in.  [FATF](https://en.wikipedia.org/wiki/Financial_Action_Task_Force), or the Financial Action Task Force, is an unelected international advisory body that issues guidance designed to prevent whatever the majority of countries deem to be financial crimes. Although no country is forced to enact one of their recommendations, the potentially devastating effects to international trade of ignoring them mean that their proclamations are consistently implemented by almost every country in the world. So when the FATF “advises” a country to adopt a regulatory stance, you can assume that it will almost always be implemented. In June 2019, they issued guidance for cryptocurrencies that included a controversial provision called the “[Travel Rule](https://complyadvantage.com/insights/fatf-travel-rule/)”.  This rule advocates that all crypto exchanges and Bitcoin brokers should only allow transfers of crypto to parties that they can properly identify. The challenge is that the identity-less nature of cryptocurrencies makes complying with this guidance, while still allowing customers to withdraw to their own crypto wallets, difficult at best and impossible at worst.
+This provides bitcoiners with a third option between 3rd party custody and self custody as shown in the figure below. 
 
-So once again, we are heading into a future where huge crypto exchanges prevent their customers from taking ownership of their own coins.  But this time it will be due to an over-abundance of regulation as opposed to a lack of it as was the case in the time of Mt. Gox.
+![The spectrum and trade offs for Fedimint Custody](/img/CustodySpectrum.png)
 
-“But why is holding most of my bitcoin on an exchange a problem?” you may ask.  Simply put, if a regulated 3rd party has control of your bitcoin, no matter how trustworthy they might seem, they can be compelled to prevent you from taking custody of your crypto.  With the latest FATF rule, we already see countries such as [India](https://www.reuters.com/markets/currencies/proposed-india-bill-banning-crypto-payments-could-mean-jail-violations-document-2021-12-07/), [South Korea](https://cointelegraph.com/news/south-korea-crypto-exchanges-to-follow-coinone-in-verifying-private-wallets), and [Estonia](https://www.coindesk.com/policy/2022/01/04/estonia-regulator-says-no-plans-to-ban-crypto/) look to fast track regulation to this effect and we can expect more to follow.  If left unchecked, the end result could be a majority of bitcoin being stored on a handful of centralised exchanges - barring Bitcoiners from self-sovereignty.
+A user who previously may have used 3rd party custody for convenience can retain that convenience whilst improving their privacy and control of their finances. 
 
-This is a concern because Bitcoin only succeeds if all its major constituents - mining, payments, software development, and custody - stay strong and decentralised. For Bitcoin to achieve its potential for separating money from state and thereby creating a freer and fairer financial world, nothing can be more important than reinforcing Bitcoin’s decentralised foundations.
+The specifics around this trust model and trade offs will be explored in [Trade offs > Custody Trust Model](../TradeOffs/CustodyTrustModel), but key to this is that you are taking on custodial risk from the federation in order to get the benefits of convenient privacy and custody services (backups, inheritance recovery, lighting transactions). 
 
-All the major elements of the Bitcoin ecosystem are significantly decentralised except for one, custody.  Right now, the default for most users is to store their censorship resistant decentralised Bitcoin with a few censurable centralised exchanges or custodians.  Fedimint is designed to resolve this major chink in the Bitcoin ecosystem’s armour.
+Important to consider in this trade off is that Fedimint has been designed to be used by pre-existing groups where members already have high levels of trust in each other which mitigates the custodial risk. 
 
-## Who invented Fedimint?
+For example I am less likely to steal from my mum, her friends and my brothers than a random stranger on the internet as there will be social consequences. 
 
-The idea behind Fedimint - taking the Chaumian mint protocol and implementing it as a federation - was first conceived and implemented by Eric Sirion (who goes by the alias "[elsirion](https://twitter.com/EricSirion)") in mid 2021.
-  
-Today, a team of contributors work on the protocol to develop it further, provide on the ground product feedback, and increase adoption.
+This model would likely would include families, friends, small villages and community groups as examples of groups with strong second party relationships.
+
+This is in contrast to the distant third party relationships offered by an exchange or the first party relationship afforded by self custody.  
+
+This setup also has the added advantage of [often being exempt from most regulatory considerations](../FAQs/RegulatoryQuestions).
+
+:::note
+This doesn't preclude the notion of "commercial" Fedimints existing in the future. 
+
+As Fedimint is an open protocol, there is nothing stopping these entities being formed, however, it is not the specific problem being addressed and this may change the regulatory discussion.
+:::
+
+As such Fedimint provides a powerful platform to decentralize banking and custody infrastructure to a local level. 
+
+By way of example consider two countries:
+
+* **Country A:** Has four banks and runs on a closed money system with no competition between banks. 
+* **Country ₿:** Has 100k banks running on an open money system, that allows competition from anyone. 
+
+Given the intense competition in country ₿ you might expect the banks to differentiate based on their close trusted relationship to the user and a focus on their best interests. 
 
