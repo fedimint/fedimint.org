@@ -15,3 +15,9 @@ Imagine if anyone holding money for their child in a piggy bank would have to be
 The most commonly envisaged model for a fedimint community is one made of pre-existing trusted guardians and users and where the guardians are not providing the service to make a profit but to help ensure that their and their friends’ bitcoins are kept safely and privately.  Furthermore, no one guardian retains total control over a user’s funds.
   
 The UK FCA has a [helpful flowchart](https://www.fca.org.uk/publication/documents/cryptoasset-registration-flowchart.pdf) showing their process for determining whether or not an organisation needs to be regulated. However, it should go without saying that if you are worried about this, you should definitely seek legal advice in your local jurisdiction.
+
+The protocol is flexible enough to support human rights groups in high threat environments. 
+
+:::note
+It is up to the federation guardians to consider the legal and regulatory implications of the deployment considered. 
+:::

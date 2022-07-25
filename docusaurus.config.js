@@ -6,8 +6,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Fedimint Wiki",
-  tagline: "A non-technical overview of the fedimint project",
+  title: "Fedimint",
+  tagline:
+    "An open source protocol to custody and transact bitcoin in a community context, built on a strong foundation of privacy.",
   url: "https://humansinstitute.github.io", // FLAG Set up for github pages
   baseUrl: "/wiki_fedimint/",
   onBrokenLinks: "throw",
@@ -35,14 +36,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/humansinstitute/wiki_fedimint/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/humansinstitute/wiki_fedimint/tree/main/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/humansinstitute/wiki_fedimint/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/humansinstitute/wiki_fedimint/tree/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -64,12 +65,12 @@ const config = {
           {
             type: "doc",
             docId: "intro",
-            position: "left",
-            label: "Tutorial",
+            position: "right",
+            label: "Learn more",
           },
           //{ to: "/blog", label: "Blog", position: "left" }, // FLAG
           {
-            href: "https://github.com/humansinstitute/wiki_fedimint", // FLAG
+            href: "https://github.com/fedimint", // FLAG
             label: "GitHub",
             position: "right",
           },

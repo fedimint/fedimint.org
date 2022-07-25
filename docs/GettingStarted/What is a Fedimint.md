@@ -5,21 +5,15 @@ sidebar_position: 2
 
 A Fedimint - or "Federated Mint" is a protocol to implement [Chaumian eCash](../CommonTerms/Chaumian%20eCash) with a federation of guardians to custody funds, instead of a centralized actor, that is integrated with the lightning network.
 
-The user experience of a Fedimint is designed to be similar to that of a custodial lightning wallet (for example Wallet of Satoshi), with the addition of strong privacy between you and the custodian. 
+The user experience of a Fedimint is designed to be similar to that of a custodial lightning wallet (e.g. Wallet of Satoshi) with the addition of strong privacy for the user.
 
-It is anticipated there will be multiple federated mints deployed globally in both small and larger community instances. 
+It is anticipated there will be multiple federated mints deployed globally in both small and large community instances. 
 
-Fedimint makes a lot more sense if you imagine it on a smaller scale, for example running a Fedimint with some friends for your respective families or as a community bank for a small community with a robust circular economy. 
+It makes sense to consider Fedimints deployed on a small scale for example, as a community bank for a small community with a robust circular economy and remember there will be many Fedimints deployed on the lightning network and not a single instance.  
 
-The protocol is flexible enough to support federations of local family members looking to formalize their custody and anonymous federations to support human rights groups in high threat environments. 
+The open protocol enables communities of Bitcoiners to come together at their own discretion, assist each other with their custody and backup arrangements and make lightning payments through a privacy preserving wallet. 
 
-:::note
-It is up to the federation guardians to consider the legal and regulatory implications of the deployment considered. 
-:::
-
-The open Fedimint protocol enables communities of Bitcoiners to come together at their own discretion, assist each other with their custody and backup arrangements and make lightning payments through a privacy preserving wallet. 
-
-Run by the community for the community.
+Run for the community, by the community.
 
 ## Logical Structure
 A Fedimint has several core components as shown in the figure below.
