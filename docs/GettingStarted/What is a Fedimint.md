@@ -3,6 +3,12 @@ sidebar_position: 2
 ---
 # What is a Fedimint
 
+:::caution
+
+This section is currently being worked on.
+
+:::
+
 A Fedimint - or "Federated Mint" is a protocol to implement [Chaumian eCash](../CommonTerms/Chaumian%20eCash) with a federation of guardians to custody funds, instead of a centralized actor, that is integrated with the lightning network.
 
 The user experience of a Fedimint is designed to be similar to that of a custodial lightning wallet (e.g. Wallet of Satoshi) with the addition of strong privacy for the user.
@@ -15,82 +21,59 @@ The open protocol enables communities of Bitcoiners to come together at their ow
 
 Run for the community, by the community.
 
-## Logical Structure
-A Fedimint has several core components as shown in the figure below.
+## Fedimint Components Structure
+A Fedimint has five functional components (accounts, custody & redemption, backup & recovery, transaction processing, LN Gateway) and three user personas (Guardian, User, Lightning Gateway) as outlined in the figure and with details below.
 
 ![High level logical model of a fedimint](/img/Fedimint-HL.png)
 
+
+All of these are supported by three core technology components eCash, lighting discussed in more detail in ["Overview > The Technology Components"](TechCompontents).
+
 ### Federation Guardians
-Federation guardians are responsible for setting up and running the Fedimint.
+Federation guardians are the technical community members responsible for setting up and running the Fedimint.  
 
-They coordinate using a [consensus protocol (HBBFT)](../CommonTerms/HBBFTConsensus) which is part of the Fedimint software deployed on personal servers.
-
-They have a number of responsibilities including:
-
-- Manage deposits and custody of on-chain bitcoin.
-- Mint new "Fedi" coins to be used for transactions in the Fedimint and for redemption of on-chain bitcoin.   
-- Sign and coordinate p2p transactions inside the Fedimint. 
-- Backup "shards" (individual parts of a full key) of user keys in order to restore accounts.  
+The guardians will coordinate using a [consensus protocol (HBBFT)](../CommonTerms/HBBFTConsensus) which is part of the Fedimint software deployed on personal servers.  This means that their computers will need to be on the same network and will be "talking" constantly in order to process the various transactions of the Fedimint.
 
 The federation guardians are specific roles within the system that can only be added or removed with consensus of the existing set of guardians.  
 
+- **Account & Onboard:** The federation guardians will run the Fedimint protocol software stack. This will allow the guardians to generate a "joining a federation QR Code".
+- **Custody & Redemption:** The federation guardians will hold private keys to the threshold multi signature contract into which bitcoin is deposited. When a user executes a deposit process they will also blind sign eCash certificates to an amount equivalent to the deposited bitcoin.
+- **Backup & Recovery:** Federation members will manage the back up of "shards" (individual parts of complete file) of users wallet data.  When a recovery request is made they will manage an out of band process to confirm the authenticity of the recovery request and coordinate with other federation members to reconstruct the shard and recover the users funds. 
+- **Transaction Processing:** review transactions submitted to the federation to ensure that only valid eCash certificates are redeemed and that new eCash certificates are generated where required ([see how do FM transactions work?](howFMtransactionsWork)).
+* **LN Gateway:** From the point of view of the federation the LN Gateway is simply a user accepting fm-BTC. 
+
 ### Fedimint Users
 
-The users of the Fedimint, utilize wallet applications in order to interact with the Fedimint. 
+The users of the Fedimint, utilize wallet applications in order to interact with the Fedimint.  It is anticipated there will be many different wallet applications. 
 
-They have no specific responsibilities, however, they may interact with a Fedimint in the following way:   
+These are considered a non-technical persona in that we assume no specific technical knowledge in order to complete tasks.  
 
-- Ensure they are happy with the reputation of the chosen mint.
-- Register an account with the mint. 
-- Deposit on chain bitcoin in exchange for "fm-BTC".
-- Deposit via Lightning Network for "fm-BTC" (via LSP).
-- Conduct p2p transactions in fm-BTC or via LSPs to the lightning network. 
-- Backup Fedimint wallet to the Federation.
+* **Account & Onboard:** Users must ensure they are happy with the reputation of the guardians for the chosen Fedimint, then they would simply scan a QR code to connect an account.  
+* **Custody & Redemption:** Users can submit a request to deposit bitcoin and exchange for fm-BTC certificates or use the fm-BTC certificates in their wallet in order to redeem on-chain bitcoin (note: users could also transfer out to themselves via the LN Gateway)
+* **Backup & Recovery:** The user will encrypt and shard their data to be backed up to the federation by their wallet application. 
+* **Transaction Processing:** The user could submit transactions that transfer fm-BTC to other users.  Alternatively the user can redeem transfered fm-BTC for newly issued fm-BTC, settling a paid transaction ([see how do FM transactions work?](howFMtransactionsWork)).
+* **LN Gateway:** As an alternative to transacting inside the Fedimint, a user can create contracts (enforced by the Fedimint consensus) that will pay the lightning gateway persona to pay LN invoices on their behalf or generate lightning invoices to be paid.
 
-In principle anyone can become a Fedimint user as long as they have access to the on boarding link / QR code. 
+In principle anyone can become a Fedimint user as long as they have access to the on boarding link / QR code, the process by which on-boarding will be managed will be managed by specific federations. 
 
-The user holds "fm-BTC" which are "digital bearer certificates" stored on the users phone. These are not account balances but equivalent to digital banknotes of specific set values. As these are digital, they can be encrypted and backed up by the federation. 
+:::note
+The money "fm-BTC" held by the user are actually "digital bearer certificates" stored on the users phone. 
 
-### Lightning Service Providers (LSPs)
+These are not account balances but equivalent to digital banknotes of specific set values. As these are digital, they can be encrypted and backed up.
+:::
+
+### Lightning Gateway Provider
 
 The Lighting Service Provider allows Fedimint users to interact with the broader lighting network outside of the mint. 
 
-:::note
-A lightning service provider is actually a special case of a federation user, who will accept fm-BTC in payment for paying and generating lightning invoices.
-:::
+They are a special case of the user persona which also runs some additional technical infrastructure software such as a lightning network routing node and software to automatically interface and review Fedimint contracts for lighting services. 
 
-The responsibilities of a lightning service provider are: 
+* **Account & Onboard:** Similar to a user the Lightning Service provider will need to be comfortable accepting the federations fm-BTC in exchange for providing a liquidity bridge to the lightning network.  
+* **Custody & Redemption:** As per user persona. It is more likely a Lightning Gateway user would require the redemption and deposit service in order to more actively balance fm-BTC, lighting and on-chain balances.  
+* **Backup & Recovery:** As per user persona.
+* **Transaction Processing:** As per user persona. The Lightning Gateway would also be running additional daemon software to automate the process of accepting contracts for lighting services ([more details in FAQs > Lightning Network Integration](../FAQs/Lightning))
 
-- Conduct due diligence on the reputation of the chosen mint.
-- Generate lighting receive invoices in exchange for fm-BTC.
-- Pay lightning invoices, in exchange for fm-BTC.
-- Deposit and withdraw on chain bitcoin to manage balance and channels.
+There will need to be a market discovery process, by which users of a Fedimint are able to contract with the Lightning Gateways, the specifics of this is still to be documented. 
 
+It is anticipated there will be a process by which a Lightning Gateway registers it's service with the federation to ease discovery, but it would also be possible to have multiple unannounced gateways that users could contract with directly.  
 
-:::caution
-
-This section is currently being worked on.
-
-:::
-
-The third and final element is the powerful technical design of Fedimint.
-
-It uses three powerful technical component to offer great privacy and interoperability: chaumian e-cash mints, federations and lightning swaps.
-
-Chaumian e-cash allows the Fedimint to effectively run a set of private user accounts that can spend and redeem bitcoin from the mint, without revealing to the mint their account balance or attaching private informaiton to transactions. 
-
-This is very important in a community banking setting where knowing the exact balances of all the people in your local community could expose individuals to physical attacks if the information is leaked or hacked.  
-
-The e-cash technology is expanded by deploying this on a federated basis. This means that the funds held in the mint are never subject to the control of a single individual and instead ==a quorum of 66%== would be required to steal user funds. 
-
-The federation is a mechanism that shares custody of the group’s bitcoin amongst all guardians and ensures that a majority of guardians need to act to perform a transaction or redeem bitcoin and that a failure of a minority of guardians can be tolerated by the system without affecting its operation. 
-
-This replicates the best practice model of multisig custody, used in exchanges and custody providers globally, but embeds this into a toolset which makes it easer for people to provide for themselves or others. 
-
-is the use of two powerful technologies, federations and chaumian e-cash mints, to remove any single weak point and to maintain complete privacy for all users, and is the reason behind Fedimint’s unusual name. 
-
-Chaumian e-cash mints are a cryptographic tool to allow the federation guardians to process transactions on behalf of any member of the group without knowing who it is or how much they have. This ensures financial privacy even though group members have delegated the complicated task of managing their bitcoin holdings to the guardians.  
-
-A more thorough break down is included in how does a Fedimint work.
-
-Because of the nature of this open network, bitcoin can be a little difficult to grasp for many people who may otherwise benefit from a censorship resistant, open, internet enabled sound money.  

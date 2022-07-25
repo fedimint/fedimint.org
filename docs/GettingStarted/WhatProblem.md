@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 title: Problem Statement
 ---
 # What problem is being addressed by  Fedimint?

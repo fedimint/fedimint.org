@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 7
 ---
 
-# How does a Fedimint work?
+# How do Fedimint transactions work?
 
 :::caution
 This Guide is being actively worked on!

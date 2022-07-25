@@ -3,6 +3,7 @@
 This Guide is being actively worked on!
 :::
 
+
 ## How does the federation custody the bitcoin?
 
 The federation guardians utilize bitcoin multi signiture wallet to manage the on chain funds. 
