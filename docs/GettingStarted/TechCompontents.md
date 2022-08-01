@@ -9,11 +9,31 @@ This Guide is being actively worked on!
 
 Fedimints use three powerful technical components to offer great privacy and interoperability: 
 
-1. chaumian e-cash mints, 
-2. federations, and 
-3. lightning swaps.
+1. Chaumian e-cash
+2. Federations
+3. Lightning swaps
 
-Chaumian e-cash allows the Fedimint to effectively run a set of private user accounts that can spend and redeem bitcoin from the mint, without revealing to the mint their account balance or attaching private informaiton to transactions. 
+## Chaumian eCash
+
+Chaumian e-cash allows the Fedimint to create and redeem IOU tokens that represent claims on bitcoin. 
+
+The technology was originally developed in the 1980's (==Check this==) and popularised through the company Digicash led by David Chaum the inventor of eCash.
+
+Digicash, allowed users to purchase $ denominated eCash tokens, that could be transferred over the internet to perform payments.  This process relied on a centralised server run by Digicash to confirm authenticity of certificates and eliminate double spend issues. 
+
+This was in effect the worlds first internet bank.
+
+What's the process of issuing and redeeming eCash tokens was made anonymous through the use of [Blind Signatures](../CommonTerms/Blind%20Signatures). 
+
+This allowed users to transact privately on the internet without the bank being aware of the specific transactions and payments made, or the balances held by any specific user. 
+
+[More details on how this is achieved is documented here(../CommonTerms/Chaumian%20eCash). 
+
+## Federations
+
+The next technical innovation with Fedimints, it to take the centralised 
+
+effectively run a set of private user accounts that can spend and redeem bitcoin from the mint, without revealing to the mint their account balance or attaching private informaiton to transactions. 
 
 This is very important in a community banking setting where knowing the exact balances of all the people in your local community could expose individuals to physical attacks if the information is leaked or hacked.  
 
