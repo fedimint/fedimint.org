@@ -11,7 +11,7 @@ This section is currently being worked on.
 
 A Fedimint - or "Federated Mint" is a protocol to implement [Chaumian eCash](../CommonTerms/Chaumian%20eCash) with a federation of guardians to custody funds, instead of a centralized actor, that is integrated with the lightning network.
 
-The user experience of a Fedimint is designed to be similar to that of a custodial lightning wallet (e.g. Wallet of Satoshi) with the addition of strong privacy for the user.
+The user experience of a Fedimint is designed to be similar to that of a custodial lightning wallet (e.g. Wallet[[TechCompontents]] of Satoshi) with the addition of strong privacy for the user.
 
 It is anticipated there will be multiple federated mints deployed globally in both small and large community instances. 
 

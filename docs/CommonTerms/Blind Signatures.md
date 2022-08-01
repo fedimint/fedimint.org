@@ -1,4 +1,4 @@
-# Blind Signatures
+# Blind Signatures & eCash
 
 :::caution
 This Guide is being actively worked on!
@@ -11,23 +11,33 @@ The canonical explanation of blind signatures was given by David Chaum in terms 
 As highlighted in the figure above imagine obtaining a signature on a document as follows:
 
 1. Create a document and seal the document into an envelope along with carbon copy paper.
-2. Pass the envelope to the signer who can sign the outside of the envelope, which in turn creates an internal signature on the document. 
-3. You have now obtained a signature on your document without revealing the contents of the document.
+2. You pass the envelope to the signer who can sign the outside of the envelope. 
+3. This creates an internal signature onto the document from the carbon paper. .
 4. If you were to reveal your document at a later date, the signer could confirm that they did indeed sign that document.
 
-This is concept is utilized inside eCash to allow an eCash mint to issue "IOUs" that it can confirm are valid, whilst retaining privacy. 
+This is concept is utilized inside eCash to allow an eCash mint to issue "IOUs" that it can confirm are valid, whilst retaining the privacy of the user. 
 
-In essence the mint has different signatures for different values of satoshis that are deposited. 
+![Community Custody on a spectrum](/img/Fedimint-ecashtoken-verify.png)
 
-As such when a deposit (lets say 10,000 satoshis) is made I write a document saying "Here's a deposit to Fedimint A with a random serial number" I pop it in an envelope and ask Fedimint A to sign it with their 10,000 satoshi signature. 
+A user can present a mint with a random identifier and request a blind signature from the mint. The mint signs different denominations with different private keys (for example a 10k Sats private key, a 5k sats private key and so on). 
 
-When it comes time to spend the sats, I take the note out of the envelope and provide that 10,000 satoshi note to the merchant in much the same way I would hand over a banknote. 
+So when a deposit (lets say 10,000 satoshis) is made, I present the mint with a random identifier and ask a blind signature with their 10,000 satoshi private key.
 
-The merchant, wants to make sure the note is real so he contacts the Fedimint to check. 
+These two piece of data make up an eCash token.
 
-The Fedimint has never seen this document, it can confirm that it does indeed include a valid signature for redemption of 10,000 satoshis.
+When it comes time to redeem these satoshis, I provide the mint with the eCash token and it performs two checks:
 
-At this point both myself and the merchant have a copy of the signed note which has a claim on the satoshis.
+1. The mint confirms the signature was made with their 10,000 satoshi private key.
+2. The mint checks it has not previously redeemed an eCash token with this unique reference number.
 
-So instead of simply accepting the signed note the merchant goes through his own envelope note trick and asks the Fedimint to destroy this claim for 10k sats and replace it with this new claim for 10k sats :) 
+If both of these checks pass then the eCash token is accepted.
+
+Until this redemption is made the mint is unaware of the unique reference number on the eCash token, as a blind signing algorithm was used. 
+
+This means that the mint is unable to ascertain the following information:
+
+- Whether the individual redeeming the token was the same individual who minted the token. 
+- What the number of tokens held by any individual user are.
+
+This is the basis of the strong privacy claims in eCash. 
 
