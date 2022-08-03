@@ -11,13 +11,13 @@ This section is currently being worked on.
 
 A Fedimint - or "Federated Mint" is a protocol to implement [Chaumian eCash](../CommonTerms/Blind%20Signatures) with a federation of guardians to custody funds, instead of a centralized actor, that is integrated with the lightning network.
 
-The user experience of a Fedimint is designed to be similar to that of a custodial lightning wallet (e.g. Wallet[[04-TechCompontents]] of Satoshi) with the addition of strong privacy for the user.
+The user experience of a Fedimint is designed to be similar to that of a custodial lightning wallet (e.g. Wallet of Satoshi) with the addition of strong privacy for the user.
 
 It is anticipated there will be multiple federated mints deployed globally in both small and large community instances. 
 
 It makes sense to consider Fedimints deployed on a small scale for example, as a community bank for a small community with a robust circular economy and remember there will be many Fedimints deployed on the lightning network and not a single instance.  
 
-The open protocol enables communities of Bitcoiners to come together a               t their own discretion, assist each other with their custody and backup arrangements and make lightning payments through a privacy preserving wallet. 
+The open protocol enables communities of Bitcoiners to come together at their own discretion, assist each other with their custody and backup arrangements and make lightning payments through a privacy preserving wallet. 
 
 Run for the community, by the community.
 

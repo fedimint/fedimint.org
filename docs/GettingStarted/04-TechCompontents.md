@@ -1,48 +1,72 @@
 ---
 sidebar_position: 4
 ---
-# The Technology Components
+# Core Technology Components
 
 :::caution
 This Guide is being actively worked on!
 :::
 
-Fedimints use three powerful technical components to offer great privacy and interoperability: 
+Fedimints use three powerful technical components, that come together to offer great privacy and interoperability: 
 
-1. Chaumian e-cash
-2. Federations
-3. Lightning swaps
+1. **Chaumian e-cash:** Privacy preserving online digital cash, pioneered by David Chaum. 
+2. **Federations:** Shared control of assets and system enabled by threshold signatures and consensus algorithms.
+3. **Lightning swaps:** economic transactions to swap a common asset between different layers.
+
+All three technologies come together to users to delegate the complicated tasks of managing their bitcoin holdings and lightning nodes, whilst retaining financial privacy.
 
 ## Chaumian eCash
 
 Chaumian e-cash allows the Fedimint to create and redeem IOU tokens that represent claims on bitcoin. 
 
-The technology was originally developed in the 1980's (==Check this==) and popularised through the company Digicash led by David Chaum the inventor of eCash.
+The technology was originally developed in 1983 by [David Chaum](https://en.wikipedia.org/wiki/David_Chaum) and realized through the company [Digicash](https://en.wikipedia.org/wiki/Digicash).
 
-Digicash, allowed users to purchase $ denominated eCash tokens, that could be transferred over the internet to perform payments.  This process relied on a centralised server run by Digicash to confirm authenticity of certificates and eliminate double spend issues. 
+Digicash, allowed users to purchase $ denominated eCash tokens, that could be transferred over the internet to perform payments, in effect creating the worlds first internet bank.
 
-This was in effect the worlds first internet bank.
+The process of issuing and redeeming eCash tokens was made anonymous through the use of Blind Signatures. 
 
-What's the process of issuing and redeeming eCash tokens was made anonymous through the use of [Blind Signatures](../CommonTerms/Blind%20Signatures). 
+[This is covered in detail at Definitions and Terms > Blind Signatures & Chaumian eCash](../CommonTerms/Chaumian%20eCash). 
+
+This process relied on a centralized server to confirm authenticity of certificates and eliminate double spend issues, however, the server had no knowledge who the eCash tokens belonged to. 
 
 This allowed users to transact privately on the internet without the bank being aware of the specific transactions and payments made, or the balances held by any specific user. 
 
-[More details on how this is achieved is documented here(../CommonTerms/Chaumian%20eCash). 
+This is very important in a community banking setting where knowing the exact balances of all the people in your local community could expose individuals to physical attacks if the information is leaked or hacked.  
 
 ## Federations
 
-The next technical innovation with Fedimints, it to take the centralised 
+Fedimint is a "federated Chaumian Mint." 
 
-effectively run a set of private user accounts that can spend and redeem bitcoin from the mint, without revealing to the mint their account balance or attaching private informaiton to transactions. 
+This means that the mint is jointly owned and operated by multiple people, we refer to as guardians. 
 
-This is very important in a community banking setting where knowing the exact balances of all the people in your local community could expose individuals to physical attacks if the information is leaked or hacked.  
+This approach has been commercialized by Blockstream in the Liquid Bitcoin side chain. 
 
-The e-cash technology is expanded by deploying this on a federated basis. This means that the funds held in the mint are never subject to the control of a single individual and instead ==a quorum of 66%== would be required to steal user funds. 
+By federating the operation, Fedimint gains several advantages over single server deployment. 
 
-The federation is a mechanism that shares custody of the group’s bitcoin amongst all guardians and ensures that a majority of guardians need to act to perform a transaction or redeem bitcoin and that a failure of a minority of guardians can be tolerated by the system without affecting its operation. 
+1. The bitcoin held in the mint is never subject to the control of a single individual making it harder for a corrupt guardian to steal funds. 
+2. Increases redundancy as guardians can go offline and transactions will still be processed where a quorum is reached. 
+3. Changes the regulatory space of the federation as now single individual controls coin issuance and redemption. 
 
-This replicates the best practice model of multisig custody, used in exchanges and custody providers globally, but embeds this into a toolset which makes it easer for people to provide for themselves or others. 
+This replicates the best practice model of multi-signature custody, used in exchanges and custody providers globally.  
 
-is the use of two powerful technologies, federations and chaumian e-cash mints, to remove any single weak point and to maintain complete privacy for all users, and is the reason behind Fedimint’s unusual name. 
+## Lightning Swaps
 
-Chaumian e-cash mints are a cryptographic tool to allow the federation guardians to process transactions on behalf of any member of the group without knowing who it is or how much they have. This ensures financial privacy even though group members have delegated the complicated task of managing their bitcoin holdings to the guardians.  
+Integration with the lightning network is achieved using lightning swaps that are provided as a service to the users of the mint. 
+
+A simple way to think about this is by imagining a man with two bags.  One bag is full of Fedimint bitcoin, one bag is full of Lightning bitcoin and he is willing to sell either for the other. 
+
+![lightnig swap operator](/img/raw-figures/fm-lightning-swaps.excalidraw.png)
+
+This is how lightning gateways work. 
+
+These users will except Fedimint bitcoin to pay a lightning invoice on your behalf, or accept incoming lightning invoices and pay you in Fedimint bitcoin.
+
+These payments are secured in both the Fedimint and the lightning network using a common Hash Time Lock Contract. 
+
+This in effect "extends" the lightning route 1 more hop into the federation and ties together the success of both payments. 
+
+The lightning never "transforms" into Fedimint bitcoin it is more a balance sheet exercise for the lightning gateway operator.
+
+It is also possible to run multiple lightning gateways on a Fedimint and for any users to become a lightning gateway as long as they run a lightning node. 
+
+

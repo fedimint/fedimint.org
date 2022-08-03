@@ -89,6 +89,6 @@ There is [some recent research](https://github.com/renepickhardt/mpp-splitter/is
 
 ---
 
-The goal would be a world of hundreds of thousands to millions of community banks running Fedimint and inter-operating over the lightning network. 
+The goal would be a world of hundreds of thousands to millions of community banks running fedimint and inter-operating over the lightning network. 
 
 
