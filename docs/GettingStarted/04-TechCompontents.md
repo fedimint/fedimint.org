@@ -25,7 +25,7 @@ Digicash, allowed users to purchase $ denominated eCash tokens, that could be tr
 
 The process of issuing and redeeming eCash tokens was made anonymous through the use of Blind Signatures. 
 
-[This is covered in detail at Definitions and Terms > Blind Signatures & Chaumian eCash](../CommonTerms/Chaumian%20eCash). 
+[This is covered in detail at Definitions and Terms > Blind Signatures & Chaumian eCash](../CommonTerms/Blind%20Signatures). 
 
 This process relied on a centralized server to confirm authenticity of certificates and eliminate double spend issues, however, the server had no knowledge who the eCash tokens belonged to. 
 
