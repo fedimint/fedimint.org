@@ -13,7 +13,7 @@ Fedimint is a protocol to "be your mums bank".
 
 ### Know your federation
 
-The specifics around this trust model and trade offs will be explored in [Trade offs > Custody Trust Model](CommunityCustodyTrustModel.md), but key to this is that you are taking on custodial risk from the federation in order to get the benefits of convenient privacy and custody services (backups, inheritance recovery, lighting transactions). 
+The specifics around this trust model and trade offs will be explored in [Trade offs > Custody Trust Model](TradeOffs/CommunityCustodyTrustModel.md), but key to this is that you are taking on custodial risk from the federation in order to get the benefits of convenient privacy and custody services (backups, inheritance recovery, lighting transactions). 
 
 Important to consider in this trade off is that Fedimint has been designed to be used by pre-existing groups where members already have high levels of trust in each other which mitigates the custodial risk. 
 
