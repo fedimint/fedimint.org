@@ -68,7 +68,11 @@ const config = {
             position: "right",
             label: "Learn more",
           },
-          //{ to: "/blog", label: "Blog", position: "left" }, // FLAG
+          {
+            to: "blog",
+            label: "Resources",
+            position: "right",
+          },
           {
             href: "https://github.com/fedimint", // FLAG
             label: "GitHub",
