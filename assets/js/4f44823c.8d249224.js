@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwiki_fedimint=self.webpackChunkwiki_fedimint||[]).push([[7156],{7686:e=>{e.exports=JSON.parse('{"permalink":"/wiki_fedimint/blog/tags/video","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

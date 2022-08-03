@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwiki_fedimint=self.webpackChunkwiki_fedimint||[]).push([[2081],{3786:i=>{i.exports=JSON.parse('{"label":"docusaurus","permalink":"/wiki_fedimint/blog/tags/docusaurus","allTagsPath":"/wiki_fedimint/blog/tags","count":4}')}}]);

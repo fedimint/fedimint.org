@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwiki_fedimint=self.webpackChunkwiki_fedimint||[]).push([[2368],{6322:i=>{i.exports=JSON.parse('{"label":"bitcoin magazine","permalink":"/wiki_fedimint/blog/tags/bitcoin-magazine","allTagsPath":"/wiki_fedimint/blog/tags","count":1}')}}]);

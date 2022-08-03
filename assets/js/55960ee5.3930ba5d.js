@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwiki_fedimint=self.webpackChunkwiki_fedimint||[]).push([[4121],{8070:i=>{i.exports=JSON.parse('[{"label":"eCash","permalink":"/wiki_fedimint/docs/tags/e-cash","count":1},{"label":"Analogy","permalink":"/wiki_fedimint/docs/tags/analogy","count":1},{"label":"Bling Signatures","permalink":"/wiki_fedimint/docs/tags/bling-signatures","count":1}]')}}]);
