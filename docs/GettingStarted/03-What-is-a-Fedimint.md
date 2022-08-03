@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 # What is a Fedimint
 
@@ -11,13 +11,13 @@ This section is currently being worked on.
 
 A Fedimint - or "Federated Mint" is a protocol to implement [Chaumian eCash](../CommonTerms/Blind%20Signatures) with a federation of guardians to custody funds, instead of a centralized actor, that is integrated with the lightning network.
 
-The user experience of a Fedimint is designed to be similar to that of a custodial lightning wallet (e.g. Wallet[[TechCompontents]] of Satoshi) with the addition of strong privacy for the user.
+The user experience of a Fedimint is designed to be similar to that of a custodial lightning wallet (e.g. Wallet[[04-TechCompontents]] of Satoshi) with the addition of strong privacy for the user.
 
 It is anticipated there will be multiple federated mints deployed globally in both small and large community instances. 
 
 It makes sense to consider Fedimints deployed on a small scale for example, as a community bank for a small community with a robust circular economy and remember there will be many Fedimints deployed on the lightning network and not a single instance.  
 
-The open protocol enables communities of Bitcoiners to come together at their own discretion, assist each other with their custody and backup arrangements and make lightning payments through a privacy preserving wallet. 
+The open protocol enables communities of Bitcoiners to come together a               t their own discretion, assist each other with their custody and backup arrangements and make lightning payments through a privacy preserving wallet. 
 
 Run for the community, by the community.
 
@@ -27,7 +27,7 @@ A Fedimint has five functional components (accounts, custody & redemption, backu
 ![High level logical model of a fedimint](/img/Fedimint-HL.png)
 
 
-All of these are supported by three core technology components eCash, lighting discussed in more detail in ["Overview > The Technology Components"](TechCompontents).
+All of these are supported by three core technology components eCash, lighting discussed in more detail in ["Overview > The Technology Components"](04-TechCompontents.md).
 
 ### Federation Guardians
 Federation guardians are the technical community members responsible for setting up and running the Fedimint.  
@@ -39,7 +39,7 @@ The federation guardians are specific roles within the system that can only be a
 - **Account & Onboard:** The federation guardians will run the Fedimint protocol software stack. This will allow the guardians to generate a "joining a federation QR Code".
 - **Custody & Redemption:** The federation guardians will hold private keys to the threshold multi signature contract into which bitcoin is deposited. When a user executes a deposit process they will also blind sign eCash certificates to an amount equivalent to the deposited bitcoin.
 - **Backup & Recovery:** Federation members will manage the back up of "shards" (individual parts of complete file) of users wallet data.  When a recovery request is made they will manage an out of band process to confirm the authenticity of the recovery request and coordinate with other federation members to reconstruct the shard and recover the users funds. 
-- **Transaction Processing:** review transactions submitted to the federation to ensure that only valid eCash certificates are redeemed and that new eCash certificates are generated where required ([see how do FM transactions work?](howFMtransactionsWork)).
+- **Transaction Processing:** review transactions submitted to the federation to ensure that only valid eCash certificates are redeemed and that new eCash certificates are generated where required ([see how do FM transactions work?](05-How-FM-Transactions-Work.md)).
 * **LN Gateway:** From the point of view of the federation the LN Gateway is simply a user accepting fm-BTC. 
 
 ### Fedimint Users
@@ -51,7 +51,7 @@ These are considered a non-technical persona in that we assume no specific techn
 * **Account & Onboard:** Users must ensure they are happy with the reputation of the guardians for the chosen Fedimint, then they would simply scan a QR code to connect an account.  
 * **Custody & Redemption:** Users can submit a request to deposit bitcoin and exchange for fm-BTC certificates or use the fm-BTC certificates in their wallet in order to redeem on-chain bitcoin (note: users could also transfer out to themselves via the LN Gateway)
 * **Backup & Recovery:** The user will encrypt and shard their data to be backed up to the federation by their wallet application. 
-* **Transaction Processing:** The user could submit transactions that transfer fm-BTC to other users.  Alternatively the user can redeem transfered fm-BTC for newly issued fm-BTC, settling a paid transaction ([see how do FM transactions work?](howFMtransactionsWork)).
+* **Transaction Processing:** The user could submit transactions that transfer fm-BTC to other users.  Alternatively the user can redeem transfered fm-BTC for newly issued fm-BTC, settling a paid transaction ([see how do FM transactions work?](05-How-FM-Transactions-Work.md)).
 * **LN Gateway:** As an alternative to transacting inside the Fedimint, a user can create contracts (enforced by the Fedimint consensus) that will pay the lightning gateway persona to pay LN invoices on their behalf or generate lightning invoices to be paid.
 
 In principle anyone can become a Fedimint user as long as they have access to the on boarding link / QR code, the process by which on-boarding will be managed will be managed by specific federations. 

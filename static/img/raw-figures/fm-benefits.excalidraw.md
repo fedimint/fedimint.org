@@ -13,7 +13,7 @@ Scaling ^tWwgJvls
 Financial 
 Privacy ^Mlf3O65C
 
-Custody ^u04q6PDi
+Community Custody ^u04q6PDi
 
 %%
 # Drawing
@@ -282,8 +282,8 @@ Custody ^u04q6PDi
 		},
 		{
 			"type": "text",
-			"version": 606,
-			"versionNonce": 1509075322,
+			"version": 620,
+			"versionNonce": 453889847,
 			"isDeleted": false,
 			"id": "u04q6PDi",
 			"fillStyle": "hachure",
@@ -293,29 +293,29 @@ Custody ^u04q6PDi
 			"opacity": 100,
 			"angle": 6.211021678219929,
 			"x": -257.75,
-			"y": -46.11902050113895,
+			"y": -58.61902050113895,
 			"strokeColor": "#000000",
 			"backgroundColor": "#fff",
 			"width": 164,
-			"height": 25,
+			"height": 50,
 			"seed": 373928463,
 			"groupIds": [
 				"g0-l4qz19NXtE63oZmlZQ"
 			],
 			"strokeSharpness": "sharp",
 			"boundElements": [],
-			"updated": 1658986468301,
+			"updated": 1659497545688,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 1,
-			"text": "Custody",
-			"rawText": "Custody",
-			"baseline": 18,
+			"text": "Community \nCustody",
+			"rawText": "Community Custody",
+			"baseline": 43,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "4cjDKyvnZvpLZFNpXQLZT",
-			"originalText": "Custody"
+			"originalText": "Community Custody"
 		}
 	],
 	"appState": {

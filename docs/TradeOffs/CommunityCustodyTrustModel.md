@@ -15,3 +15,4 @@ Here we want to present a simple trust model to help understand this trade off a
 
 ![trust model](/img/FedimintTrust.png)
 
+ 
