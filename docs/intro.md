@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Fedimint is an open source protocol to custody and transact bitcoin in a community context, built on a strong foundation of privacy.
 
-It takes advantage of very clever technology and the very human circles of trust, to provide a solution to custody that is more convenient than holding Bitcoin on a 3rd party exchang,e and less expensive and complex than many self-custody solutions.
+It takes advantage of very clever technology and the very human circles of trust, to provide a solution to custody that is more convenient than holding Bitcoin on a 3rd party exchange, and less expensive and complex than many self-custody solutions.
 
 ![Fedimint Categories](/img/FedimintMap.png)
 
