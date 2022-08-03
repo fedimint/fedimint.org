@@ -14,7 +14,7 @@ Friends ^p2D6vAt1
 
 Community ^ysu90TbR
 
-Anon Online Services ^t8S8etsy
+Private Online Services ^t8S8etsy
 
 Higher 2nd party trust
 Lower Anonymity set ^txB7eaXT
@@ -22,9 +22,9 @@ Lower Anonymity set ^txB7eaXT
 Lower 2nd party trust
 Higher Anonymity set ^16LPvUOc
 
-Very low?? 3rd party trust
+Lowest 3rd party trust
  Very high anonymity set 
-- interesting design space :) ^b3uytVK3
+ ^b3uytVK3
 
 Focus of fedimint.org ^D52vRJD8
 
@@ -11991,8 +11991,8 @@ problematic regulatory space  ^DklPbt4W
 		},
 		{
 			"type": "text",
-			"version": 989,
-			"versionNonce": 240055181,
+			"version": 1021,
+			"versionNonce": 996329047,
 			"isDeleted": false,
 			"id": "t8S8etsy",
 			"fillStyle": "hachure",
@@ -12001,28 +12001,28 @@ problematic regulatory space  ^DklPbt4W
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 330.86085530714104,
+			"x": 297.5275219738078,
 			"y": 121.53270166032883,
 			"strokeColor": "#000",
 			"backgroundColor": "transparent",
-			"width": 330,
+			"width": 380,
 			"height": 43,
 			"seed": 1809544832,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
 			"boundElements": [],
-			"updated": 1659493490006,
+			"updated": 1659513596552,
 			"link": null,
 			"locked": false,
 			"fontSize": 33.752883937173785,
 			"fontFamily": 1,
-			"text": "Anon Online Services",
-			"rawText": "Anon Online Services",
+			"text": "Private Online Services",
+			"rawText": "Private Online Services",
 			"baseline": 30,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Anon Online Services"
+			"originalText": "Private Online Services"
 		},
 		{
 			"type": "text",
@@ -12096,8 +12096,8 @@ problematic regulatory space  ^DklPbt4W
 		},
 		{
 			"type": "text",
-			"version": 376,
-			"versionNonce": 1734485869,
+			"version": 422,
+			"versionNonce": 1676836663,
 			"isDeleted": false,
 			"id": "b3uytVK3",
 			"fillStyle": "cross-hatch",
@@ -12106,28 +12106,28 @@ problematic regulatory space  ^DklPbt4W
 			"roughness": 2,
 			"opacity": 100,
 			"angle": 0,
-			"x": 354.5822542654246,
+			"x": 361.0822542654246,
 			"y": 226.9153818776183,
 			"strokeColor": "#000000",
 			"backgroundColor": "#fa5252",
-			"width": 278,
+			"width": 250,
 			"height": 78,
 			"seed": 1392181632,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
 			"boundElements": [],
-			"updated": 1659493490006,
+			"updated": 1659513635684,
 			"link": null,
 			"locked": false,
 			"fontSize": 20.27811987135652,
 			"fontFamily": 1,
-			"text": "Very low?? 3rd party trust\n Very high anonymity set \n- interesting design space :)",
-			"rawText": "Very low?? 3rd party trust\n Very high anonymity set \n- interesting design space :)",
+			"text": "Lowest 3rd party trust\n Very high anonymity set \n",
+			"rawText": "Lowest 3rd party trust\n Very high anonymity set \n",
 			"baseline": 70,
 			"textAlign": "center",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Very low?? 3rd party trust\n Very high anonymity set \n- interesting design space :)"
+			"originalText": "Lowest 3rd party trust\n Very high anonymity set \n"
 		},
 		{
 			"type": "arrow",
@@ -12361,41 +12361,6 @@ problematic regulatory space  ^DklPbt4W
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Perfectly possible...\nless public discussion, \nproblematic regulatory space "
-		},
-		{
-			"type": "text",
-			"version": 182,
-			"versionNonce": 58501911,
-			"isDeleted": true,
-			"id": "iDL6YypU",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "dotted",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -606.9838986071805,
-			"y": -490.89267206041177,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"width": 354,
-			"height": 197,
-			"seed": 2011747968,
-			"groupIds": [],
-			"strokeSharpness": "sharp",
-			"boundElements": [],
-			"updated": 1659493545856,
-			"link": null,
-			"locked": false,
-			"fontSize": 155.99999999999994,
-			"fontFamily": 1,
-			"text": "Who?",
-			"rawText": "Who?",
-			"baseline": 138,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Who?"
 		}
 	],
 	"appState": {
