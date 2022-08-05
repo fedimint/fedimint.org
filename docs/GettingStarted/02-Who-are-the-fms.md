@@ -69,4 +69,4 @@ A much better country to be a customer.
 
 ---
 
-The specifics around this trust model and trade offs will be explored in [Trade offs > Custody Trust Model](../TradeOffs/CommunityCustodyTrustModel).
+The specifics around this trust model and trade offs will be explored in [Trade offs > Custody Trust Model](02-NotYourKeys.md).
