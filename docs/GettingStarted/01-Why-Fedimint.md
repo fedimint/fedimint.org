@@ -47,7 +47,7 @@ This allows Fedimint users to remain part of the wider lightning network merchan
 As such as a user who previously may have used 3rd party custody for convenience can retain that convenience whilst improving their privacy and control of their finances.
 
 :::note
-There is a [trade off ](../CommonTerms/CustodialRisk) here as you are trusting a federation with your bitcoin custody. As such it will be important to "know your federation".
+There is a [trade off ](../TradeOffs/NotYOurKeys) here as you are trusting a federation with your bitcoin custody. As such it will be important to "know your federation".
 :::
 
 ## Financial Privacy
