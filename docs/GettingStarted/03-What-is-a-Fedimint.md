@@ -63,9 +63,15 @@ These are not account balances but equivalent to digital banknotes of specific s
 
 ### Lightning Gateway Provider
 
-The Lighting Gateway is a Fedimint User who also runs a lightning node. A federation may opt to run its own lightning gateway as well, but we have intentionally architected Fedimint such that any user can act as a lightning gateway to interact with the broader lighting network outside of the mint.
+The Lighting Gateway is a Fedimint User who also runs a lightning node. 
 
-The Lightning Gateway monitors the Federation for user requests to pay Ligtning invoices or receive lightning payments. To send a lightning payment, the Fedimint User locks eCash tokens to a contract which contains a lightning invoice. The lightning gateway can sweep the eCash tokens from the contract by paying the lightning invoice. To receive a payment, the Fedimint User broadcasts a tweaked invoice to the lightning gateway. The User reveals the tweak, allowing the gateway to receive the lightning payment, in exchange for ecash tokens.
+A federation may opt to run its own lightning gateway as well, but we have intentionally architected Fedimint such that any user can act as a lightning gateway to interact with the broader lighting network outside of the mint.
+
+The Lightning Gateway monitors the Federation for user requests to pay Lightning invoices or receive lightning payments. 
+
+To send a lightning payment, the Fedimint User locks eCash tokens to a contract which contains a lightning invoice. The lightning gateway can sweep the eCash tokens from the contract by paying the lightning invoice. 
+
+To receive a payment, the Fedimint User broadcasts a tweaked invoice to the lightning gateway. The User reveals the tweak, allowing the gateway to receive the lightning payment, in exchange for eCash tokens.
 
 - **Account & Onboard:** Similar to a user the Lightning Service provider will need to be comfortable accepting the federations fm-BTC in exchange for providing a liquidity bridge to the lightning network.
 - **Custody & Redemption:** As per user persona. It is more likely a Lightning Gateway user would require the redemption and deposit service in order to more actively balance fm-BTC, lighting and on-chain balances.

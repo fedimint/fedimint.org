@@ -17,7 +17,20 @@ This is possible in theory but the most practical implementations would require 
 
 ## Can the federation guardians collude and steal from me?
 
-Guardian collusion is prevented by the configuration of the federation and the selection of its guardians. The federation uses an asynchronous bft consensus, e.g. 3/5 or 7/13 that would require a majority to collude to steal your coins. Within fedimint you are explicitly trusting that the federation will not collude, their incentive not to is 2nd degree social connections so a fedimint user should know in person who at least 1 of their federation guardians are and be capable of directly interacting with them.
+Guardian collusion is prevented by the configuration of the federation and the selection of its guardians. The federation uses an asynchronous bft consensus, e.g. 3/5 or 7/13 that would require a majority to collude to steal your coins. 
+
+Within fedimint you are explicitly trusting that the federation will not collude, their incentive not to is 2nd degree social connections so a fedimint user should know in person who at least 1 of their federation guardians are and be capable of directly interacting with them.
+
+## Can a single bad guardian, rewrite my transaction to steal coins?
+
+On receipt of a payment, you will want to swap out the eCash tokens you received for new eCash tokens. 
+
+When you submit this transaction, you will specify the input coins provided and the new blind signature requests that you are trading them for.
+
+This is constructed as a transaction which include the inputs, outputs and an associated public key known to the user. The user then signs the transaction on submission. 
+
+This signature is part of the validation check on the consensus algorithm, as such no inputs or outputs can be changed by a rogue guardian (for example to steal the outputs) without failing the consensus round. 
+
 
 ## Can guardians prevent me from pegging out? 
 
