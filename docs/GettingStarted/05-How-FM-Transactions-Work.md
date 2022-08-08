@@ -85,7 +85,7 @@ The Lightning Gateway now takes that pre-image and uses this to claim the 10,200
 The Lightning Gateway's fm-BTC balance is now up 10,200 sats and their net position is up 200 sats.
 
 :::note
-By linking the HTLCs with the same pre-image between the lightning route and the mint, the allows the Fedimint to spoof a lightning node and extend the route "into the mint".
+By linking the HTLCs with the same pre-image between the lightning route and the mint, this allows the Fedimint to spoof a lightning node and extend the route "into the mint".
 :::
 
 ## Transactions from Fedimint to Other Fedimints
