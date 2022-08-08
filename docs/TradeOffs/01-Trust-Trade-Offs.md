@@ -40,8 +40,9 @@ The trade offs in the trust model have been captured as five key risks as outlin
 1. **[Custodial Risk](NotYourKeys):** Can the federation steal or lose your funds. 
 2. **[Debasement Risk](DebasementRisk):** Can the federation issue more claims to bitcoin than they own. 
 3. **[Regulatory Risk](RegulatoryRisk):** Can the federation be unilaterally shut down or forced to cease operations.
-4. **[LN Gateway Censorship Risk](TrustLNGateways):** Can the LN gateways refuse service. 
-5. **[Transaction Censorship Risk](Transaction-Contract-Fulfilment):** Can the federation refuse service. 
+4. **[LN Gateway Censorship Risk](TrustLNGateways):** What are the risks in LN gateways refusing service to mint users.
+5. **[Transaction Censorship Risk](Transaction-Contract-Fulfilment):** In what instance could a federation refuse service. 
+6. **[Deanonymisation of backups:](BackupDeanonymization)** Can the federation leak identity information from your backup.
 
 
 [^1]: This is under constant revision, please raise further trade offs for consideration. 

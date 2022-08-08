@@ -12,9 +12,7 @@ Bitcoin is a powerful human rights technology that enables anybody in the world 
 
 Anyone, anywhere in the world, can run their own node, custody their own funds, and transact permissionlessly over the Bitcoin main chain or the Lightning Network.
 
-We believe that
-
-Creating simpler, private user experiences will be critical in promoting the human rights benefits of bitcoin.
+We believe that creating simpler, private user experiences will be critical in promoting the human rights benefits of bitcoin.
 
 Fedimint is built on three guiding pillars.
 
@@ -22,13 +20,21 @@ Fedimint is built on three guiding pillars.
 
 ## Community Custody
 
-Bitcoiners should run their own nodes and custody their own funds. However, the vast majority of people onboarding to Bitcoin today do so through 3rd party custodians like exchanges or custodial wallets. They sacrifice their privacy and security in favor of speed and convenience. We believe this tradeoff is unacceptable, and with Fedimint are building a solution which allows users to onboard to Bitcoin in a manner they find extremely convenient, without sacrificing privacy and security.
+Ideally bitcoiners should run their own nodes and custody their own funds.
 
-Many people find the technical challenges of running their own nodes and custodying their own funds through seed management prohibitively difficult, and opt into trusting a third party custodian.
+Many people find the technical challenges of running their own nodes and holding their own funds through seed management prohibitively difficult, and opt into trusting a third party custodian like exchanges or custodial wallets. 
 
-Fedimint aims to address this by distributing the custodianship across millions of communities, making it simple for communities to bank themselves. Fedimint allows Bitcoiners to onboard newCoiners themselves, assisting them in their custody and payment model. Instead of referring a newCoiner to a third party custodian, you can onboard them yourself as part of a Federation.
+These users will sacrifice their privacy and security in favor of speed and convenience and this arrangement can represent a systemic risk to the bitcoin network as large quantities of bitcoin are aggregated into single custodians.
 
-Put another way it allows you to **be your mum's / friends / villages bank**. We call these close, trusted relationships "2nd party custodians". Fedimint federation guardians should be close friends and family members that you know personally, and can directly influence should they ever attempt to violate your trust.
+Fedimint aims to address this by distributing the custodianship across millions of communities, making it simple for communities to bank themselves. 
+
+We are building a solution which allows users to onboard to Bitcoin in a manner they find extremely convenient, without sacrificing privacy and security.
+
+Fedimint allows Bitcoiners to onboard new bitcoiners themselves, assisting them in their custody and payment model. Instead of referring a new bitcoiner to a third party custodian, you can onboard them yourself as part of a Federation.
+
+Put another way it allows you to **be your mum's / friends / villages bank**. 
+
+We call these close, trusted relationships "2nd party custodians".  Fedimint federation guardians should be close friends and family members that you know personally, and can directly influence should they ever attempt to violate your trust.
 
 This provides bitcoiners with a third option between 3rd party centralized custodians and self custody as shown in the figure below.
 
