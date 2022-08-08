@@ -2,7 +2,11 @@
 sidebar_position: 2
 ---
 
-# Custodial Risk - Not your keys!
+# Custodial Risk
+
+:::caution
+This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
+:::
 
 A common and reasonable critique of the Fedimint protocol is the level of trust which is invested in the Federation guardians, as this is seen as a violation of a core norm of the bitcoin community. 
 

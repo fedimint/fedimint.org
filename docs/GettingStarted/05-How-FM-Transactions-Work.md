@@ -7,7 +7,7 @@ sidebar_position: 5
 This is a set of simplified transactions flows to explain how transaction processing works inside the Fedimint, with integration to the wider lightning network and between different mints.
 
 :::caution
-This Guide is being actively worked on!
+This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
 :::
 
 ## Transactions within a Fedimint

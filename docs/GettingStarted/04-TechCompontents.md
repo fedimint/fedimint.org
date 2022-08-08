@@ -5,7 +5,7 @@ sidebar_position: 4
 # Core Technology Components
 
 :::caution
-This Guide is a work in progress! We'd appreciate any feedback, and you can submit edits through the link at the bottom of the page.
+This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
 :::
 
 Fedimints use three powerful technical components, that come together to offer great privacy and interoperability:

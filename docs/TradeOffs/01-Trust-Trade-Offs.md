@@ -2,10 +2,10 @@
 sidebar_position: 1
 ---
 
-# Trust and Trade Offs
+# Trust Model
 
 :::caution
-This Guide is being actively worked on!
+This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
 :::
 
 The Fedimint protocol is an optional opensource protocol which can be utilized alongside bitcoin and the lightning network. 

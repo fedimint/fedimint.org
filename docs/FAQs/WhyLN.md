@@ -1,4 +1,6 @@
-## Why Federated Chaumian E-Cash Interoperable with Lightning as a Scaling Solution? 
+# Why eCash integrated with Lightning?
+
+Why Federated Chaumian E-Cash Interoperable with Lightning as a Scaling Solution? 
 
 Step 1: At billions of people, not everyone can self custody through owning their own UTXOs without blowing out the UTXO set
 Step 2: people will therefore have to have shared custody of ind. UTXOs either on chain or through shared lightning channels 

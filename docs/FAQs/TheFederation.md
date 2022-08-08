@@ -1,8 +1,9 @@
-# The Federation
+# What does the Federation do? 
 :::caution
 This Guide is being actively worked on!
 :::
 
+The federation is the collective term for the guardians who actively run the Fedimint software on behalf of the users. They will run the software to custody, redeem and enforce contracts in the federation. 
 
 ## How does the federation custody the bitcoin?
 

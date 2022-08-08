@@ -5,9 +5,7 @@ sidebar_position: 3
 # What is a Fedimint
 
 :::caution
-
-This Guide is a work in progress! We'd appreciate any feedback, and you can submit edits through the link at the bottom of the page.
-
+This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
 :::
 
 A Fedimint - or "Federated Mint" is an implementation of [Chaumian eCash](../CommonTerms/Blind%20Signatures) with a federation of guardians to custody funds, instead of a centralized actor, and is natively interoperable with Bitcoin's Lightning Network.

@@ -5,7 +5,7 @@ sidebar_position: 2
 # Who are the federations?
 
 :::caution
-This Guide is a work in progress! We'd appreciate any feedback, and you can submit edits through the link at the bottom of the page.
+This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
 :::
 
 Fedimint is an open source protocol and technology stack which makes it easier to deploy and manage **community custody** solutions.

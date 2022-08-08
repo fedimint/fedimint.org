@@ -1,8 +1,10 @@
-# Joining a Federation
+# How do I join a federation?
 
 :::caution
 This Guide is being actively worked on!
 :::
+
+Right now there are no active federations, however, we expect to start seeing these go live in 2023.
 
 ## Know your family / friends / federation
 

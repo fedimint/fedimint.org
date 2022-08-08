@@ -1,4 +1,4 @@
-# Why Community Custody
+# Why consider community custody?
 
 ![High level logical model of a fedimint](/img/CommunityCustody.png)
 
@@ -23,16 +23,3 @@ So once again, we are heading into a future where huge crypto exchanges prevent 
 This is a concern because Bitcoin only succeeds if all its major constituents - mining, payments, software development, and custody - stay strong and decentralised. For Bitcoin to achieve its potential for separating money from state and thereby creating a freer and fairer financial world, nothing can be more important than reinforcing Bitcoin’s decentralised foundations.
 
 All the major elements of the Bitcoin ecosystem are significantly decentralised except for one, custody.  Right now, the default for most users is to store their censorship resistant decentralised Bitcoin with a few censurable centralised exchanges or custodians.  Fedimint is designed to resolve this major chink in the Bitcoin ecosystem’s armour.
-
-
----
-
-The second element is to break the custody challenge into two components. 
-
-It does this by recognising within any given group, there will be some more capable of guarding the group’s Bitcoin than others.  The more capable “group guardians” do the heavy lifting - hosting the group’s wallets and processing transactions - while the other members of the group have an ultra simple app that off loads all the complex stuff to the group guardians. 
-
-You could think of this as "Be your mates bank".  
-
-This, is already a common occurance today as many bitcoiners assist family and friends with their self custody setups.  Many in the Bitcoin space for have experienced a time-poor or less tech savvy relative or friend asking them to buy, sell, custody, or transfer bitcoin on their behalf, thereby acting as their bitcoin guardian, earning the popular monikor "Uncle Jim" - where being Uncle Jim is to run all the technical aspects of your friend and families bitcoin setup. 
-
-Here it's good to think of Fedimint as a protocol and tech stack, that makes it easier to be Uncle Jim.

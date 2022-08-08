@@ -1,10 +1,10 @@
-# Backups
+# How do backups work?
 
 :::caution
 This Guide is being actively worked on!
 :::
 
-The backup process in 
+The backup process in Fedimint is out of scope of the main scope of the protocol and is likely to differ depending on the particular federation. 
 
 ## How are user backups and recoveries managed?
 

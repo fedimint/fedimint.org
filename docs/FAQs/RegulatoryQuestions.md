@@ -1,10 +1,8 @@
-# Regulatory Questions
+# Would Fedimint federations need to be regulated? 
 
 :::caution
 This Guide is being actively worked on!
 :::
-
-## Would fedimint federations need to be regulated? 
 
 This will of course depend on the way a Fedimint is set up and the laws in the local jurisdiction. 
 
