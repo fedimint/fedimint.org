@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require("@site/static/img/undraw_digital_currency_qpak.svg").default,
     description: (
       <>
-        A simple open framework to deliver best practice community banking and
+        An open framework to deliver best practice federated applications and
         second party custody for friends, family and communities.
       </>
     ),
@@ -17,10 +17,7 @@ const FeatureList = [
     title: "Private",
     Svg: require("@site/static/img/undraw_bitcoin_p2p_re_1xqa.svg").default,
     description: (
-      <>
-        Fedimint, uses Chaumian eCash to provide privacy by default. Keep your
-        balances and payments to yourself.
-      </>
+      <>Privacy by default. Keep your balances and payments to yourself.</>
     ),
   },
   {
@@ -28,8 +25,8 @@ const FeatureList = [
     Svg: require("@site/static/img/undraw_nakamoto_-2-iv6.svg").default,
     description: (
       <>
-        Fedimint provides integration through lighting to the wider bitcoin
-        ecosystem.
+        Natively interoperable with the Bitcoin Lightning Network. Payments to
+        or from anyone, anywhere, at anytime.
       </>
     ),
   },
