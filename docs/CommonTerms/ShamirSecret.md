@@ -1,7 +1,7 @@
 # Shamir Secret Sharing
 
 :::caution
-This Guide is being actively worked on!
+This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
 :::
 
 Where users need to back up data or keys to the federation Fedimint utilizes the popular and time tested algorithm for Shamir Secret Sharing. 

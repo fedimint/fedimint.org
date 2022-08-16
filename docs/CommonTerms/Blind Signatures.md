@@ -3,13 +3,13 @@ title: Blind Signatures & eCash
 tags:
   - eCash
   - Analogy
-  - Bling Signatures
+  - Blind Signatures
 ---
 
 # Blind Signatures & Chaumian eCash
 
 :::caution
-This Guide is being actively worked on!
+This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
 :::
 
 ![Community Custody on a spectrum](/img/blind-signing.png)
