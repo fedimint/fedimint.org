@@ -4,70 +4,116 @@ sidebar_position: 3
 
 # Debasement Risk
 
-:::caution
-This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
-:::
-
-eCash tokens represent a claim on bitcoin held by the federation guardians.
+[eCash tokens](/docs/CommonTerms/eCashToken) represent a claim on bitcoin held by the federation guardians.
 
 As such there is a possibility that the mint could generate more claims for bitcoin than there are bitcoin in the custody of the guardians. 
 
-This could have multiple impacts including violating the norms of the 21 million bitcoin and the ability of the user to verify their transactions. 
+This could have multiple impacts including violating the norms of the 21 million bitcoin limit and the ability of the user to verify their transactions. 
 
 ![Dont trust verify](/img/raw-figures/fm-donttrust-verify.excalidraw.png)
 
 
 ## The Risk
 
-This risk is really a balance sheet and audit problem. 
+This risk to a user is that they may be left holding eCash tokens, that are not matched to bitcoin in the federation vault.  
 
-At all times the mint has both assets and liabilities which should balance:
+This risk is caused by a balance sheet audit and verification problem that exists in eCash due to the anonymous nature of blinded eCash tokens. 
+
+To expand on this, at all times the mint has both assets and liabilities which should balance:
 
 - **Assets:** The bitcoin held in the on chain multi signature wallet controlled by the federation guardians. 
 - **Liabilities:** The outstanding number of eCash tokens that have been issued by the mint.  
 
 ![Balance sheet options](/img/raw-figures/fm-debasement-balance-combined.png)
 
-The guardians of the federation have access to all required information that allows them to balance the books between the eCash outstanding and the assets held on chain. 
+The guardians of the federation have access to the required information that allows them to balance the books between the eCash outstanding and the assets held on chain. 
 
-For the user however, whilst they can see the assets on chain, they have no view of the total number of outstanding liabilities. 
+For the user however, whilst they can see the assets on chain, they have no view of the total number of outstanding liabilities and so the users is always "unable to verify" the total asset and liability balance of the federation, as such they are trusting the guardians to manage this balance. 
 
 This mismatch is at the core of this risk as it means that no external party to the guardians who can audit the supply and marks the importance strong 2nd party trust in federation guardians.
 
-To understand the impact of this risk we need to consider the incentive for a dishonest guardian and how they would profit from an inflating supply in the mint.
+:::info
+For completeness this risk also exists in any custodial bitcoin arrangement (for example with exchanges) in which the user gives up access to their keys.
+:::
 
-By inflating the supply the guardian would gain access to additional "claims" on bitcoin that could be transferred to any of the parties who accept fm-BTC these would be:
+### The Corrupt Quorum Problem
+
+This is complicated further if we consider the situation in which there is a "corrupt quorum" of guardians.
+
+Only guardians are able to create and sign false claims and this is done with a threshold of guardians requiring many corrupt guardians. 
+
+So in order to realize this risk in a Fedimint, a quorum of corrupt guardians (66% or in our figure guardian 1 & 2) would need to collude to create new eCash tokens that had no bitcoin backing as shown below.
+
+![Balance sheet options](/img/raw-figures/fm-debasement-corrupt.png)
+
+Three points to make at this point are:
+
+1. No additional bitcoins exist, only additional claims to bitcoin that circulate within a specific limited economic community. 
+2. This is a fraud exercised by a subset of federation guardians on both the Fedimint users who have honestly deposited funds (loss of funds impact) and the honest Guardian (reputation impact). 
+4. In order to realize this fraud the corrupt quorum of will need to exercise a redemption of the "false eCash claims".
+
+To understand the impact we need to consider ***how*** corrupt guardians would redeem these false "claims" on the bitcoin.  These claims could be transferred to any of the parties who accept fm-BTC:
 
 1. **The Mint:** To redeem for bitcoin from the multisig. 
 2. **Merchants / Users:** In exchange for goods and services.
 3. **LN Gateway:** In exchange for making and receiving lightning payments (Mint issues eCash and pays out to itself via LN, gateway racks up IOUs and would start redeeming against the bitcoin supply - so we're back to why not steal the bitcoin?)
 
-Each of theses parties could be attacked by a corrupt guardian paying with false claims, however, the impact varies drastically. 
+The corrupt guardians could take any one, or all three of these exits. 
 
-Only guardians are able to create and sign false claims and this is done with a threshold of guardians requiring many corrupt guardians. 
+#### Exit 1: The Mint
 
-As such when these guardians attack the mint, the guardians would in effect be attacking themselves and attempting to steal bitcoin they already control.  
+To exit this attack via the mint the corrupt guardians are using the claims to remove bitcoin from the mint, without alerting the remaining honest guardian.
 
-The two most likely attacks would likely be via the users and LN Gateway. 
+It should be noted at this point that the same group could empty the mint directly if they are a quorum on the multi-sig vault. This would be a higher pay off strategy, but would instantly alert the remaining guardian and so be instantly obvious within the community. 
 
-To attack merchants would in effect by a "Mint eats free" attack by issuing false tokens and using these to purchase real world goods. 
+A lower value theft could occur without alert where the corrupt guardians redeem a smaller amount of bitcoin over time. As more bitcoin is withdrawn this increases the chances of a collapse of the Fedimint. 
 
-Over a longer period of time more fm-BTC claims would be held by the users and eventually the Fedimint would collapse when the redemption's outpace the bitcoin in the mint. 
+#### Exit 2: Defraud Merchants / Users  
 
-The LN gateway attack is very similar only instead of cashing out to real world goods the claims are paid to the LN gateway to pay invoices over lightning e.g. to the corrupt guardian external lightning wallet. 
+This attack would involve issuing fake eCash and using this in the local economy in exchange for goods and services.  A "mint eats free attack". 
 
+Here the corrupt guardians are able to acquire real world goods and services from others in the federation at zero cost. This introduces a risk of collapse on the Fedimint. 
+
+#### Exit 3: LN Gateway
+
+The LN gateway attack is similar to attack two, only instead of cashing out to real world goods the claims are paid to the LN gateway in order to pay invoices over lightning e.g. to the corrupt guardians external lightning wallet. 
+
+This version, has potentially more risk for the corrupt guardians as it is expected that LN gateways would more frequently redeem these eCash tokens for on-chain bitcoin than a user / merchant in order to balance liquidity.
+
+In this way an LN Gateway could also act as an early warning on mint liquidity, where a trend is observed of bitcoin constantly flowing out of the mint and not being received inbound.
+
+### Impact
+
+The impact of this activity is two fold:
+
+1. **Mint Collapse:** Over a period of time more fm-BTC claims would be held by the users than exist in the multi-sig. This leads to fragility and eventually collapse of the Fedimint when the redemption's exceed the bitcoin in the mint. 
+2. **Reputation Loss:** The local reputation of the corrupt guardians would be destroyed, quite rightly. Unfortunately this would also likely impact the honest guardian as it would not be possible to confirm which quorum of guardians were dishonest. 
 
 ## The Mitigation 
 
+==IN PROGRESS==
+
+:::caution
+This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
+:::
+
 In mitigating this risk we should consider both attempting to stop false claims, as well as providing audit and verification (catch cheating guardians in the act and raise an alarm early) for users of the systems to back up the trust model. 
 
-Whilst several mitigation activities will be outlined, the tl;dr will be 
+Whilst several mitigation activities will be outlined, the tl;dr will be a user can't verify the reliability or 
 
 ### In Mint Audits
 
-Each consensus epoch, balances the assets and liabilities of the mint 
+During each consensus epoch, code is in place to balance the known assets and liabilities of the mint. This will allow guardians to monitor for bugs which cause an debasements and raise the alarm / act accordingly. 
 
-### Guardian mexican stand off
+It should be noted that if there is a quorum of bad guardians then these liabilities would be "unknown" to the Fedimint and so would not be identified by this process. 
+
+### Guardian "Mexican Stand-off"
+
+For this risk to play out, we 
+
+An honest guardian would know. The amount and value of eCash tokens at specific values that they have personally 
+
+Honest guardian is aware of up-time, can raise alarm on increased redemptions of honest 
 
 ### Know Your Federation 
 
@@ -79,6 +125,12 @@ The risk here is that the guardians would be able to debase your holding by secr
 
 ### Existing Risk
 
-### Threshold signatures on eCash Issuance
+### Threshold signatures on eCash Issuance & Redemption
+
+It is possible (and recommended) to separate both the key sets and thresholds required to perform transaction signing and management of the multi-signature vault.  
+
+In effect this means you can set a higher threshold of trust for users to redeem the on-chain bitcoin form the mint. This protects users 
 
 ### Bank Runs
+
+### In App Monitoring
