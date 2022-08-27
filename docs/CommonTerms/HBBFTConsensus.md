@@ -23,9 +23,3 @@ The consensus set `C` contains at least `n − f` contributions from different p
 Note how this implies that if more than `f` participants propose the same item said item is guaranteed to be included in the next consensus output.
 
 The consensus protocols we are discussing, asynchronous ones, can only handle about `1/3` faulty nodes, so this will also be our assumption when building our protocol on top if not stated otherwise.
-
-TODO
-
-- [x] Pull from .org site
-- [x] tidy up
-- [ ] Create an appropriate analogy or story?  

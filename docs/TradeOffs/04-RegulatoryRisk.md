@@ -1,7 +1,7 @@
 # Regulatory Risk
 
 :::caution
-This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
 :::
 
 The Fedimint protocol has been designed to fit a particular regulatory niche which people to custody assets for friends, family and community interests, where there is no profit motive. 

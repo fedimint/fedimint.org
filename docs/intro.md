@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # Getting Started
 
+:::caution
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
+:::
+
 Fedimint is an open source protocol to custody and transact bitcoin in a community context, built on a strong foundation of privacy.
 
 If you are confident taking self-custody of your bitcoin and running your own nodes, we highly recommend you do so. We are building Fedimint as a superior alternative to 3rd party custody. Fedimint is a mechanism for Bitcoiners and trusted community members to onboard their local communities to Bitcoin in a more accountable and private way.

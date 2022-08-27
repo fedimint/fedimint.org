@@ -2,7 +2,7 @@
   "position": 2,
   "label": "Trade Offs",
   "collapsible": true,
-  "collapsed": false,
+  "collapsed": true,
   "link": {
     "type": "generated-index",
     "title": "Answers to common critiques and trade offs"

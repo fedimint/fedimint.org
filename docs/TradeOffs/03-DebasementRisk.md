@@ -4,6 +4,10 @@ sidebar_position: 3
 
 # Debasement Risk
 
+:::caution
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
+:::
+
 [eCash tokens](/docs/CommonTerms/eCashToken) represent a claim on bitcoin held by the federation guardians.
 
 As such there is a possibility that the mint could generate more claims for bitcoin than there are bitcoin in the custody of the guardians. 

@@ -4,13 +4,7 @@
 This Guide is being actively worked on!
 :::
 
-Right now there are no active federations, however, we expect to start seeing these go live in 2023.
-
-## Know your family / friends / federation
-
-
-## How do I sign up?
-
+Right now there are no active federations, however, we expect to start seeing these go live in 2023.  If you would like to become involved in our [development process and testing  please reach out via our community telegram at t.me/fedimint](https://t.me/fedimint)
 
 ## Is it possible for a user to connect to multiple federations at the same time?
 
