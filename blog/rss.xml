@@ -4,22 +4,31 @@
         <title>Fedimint Blog</title>
         <link>https://humansinstitute.github.io/wiki_fedimint/blog</link>
         <description>Fedimint Blog</description>
-        <lastBuildDate>Mon, 01 Aug 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 15 Jan 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[A collection of podcasts on Fedimint]]></title>
-            <link>https://humansinstitute.github.io/wiki_fedimint/blog/fedimint podcasts</link>
-            <guid>fedimint podcasts</guid>
-            <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[There have been a range of recent podcasts covering Fedimint. This is a collection of podcasts over time.]]></description>
-            <content:encoded><![CDATA[<p>There have been a range of recent podcasts covering Fedimint. This is a collection of podcasts over time. </p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="slp331-eric-sirion-fedimints-for-privacy-and-scaling">SLP331 Eric Sirion Fedimints for Privacy and Scaling<a class="hash-link" href="#slp331-eric-sirion-fedimints-for-privacy-and-scaling" title="Direct link to heading">​</a></h3><p><strong>Date:</strong> 17tth December 2021
-<strong>Link:</strong> <a href="https://stephanlivera.com/episode/331/" target="_blank" rel="noopener noreferrer">https://stephanlivera.com/episode/331/</a></p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="improving-bitcoin-privacy-with-federated-ecash-mints">Improving Bitcoin Privacy with Federated eCash Mints<a class="hash-link" href="#improving-bitcoin-privacy-with-federated-ecash-mints" title="Direct link to heading">​</a></h3><p><strong>Date:</strong>
-<strong>Link:</strong> <a href="https://bitcointv.com/w/kHwmbLTWjsbaDTJpBewUmX" target="_blank" rel="noopener noreferrer">https://bitcointv.com/w/kHwmbLTWjsbaDTJpBewUmX</a></p><p>A talk at the adopting bitcoin conference in El Salvador. </p><iframe title="Improving Bitcoin Privacy with Federated E-Cash Mints - elsirion - Day 2 DEV Track - AB21" src="https://bitcointv.com/videos/embed/9fa9d4ed-6fde-4655-9807-4532799c712f" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe><h3 class="anchor anchorWithStickyNavbar_LWe7" id="citadel-dispatch-episode-45">Citadel Dispatch Episode 45<a class="hash-link" href="#citadel-dispatch-episode-45" title="Direct link to heading">​</a></h3><p><strong>Date:</strong>  24th November 2021
-<strong>Link:</strong> <a href="https://bitcointv.com/w/uTtKtUmfWZ7mZDztVXVRWv" target="_blank" rel="noopener noreferrer">https://bitcointv.com/w/uTtKtUmfWZ7mZDztVXVRWv</a></p><p>Eric Sirion (representing Fedimints) appeared alongside @fiatjaf and @akumaigorodski to discuss scaling mobile lightning wallets with eCash and hosted channels. </p><iframe title="Citadel Dispatch e45 - the future of mobile lightning wallets with @ericsirion, @akumaigorodski, and @fiatjaf" src="https://bitcointv.com/videos/embed/e9efea85-1f1d-4579-8fdc-8b7a94a9a555" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>]]></content:encoded>
+            <title><![CDATA[Bitcoin Explained with Ruben Somsen about federated e-cash]]></title>
+            <link>https://humansinstitute.github.io/wiki_fedimint/blog/bitcoin-explained-22</link>
+            <guid>bitcoin-explained-22</guid>
+            <pubDate>Sat, 15 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[An episode of Bitcoin Explained with Ruben Somsen, recorded in January 2022 all about federated e-cash]]></description>
+            <content:encoded><![CDATA[<p>An episode of Bitcoin Explained with Ruben Somsen, recorded in January 2022 all about federated e-cash</p><iframe width="560" height="315" src="https://www.youtube.com/embed/alyYNIX0m3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><p><a href="https://www.youtube.com/watch?v=alyYNIX0m3o" target="_blank" rel="noopener noreferrer">The You Tube page.</a></p>]]></content:encoded>
+            <category>video</category>
+            <category>podcast</category>
             <category>fedimint</category>
-            <category>podcasts</category>
+        </item>
+        <item>
+            <title><![CDATA[Eric Sirion on Stephan Livera Podcast 331]]></title>
+            <link>https://humansinstitute.github.io/wiki_fedimint/blog/eric-slp331</link>
+            <guid>eric-slp331</guid>
+            <pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Eric discusses the latest progress on MiniMint and the use of Federated Mints for Bitcoin scaling and privacy, on Stephan Livera Podcast Episode 331.]]></description>
+            <content:encoded><![CDATA[<p>Eric discusses the latest progress on MiniMint and the use of Federated Mints for Bitcoin scaling and privacy, <a href="https://stephanlivera.com/episode/331/" target="blank" rel="noopener noreferrer">on Stephan Livera Podcast Episode 331.</a></p><iframe width="560" height="315" src="https://www.youtube.com/embed/5KbY4IX0-NQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><p><a href="https://www.youtube.com/watch?v=5KbY4IX0-NQ" target="_blank" rel="noopener noreferrer">You tube link</a>.</p>]]></content:encoded>
+            <category>fedimint</category>
+            <category>bitcoin magazine</category>
+            <category>twitter spaces</category>
         </item>
         <item>
             <title><![CDATA[Federated Chaumian Mints on Lightning a Twitter Spaces Discussion]]></title>
