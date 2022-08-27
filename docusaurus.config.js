@@ -70,17 +70,17 @@ const config = {
           },
           {
             href: "/",
-            label: "   |   ",
+            label: "  |  ",
             position: "right",
           },
           {
             to: "blog",
-            label: "More Resources & Updates",
+            label: "Resources & Updates",
             position: "right",
           },
           {
             href: "/",
-            label: "   |   ",
+            label: "  |  ",
             position: "right",
           },
           {
