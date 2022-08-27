@@ -1,0 +1,9 @@
+{
+  "position": 9,
+  "label": "Minimint Details",
+  "collapsible": true,
+  "collapsed": true,
+  "customProps": {
+    "description": "An overview of the minimint architecture, consensus design and wallet details from the early designs."
+  }
+}

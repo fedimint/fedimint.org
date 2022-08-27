@@ -69,8 +69,18 @@ const config = {
             label: "Learn more",
           },
           {
+            href: "/",
+            label: "   |   ",
+            position: "right",
+          },
+          {
             to: "blog",
-            label: "Resources",
+            label: "More Resources & Updates",
+            position: "right",
+          },
+          {
+            href: "/",
+            label: "   |   ",
             position: "right",
           },
           {
@@ -115,6 +125,14 @@ const config = {
               {
                 label: "GitHub",
                 href: "https://github.com/fedimint",
+              },
+              {
+                label: "Mail",
+                href: "mailto:elsirion@protonmail.com",
+              },
+              {
+                label: "GPG Key",
+                href: "https://fedimint.org/elsirion.asc",
               },
             ],
           },

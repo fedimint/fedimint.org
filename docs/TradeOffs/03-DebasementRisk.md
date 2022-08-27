@@ -97,7 +97,7 @@ The impact of this activity is two fold:
 This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
 :::
 
-In mitigating this risk we should consider both attempting to stop false claims, as well as providing audit and verification (catch cheating guardians in the act and raise an alarm early) for users of the systems to back up the trust model. 
+In mitigating this risk we should consider the options to both stop false claims and raise the alarm on discovery of false claims. 
 
 Whilst several mitigation activities will be outlined, the tl;dr will be a user can't verify the reliability or 
 
