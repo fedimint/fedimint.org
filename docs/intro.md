@@ -14,6 +14,6 @@ If you are confident taking self-custody of your bitcoin and running your own no
 
 ![Fedimint Categories](/img/FedimintMap.png)
 
-This is a quick tour through the protocol to help you understand how it works and to answer questions around the tradeoffs, technologies, and common terms you might hear. We close this tour with an overview of several use cases we believe Fedimint can help with.
+This is a quick tour through the protocol to help you understand how it works and to answer questions around the trade offs, technologies, and common terms you might hear. We close this tour with an overview of several use cases we believe Fedimint can help with.
 
 The purpose of this documentation is to explain how Fedimint works, in a manner that is easily digestible by a non technical audience, inspired by the bitcoin.org wiki.
