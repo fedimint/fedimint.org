@@ -2,13 +2,13 @@
 sidebar_position: 2
 ---
 
-# Minimint Architecture
+# Fedimint Architecture
 
-MiniMint is a highly experimental Rust implementation of a federated chaumian mint on top of Bitcoin. If you are interested in taking a look feel free to [reach out](mailto:elsirion@protonmail.com).
+Fedimint is a highly experimental Rust implementation of a federated chaumian mint on top of Bitcoin. If you are interested in taking a look feel free to [reach out](mailto:elsirion@protonmail.com).
 
-In the following we will try to illuminate the high level architecture. Since this is probably not the only way to build such a federated mint we will only talk about MiniMint in particular here. Other projects like SCRIT made other design decisions that are not reflected. Maybe a more comprehensive comparison can be written at a later date.
+In the following we will try to illuminate the high level architecture. Since this is probably not the only way to build such a federated mint we will only talk about Fedimint in particular here. Other projects like SCRIT made other design decisions that are not reflected. Maybe a more comprehensive comparison can be written at a later date.
 
-MiniMint started out as a federated chaumian e-cash prototype. By now it is a more general framework for federated financial applications. At its core is lies the ability to agree on and process transactions. The possible input and output types of these transactions are defined by modules.
+Fedimint started out as a federated chaumian e-cash prototype. By now it is a more general framework for federated financial applications. At its core is lies the ability to agree on and process transactions. The possible input and output types of these transactions are defined by modules.
 
 To implement the federated e-cash functionality there currently exist two modules:
 
@@ -31,7 +31,7 @@ After all transactions have been processed the next consensus proposal is prepar
 
 ## Modules
 
-Each module defines an input, output and consensus item type. Modules also keep their own state using the same key-value store as MiniMint. See the database documentation for more information.
+Each module defines an input, output and consensus item type. Modules also keep their own state using the same key-value store as Fedimint. See the database documentation for more information.
 
 | Module     | Input      | Output        | Consensus Items                                                                           |
 | ---------- | ---------- | ------------- | ----------------------------------------------------------------------------------------- |

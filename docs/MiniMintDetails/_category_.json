@@ -1,9 +1,9 @@
 {
   "position": 4,
-  "label": "Minimint Details",
+  "label": "Fedimint Details",
   "collapsible": true,
   "collapsed": true,
   "customProps": {
-    "description": "An overview of the minimint architecture, consensus design and wallet details from the early designs."
+    "description": "An overview of the Fedimint architecture, consensus design and wallet details from the early designs."
   }
 }
