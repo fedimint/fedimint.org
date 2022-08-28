@@ -33,6 +33,10 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+.heroBanner_src-pages-index-module {
+  padding: 10rem 0rem;
+}
+
 .navbar__title {
   display: none;
 }
@@ -54,7 +58,7 @@ p a {
   color: #852eb0;
 }
 
-p {
+section p {
   padding: 0px 10px 0px 10px;
 }
 

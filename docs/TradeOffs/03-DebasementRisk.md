@@ -95,15 +95,13 @@ The impact of this activity is two fold:
 
 ## The Mitigation 
 
-==IN PROGRESS==
-
-:::caution
-This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
+:::info
+This section is under active review. PRs and discussion are appreciated on the Fedimint telgram, discord or github.
 :::
 
 In mitigating this risk we should consider the options to both stop false claims and raise the alarm on discovery of false claims. 
 
-Whilst several mitigation activities will be outlined, the tl;dr will be a user can't verify the reliability or 
+Whilst several mitigation activities will be outlined, the tl;dr is that a user can't verify the holdings of mint, however, several activities and alerts can be built around the mint to trigger warnings of misconduct.
 
 ### In Mint Audits
 
@@ -113,21 +111,15 @@ It should be noted that if there is a quorum of bad guardians then these liabili
 
 ### Guardian "Mexican Stand-off"
 
-For this risk to play out, we 
+An honest guardian could track the volume and value of eCash tokens that have been signed whilst they have been in the quorum. They would also be aware of their own up-time.
 
-An honest guardian would know. The amount and value of eCash tokens at specific values that they have personally 
-
-Honest guardian is aware of up-time, can raise alarm on increased redemptions of honest 
+Using these two data points they could estimate the likely hood of debasement if the level of redemptions to the mint causes the can raise alarm on increased redemptions of honest 
 
 ### Know Your Federation 
 
-You're already trusting the mint with all of your bitcoin. 
+You're already trusting the mint with all of your bitcoin. As such you should only utilise federations that you personal know and trust with your funds. 
 
-However, it is in theory possible to perform an attestation to show that the number of issued tokens and the Bitcoin balance held by the federation match at points when a “re-keying checkpoint” is made (a mechanism to periodically switch out private keys and prevent database bloat). Users are required to exchange their old tokens for new ones before each such re-keying checkpoint. This limits the frequency with which the procedure can be performed.
-
-The risk here is that the guardians would be able to debase your holding by secretly signing and issuing additional tokens that are spendable inside the mint
-
-### Existing Risk
+The main line of defence against debasement risk is choosing to only place your bitcoin in the hands of honest guardians.
 
 ### Threshold signatures on eCash Issuance & Redemption
 
@@ -137,4 +129,20 @@ In effect this means you can set a higher threshold of trust for users to redeem
 
 ### Bank Runs
 
+As a user could be a member of multiple federations there could be consideration given to allow users to automate bank runs from one federation to another to regularly stress test the solvency of the Fedimint. 
+
+### Re-keying Event 
+
+It is possible to perform an attestation to show that the number of issued tokens and the Bitcoin balance held by the federation match at points when a “re-keying checkpoint” is made. 
+
+This is a mechanism to periodically switch out private keys and prevent database bloat.
+
+Users are required to exchange their old tokens for new ones before each such re-keying checkpoint. This limits the frequency with which the procedure can be performed.
+
 ### In App Monitoring
+
+in app monitoring of LN flows and redemption's could be used to trigger early warning signs for "strange activitiy" within the mint. This could provide users an opportunity to conduct a "bank run" on the Fedimint or trigger a re-keying event to prove solvency.
+
+### Existing Risk
+
+This is just to note that this risk already exists in bitcoin with respect to the notion of exchanges and large custodians, who could already engage in fractional reserve banking.

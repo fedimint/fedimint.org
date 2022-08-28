@@ -22,7 +22,7 @@ const config = {
   organizationName: "humansinstitute", // Usually your GitHub org/user name. FLAG
   projectName: "wiki_fedimint", // Usually your repo name. FLAG
   deploymentBranch: "gh-pages",
-  trailingSlash: false, //FLAG
+  trailingSlash: false,
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -73,7 +73,7 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: "Fedimint", // FLAG
+        title: "Fedimint",
         logo: {
           alt: "Fedimint Full Logo",
           src: "img/Fedimint-Full.png",
