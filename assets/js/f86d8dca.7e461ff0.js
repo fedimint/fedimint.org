@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwiki_fedimint=self.webpackChunkwiki_fedimint||[]).push([[1687],{5348:i=>{i.exports=JSON.parse('{"label":"Bitocin Magazine","permalink":"/wiki_fedimint/blog/tags/bitocin-magazine","allTagsPath":"/wiki_fedimint/blog/tags","count":1}')}}]);

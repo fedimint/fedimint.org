@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwiki_fedimint=self.webpackChunkwiki_fedimint||[]).push([[8875],{1341:i=>{i.exports=JSON.parse('{"label":"elsirion","permalink":"/blog/tags/elsirion","allTagsPath":"/blog/tags","count":1}')}}]);

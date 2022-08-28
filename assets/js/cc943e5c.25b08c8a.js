@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwiki_fedimint=self.webpackChunkwiki_fedimint||[]).push([[1839],{8538:i=>{i.exports=JSON.parse('{"permalink":"/wiki_fedimint/blog/tags/scrit","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
