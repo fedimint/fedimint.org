@@ -1,7 +1,7 @@
 ---
 slug: blockstream-mm
 title: Blockstream Announces Support for Minimint! 
-tags: [minimint, funding, supporters, announcements]
+tags: [minimint, funding, supporters, blockstream, announcements, 2021]
 ---
 
 [This linked article](https://medium.com/blockstream/blockstream-sponsors-federated-e-cash-as-a-bitcoin-scaling-technology-637ba05de7b3) provides an overview of the funding provided to Eric Sirion for the development of Minimint.

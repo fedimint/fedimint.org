@@ -1,7 +1,7 @@
 ---
 slug: fed-cm-spaces
 title: Federated Chaumian Mints on Lightning a Twitter Spaces Discussion
-tags: [fedimint, bitcoin magazine, twitter spaces]
+tags: [fedimint, bitcoin magazine, twitter spaces, 2021]
 ---
 
 [You tube link to a recorded twitter spaces in December 2021 on the operation of Chaumian Mints](https://www.youtube.com/watch?v=A_7-DsreUQg).

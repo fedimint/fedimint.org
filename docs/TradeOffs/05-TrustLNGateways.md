@@ -7,9 +7,3 @@ This guide has been developed as a community project and is a live document. We 
 Lightning Gateways provide a service to the federation users, to allow them to connect with the wider bitcoin ecosystem. Without this service the ability to transact is heavily impaired. 
 
 This risk focus on risks associated with the LN Gateway restricting service. 
-
-## The Risk
-
-## The Mitigation 
-
-### Know Your Federation 

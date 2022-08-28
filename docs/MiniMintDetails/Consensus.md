@@ -11,7 +11,7 @@ Because it takes such a central part in a federated mint we will begin with expl
 A byzantine fault does not only allow a party to go offline, but also to maliciously continue participating in the
 protocol. In the following we will use
 
-$$n$$
+$n$
 
 as the total number of participants in a protocol and
 

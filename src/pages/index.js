@@ -31,17 +31,19 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`Welcome to ${siteConfig.title}`}
+      description="Fedimint is an opensource protocol to custody and transact bitcoin in a community context, built on a strong foundation of privacy."
     >
       <HomepageHeader />
       <main>
         <HomepageFeatures />
-
         <section className={styles.features}>
           <div className="container">
+            <div className="row-spacer">
+              <hr />
+            </div>
             <div className="row">
-              <h1 className="title">Welcome to Fedimint.org</h1>
+              <h1 className="t1">Welcome to Fedimint.org</h1>
               <p>
                 This site is intended to collect research and ideas about
                 federated chaumian mints to scale Bitcoin while also making it
@@ -54,15 +56,17 @@ export default function Home() {
               </p>
             </div>
             <div className="row">
-              <h2>Prior Art</h2>
+              <h2 className="t1">Prior Art</h2>
               <div>
                 <p>
                   We believe it is important to acknowledge the work which has
                   led up to the current Fedimint opensource protocol design.
                 </p>
                 <p>
-                  We are currently aware of two efforts to build such a
-                  federated mint:
+                  We are currently aware of the following efforts to build
+                  federated eCash mints:
+                </p>
+                <p>
                   <ul>
                     <li>
                       <b>
@@ -114,51 +118,49 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="row">
-              <h2>Support and Donations</h2>
-
-              <div>
-                <p>
-                  The Fedimint project is grateful for the generous support and
-                  donations we’ve received from various organisations and
-                  individuals including:
-                </p>
-              </div>
+            <div className="row1">
+              <h2 className="t1">Support and Donations</h2>
+              <p>
+                The Fedimint project is grateful for the generous support and
+                donations we've received from various organisations and
+                individuals including:
+              </p>
               <p>
                 <ul>
                   <li>
                     <a href="https://blockstream.com/" target="_blank">
-                      Blockstream
+                      <b>Blockstream</b>
                     </a>
                   </li>
                   <li>
                     <a href="https://twitter.com/obi" target="_blank">
-                      Obi Nwosu
+                      <b>Obi Nwosu</b>
                     </a>
                   </li>
                   <li>
                     <a href="https://einundzwanzig.space/" target="_blank">
-                      Einundzwanzig
+                      <b>Einundzwanzig</b>
                     </a>
                   </li>
                   <li>
                     <a href="https://hrf.org/" target="_blank">
-                      Human Rights Foundation
+                      <b>Human Rights Foundation</b>
                     </a>
                   </li>
                   <li>
                     <a href="https://ten31.vc/" target="_blank">
-                      Ten 31
+                      <b>Ten 31</b>
                     </a>
                   </li>
                   <li>
                     <a href="https://spiral.xyz/" target="_blank">
-                      Spiral
+                      <b>Spiral</b>
                     </a>
                   </li>
                 </ul>
               </p>
             </div>
+            <div className="row-spacer"></div>
           </div>
         </section>
         <div></div>

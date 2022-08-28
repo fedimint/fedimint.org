@@ -1,7 +1,7 @@
 ---
 slug: bitcoin-explained-22
 title: Bitcoin Explained with Ruben Somsen about federated e-cash
-tags: [video, podcast, fedimint]
+tags: [video, podcast, fedimint, 2022]
 ---
 
 An episode of Bitcoin Explained with Ruben Somsen, recorded in January 2022 all about federated e-cash

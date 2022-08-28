@@ -3,6 +3,8 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const math = require("remark-math");
+const katex = require("rehype-katex");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -35,15 +37,15 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/humansinstitute/wiki_fedimint/tree/main/",
+          editUrl: "https://github.com/fedimint/fedimint.org/tree/main/",
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/humansinstitute/wiki_fedimint/tree/main/",
+          editUrl: "https://github.com/fedimint/fedimint.org/tree/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -52,9 +54,24 @@ const config = {
     ],
   ],
 
+  stylesheets: [
+    {
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+      type: "text/css",
+      integrity:
+        "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+      crossorigin: "anonymous",
+    },
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: "light",
+        disableSwitch: true, //FLAG - Curruntly set to avoid having to customise dark mode CSS
+        respectPrefersColorScheme: false,
+      },
       navbar: {
         title: "Fedimint", // FLAG
         logo: {
@@ -84,7 +101,7 @@ const config = {
             position: "right",
           },
           {
-            href: "https://github.com/fedimint", // FLAG
+            href: "https://github.com/fedimint",
             label: "GitHub",
             position: "right",
           },
@@ -102,7 +119,7 @@ const config = {
               },
               {
                 label: "Tech Docs",
-                href: "https://fedimint.org/MiniMint/", ///
+                href: "https://github.com/fedimint/fedimint/wiki",
               },
             ],
           },

@@ -41,6 +41,23 @@
   text-align: center;
 }
 
+.row-spacer {
+  padding: 0px 0px 50px 0px;
+}
+
+.t1 {
+  color: #170022;
+  padding: 0px 10px 0px 10px;
+}
+
+p a {
+  color: #852eb0;
+}
+
+p {
+  padding: 0px 10px 0px 10px;
+}
+
 /** Copy of Fedimint Site CSS as a reference
 
 
