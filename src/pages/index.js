@@ -71,14 +71,13 @@ export default function Home() {
                     <li>
                       <b>
                         <a
-                          href="https://github.com/fedimint/minimint"
+                          href="https://github.com/fedimint/fedimint"
                           target="_blank"
                         >
-                          MiniMint:
+                          Fedimint:
                         </a>
                       </b>{" "}
-                      (this was the precursor work to Fedimint, since renamed) A
-                      modular federated e-cash prototype still under heavy
+                      A modular federated e-cash prototype still under heavy
                       development written in Rust. It already supports all main
                       operations (deposit/withdraw via both on-chain Bitcoin and
                       Lightning, e-cash transfers) and comes with a rudimentary
