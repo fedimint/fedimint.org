@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwiki_fedimint=self.webpackChunkwiki_fedimint||[]).push([[4447],{7015:i=>{i.exports=JSON.parse('{"permalink":"/wiki_fedimint/blog/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":11,"previousPage":"/wiki_fedimint/blog","blogDescription":"Blog","blogTitle":"Blog"}')}}]);
