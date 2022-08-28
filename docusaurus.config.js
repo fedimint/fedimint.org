@@ -136,6 +136,10 @@ const config = {
                 label: "Twitter",
                 href: "https://twitter.com/fedimint",
               },
+              {
+                label: "Discord",
+                href: "https://chat.fedimint.org",
+              },
             ],
           },
           {
