@@ -1,7 +1,7 @@
 # How do I join a federation?
 
-:::caution
-This Guide is being actively worked on!
+:::info
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
 :::
 
 Right now there are no active federations, however, we expect to start seeing these go live in 2023.  If you would like to become involved in our [development process and testing  please reach out via our community telegram at t.me/fedimint](https://t.me/fedimint)

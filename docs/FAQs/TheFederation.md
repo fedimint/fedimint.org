@@ -1,6 +1,7 @@
 # What does the Federation do? 
-:::caution
-This Guide is being actively worked on!
+
+:::info
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
 :::
 
 The federation is the collective term for the guardians who actively run the Fedimint software on behalf of the users. They will run the software to custody, redeem and enforce contracts in the federation. 

@@ -1,8 +1,9 @@
 # Honey Badger Byzantine Fault Tolerant Consensus
 
-:::caution
-This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
+:::info
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
 :::
+
 
 Because it takes such a central part in a federated mint we will begin with explaining the properties of [Byzantine Fault Tolerant (BFT)](https://en.wikipedia.org/wiki/Byzantine_fault) consensus algorithms. 
 

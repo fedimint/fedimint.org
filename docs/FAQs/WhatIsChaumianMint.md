@@ -1,8 +1,11 @@
 ---
 sidebar_position: 1
+title: What is aChaumian Mint
 ---
 
-# What Is A Chaumian Mint
+:::info
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
+:::
 
 One of the (if not the) earliest e-cash schemes were [Chaumian mints or banks](http://www.hit.bme.hu/~buttyan/courses/BMEVIHIM219/2009/Chaum.BlindSigForPayment.1982.PDF). They use blind signatures to allow the anonymous transfer of backing assets held by the mint. 
 
@@ -17,7 +20,7 @@ This means trading these IOUs is completely anonymous.
 One big problem of chaumian mints is that they are a single point of failure and an easy target for regulation and other attacks. Most countries financial regulations disallow anonymous payments to some degree, so running a mint in the open is a bad idea.
 
 Running one anonymously brings with it the problem of trust, the operator could run away with the money at any point. This combination of problems relegated the concept to a very small, low value market, e.g. [to pay for watchtower fees](https://lightning-wallet.com/storage-tokens#storage-tokens) in lightning.
-[](https://fedimint.org/#what-is-a-federated-mint)￼
+
 ## What is a Federated Mint?
 
 In a federated mint the required trust is split over multiple parties. It employs a consensus algorithm and threshold cryptography to guarantee both safety and availability even in the case that some parties are compromised. 

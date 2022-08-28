@@ -74,17 +74,17 @@ export default function Home() {
                           href="https://github.com/fedimint/minimint"
                           target="_blank"
                         >
-                          MiniMint
+                          MiniMint:
                         </a>
                       </b>{" "}
-                      (precursor work to be renamed to Fedimint): A modular
-                      federated e-cash prototype still under heavy development
-                      written in Rust. It already supports all main operations
-                      (deposit/withdraw via both on-chain Bitcoin and Lightning,
-                      e-cash transfers) and comes with a rudimentary CLI client.
-                      Some features are still missing and blocking mainnet
-                      deployments, but the project is moving quickly. If you are
-                      interested in contributing check out the GitHub
+                      (this was the precursor work to Fedimint, since renamed) A
+                      modular federated e-cash prototype still under heavy
+                      development written in Rust. It already supports all main
+                      operations (deposit/withdraw via both on-chain Bitcoin and
+                      Lightning, e-cash transfers) and comes with a rudimentary
+                      CLI client. Some features are still missing and blocking
+                      mainnet deployments, but the project is moving quickly. If
+                      you are interested in contributing check out the GitHub
                       repository.
                     </li>
                     <li>

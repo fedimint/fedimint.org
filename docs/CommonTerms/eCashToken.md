@@ -6,8 +6,8 @@ tags:
 ---
 # eCash Tokens and fm-BTC
 
-:::caution
-This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
+:::info
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
 :::
 
 Throughout the guide we refer to eCash tokens, fm-BTC (Fedimint BTC) or fm-sats (Fedimint satoshis) as the currency used within the Fedimint. 

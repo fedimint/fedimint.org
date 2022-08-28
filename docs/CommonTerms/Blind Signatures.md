@@ -8,8 +8,8 @@ tags:
 
 # Blind Signatures & Chaumian eCash
 
-:::caution
-This Guide is a work in progress.  We would appreciate any feedback you may have and you can submit edits through the link at the bottom of the page.
+:::info
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
 :::
 
 ![Community Custody on a spectrum](/img/blind-signing.png)

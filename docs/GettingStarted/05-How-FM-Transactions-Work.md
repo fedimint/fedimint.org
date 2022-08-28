@@ -4,11 +4,12 @@ sidebar_position: 5
 
 # How do Fedimint transactions work?
 
-This is a set of simplified transactions flows to explain how transaction processing works inside the Fedimint, with integration to the wider lightning network and between different mints.
-
-:::caution
+:::info
 This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
 :::
+
+This is a set of simplified transactions flows to explain how transaction processing works inside the Fedimint, with integration to the wider lightning network and between different mints.
+
 ## Transactions within a Fedimint
 
 This represents how a transaction would settle entirely within the same Fedimint.

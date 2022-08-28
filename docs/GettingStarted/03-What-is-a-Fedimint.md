@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # What is a Fedimint
 
-:::caution
+:::info
 This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
 :::
 

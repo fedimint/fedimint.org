@@ -1,5 +1,9 @@
 # Why consider community custody?
 
+:::info
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
+:::
+
 ![High level logical model of a fedimint](/img/CommunityCustody.png)
 
 What does the infamous Mt. Gox exchange and the latest cryptocurrency restrictions agreed by the world's regulators have in common?
