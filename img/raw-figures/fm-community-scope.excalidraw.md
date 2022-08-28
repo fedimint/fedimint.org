@@ -30,7 +30,9 @@ Focus of fedimint.org ^D52vRJD8
 
 Perfectly possible...
 less public discussion, 
-problematic regulatory space  ^DklPbt4W
+problematic regulatory space,
+harder to trust guardians
+ ^DklPbt4W
 
 %%
 # Drawing
@@ -12329,8 +12331,8 @@ problematic regulatory space  ^DklPbt4W
 		},
 		{
 			"type": "text",
-			"version": 401,
-			"versionNonce": 2054581556,
+			"version": 444,
+			"versionNonce": 1119316480,
 			"isDeleted": false,
 			"id": "DklPbt4W",
 			"fillStyle": "solid",
@@ -12339,28 +12341,28 @@ problematic regulatory space  ^DklPbt4W
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 277.38852965846706,
+			"x": 281.38852965846706,
 			"y": 400.8926720604118,
 			"strokeColor": "#495057",
 			"backgroundColor": "#12b886",
-			"width": 411,
-			"height": 105,
+			"width": 403,
+			"height": 175,
 			"seed": 690763392,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
 			"boundElements": [],
-			"updated": 1659493490006,
+			"updated": 1661601441520,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
 			"fontFamily": 1,
-			"text": "Perfectly possible...\nless public discussion, \nproblematic regulatory space ",
-			"rawText": "Perfectly possible...\nless public discussion, \nproblematic regulatory space ",
-			"baseline": 95,
+			"text": "Perfectly possible...\nless public discussion, \nproblematic regulatory space,\nharder to trust guardians\n",
+			"rawText": "Perfectly possible...\nless public discussion, \nproblematic regulatory space,\nharder to trust guardians\n",
+			"baseline": 165,
 			"textAlign": "center",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Perfectly possible...\nless public discussion, \nproblematic regulatory space "
+			"originalText": "Perfectly possible...\nless public discussion, \nproblematic regulatory space,\nharder to trust guardians\n"
 		}
 	],
 	"appState": {

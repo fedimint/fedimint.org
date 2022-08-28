@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwiki_fedimint=self.webpackChunkwiki_fedimint||[]).push([[8984],{6232:i=>{i.exports=JSON.parse('{"label":"2022","permalink":"/wiki_fedimint/blog/tags/2022","allTagsPath":"/wiki_fedimint/blog/tags","count":4}')}}]);
