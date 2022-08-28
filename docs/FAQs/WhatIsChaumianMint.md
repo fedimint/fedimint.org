@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: What is aChaumian Mint
+title: What is a Chaumian Mint
 ---
 
 :::info
