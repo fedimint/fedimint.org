@@ -19,7 +19,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            Learn more about Fedimints
+            Learn more about Fedimint
           </Link>
         </div>
       </div>
