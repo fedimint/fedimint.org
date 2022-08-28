@@ -47,7 +47,7 @@ These larger community bodies could even be formalized with constitutions to des
 
 This is in contrast to the distant third party relationships offered by an exchange or the first party relationship afforded by self custody.
 
-This setup also has the added advantage of [often being exempt from most regulatory considerations](../FAQs/RegulatoryQuestions), where the context is strictly non-commercial.
+This setup also has the added advantage of [often being exempt from most regulatory considerations](../TradeOffs/RegulatoryRisk), where the context is strictly non-commercial.
 
 :::note
 This doesn't preclude the notion of "commercial" Fedimints existing in the future.
