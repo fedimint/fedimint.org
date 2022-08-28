@@ -11,15 +11,15 @@ const config = {
   title: "Fedimint",
   tagline:
     "An open source protocol to custody and transact bitcoin in a community context, built on a strong foundation of privacy.",
-  url: "https://humansinstitute.github.io", // Set up for github pages FLAG Set to fedimint.org
-  baseUrl: "/wiki_fedimint/", //FLAG - Set to /
+  url: "https://staging.fedimint.org", // Set up for github pages FLAG Set to fedimint.org
+  baseUrl: "/", //FLAG - Set to /
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "humansinstitute", // Usually your GitHub org/user name. FLAG set to "fedimint"
+  organizationName: "fedimint", // Usually your GitHub org/user name. FLAG set to "fedimint"
   projectName: "wiki_fedimint", // Usually your repo name. FLAG set to "fedimint.org"
   deploymentBranch: "gh-pages",
   trailingSlash: false,
