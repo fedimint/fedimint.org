@@ -37,7 +37,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/fedimint/fedimint.org/tree/main/",
+          editUrl: "https://github.com/fedimint/wiki_fedimint/tree/main/",
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
@@ -45,7 +45,7 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/fedimint/fedimint.org/tree/main/",
+          editUrl: "https://github.com/fedimint/wiki_fedimint/tree/main/",
           blogSidebarTitle: "All posts",
           blogSidebarCount: "ALL",
         },

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Trust Model
+# Trust Model Trade Offs
 
 :::caution
 This guide has been developed as a community project and is a live document. We would advise you to fully consider your own risk model and mitigations before running Fedimint. We also appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
@@ -25,12 +25,14 @@ On the flip side the user benefits from the following positive attributes:
 
 1. **Blind Balance:** The guardians cannot see a users balance. 
 2. **Blind Transactions:** The guardians cannot tell which parties are part of a transaction.
+3. **Unattended LN deposits:** A user of a fedimint can receive payment on the lightning network without needing to be online.
+4. **Simplified use:** Using the Bitcoin and Lightning network is made simpler due to the operation of the Bitcoin and Lightning nodes being outsourced to the federation of LN gateways.
 
 :::note
-Fedimint is a voluntary system which individuals can and individuals in part or fully for their bitcoin custody. We hope that by being honest with these trade offs, individuals can make better decisions for their risk profiles. 
+Fedimint is a voluntary system which individuals can use in part or fully for their bitcoin custody. We hope that an honest accounting of the trade offs will help individuals make better decisions for their risk profiles. 
 :::
 
-## The Trade Offs
+## The Risks
 
 The trade offs in the trust model have been captured as five key risks as outlined below[^1] and explored in more detail on the following pages. 
 
@@ -42,7 +44,6 @@ The trade offs in the trust model have been captured as five key risks as outlin
 3. **[Regulatory Risk](RegulatoryRisk):** Can the federation be unilaterally shut down or forced to cease operations.
 4. **[LN Gateway Censorship Risk](TrustLNGateways):** What are the risks in LN gateways refusing service to mint users.
 5. **[Transaction Censorship Risk](Transaction-Contract-Fulfilment):** In what instance could a federation refuse service. 
-6. **[Deanonymisation of backups:](BackupDeanonymization)** Can the federation leak identity information from your backup.
 
 
 [^1]: This is under constant revision, please raise further trade offs for consideration. 
