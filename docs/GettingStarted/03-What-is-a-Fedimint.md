@@ -24,7 +24,7 @@ Fedimints are run for the community, by the community.
 
 A Fedimint has five functional components (accounts, custody & redemption, backup & recovery, transaction processing, LN Gateway) and three user personas (Guardian, User, Lightning Gateway) as outlined in the figure and with details below.
 
-![High level logical model of a fedimint](/img/Fedimint-HL.png)
+![High level logical model of a fedimint](/img/raw-figures/fm-logical.excalidraw.png)
 
 All of these are supported by three core technology components, discussed in greater detail in ["Overview > Technologies used in Fedimint"](TechCompontents).
 

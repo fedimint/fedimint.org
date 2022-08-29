@@ -30,7 +30,7 @@ fm-BTC ^zvpj8oMR
 
 fm-BTC ^90RTZ8y0
 
-Alice's Fedi 
+Alice's FM 
 Wallet ^q516oHaC
 
 
@@ -65,7 +65,7 @@ fm-BTC ^j9xHpJPA
 
 fm-BTC ^ohf0TseL
 
-Bobs Fedi 
+Bobs FM 
 Wallet ^OO1wt5IY
 
 fm-BTC ^PriAcnei
@@ -108,9 +108,6 @@ fm-BTC ^ftSF5Z8j
 
 fm-BTC ^PLFy2fb1
 
-Alice's Fedi 
-Wallet ^A18kGqI5
-
 
 Lightning Gateway
 Provider ^PAZ8pjsK
@@ -142,9 +139,6 @@ fm-BTC ^MISuhR7S
 fm-BTC ^NH78mbII
 
 fm-BTC ^pRe5k2QG
-
-Bobs Fedi 
-Wallet ^ALgI3lIy
 
 fm-BTC ^ah9MQaLA
 
@@ -1857,8 +1851,8 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 		},
 		{
 			"type": "ellipse",
-			"version": 712,
-			"versionNonce": 1010561849,
+			"version": 713,
+			"versionNonce": 1588187745,
 			"isDeleted": false,
 			"id": "SlZMdbRskxF92CVA_wVL9",
 			"fillStyle": "solid",
@@ -1868,7 +1862,7 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 			"opacity": 100,
 			"angle": 0,
 			"x": -515.4585266078066,
-			"y": 21.689753153887803,
+			"y": 21.689753153887807,
 			"strokeColor": "#000000",
 			"backgroundColor": "#4c6ef5",
 			"width": 47,
@@ -1884,7 +1878,7 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 					"type": "text"
 				}
 			],
-			"updated": 1659664312228,
+			"updated": 1661771666914,
 			"link": null,
 			"locked": false
 		},
@@ -2001,8 +1995,8 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 		},
 		{
 			"type": "text",
-			"version": 541,
-			"versionNonce": 29424825,
+			"version": 543,
+			"versionNonce": 1658834241,
 			"isDeleted": false,
 			"id": "q516oHaC",
 			"fillStyle": "solid",
@@ -2011,11 +2005,11 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 5.8815020660337884,
-			"x": -570.9709527552013,
+			"x": -564.4709527552013,
 			"y": 98.66408123516226,
 			"strokeColor": "#000000",
 			"backgroundColor": "#fff",
-			"width": 134,
+			"width": 121,
 			"height": 56,
 			"seed": 1349029911,
 			"groupIds": [
@@ -2028,18 +2022,18 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 					"type": "arrow"
 				}
 			],
-			"updated": 1659663157876,
+			"updated": 1661771679931,
 			"link": null,
 			"locked": false,
 			"fontSize": 22.611423046137283,
 			"fontFamily": 1,
-			"text": "Alice's Fedi \nWallet",
-			"rawText": "Alice's Fedi \nWallet",
+			"text": "Alice's FM \nWallet",
+			"rawText": "Alice's FM \nWallet",
 			"baseline": 48,
 			"textAlign": "center",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Alice's Fedi \nWallet"
+			"originalText": "Alice's FM \nWallet"
 		},
 		{
 			"type": "rectangle",
@@ -2634,48 +2628,6 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 			"verticalAlign": "middle",
 			"containerId": "Q_ClzcBaaouUVBROAa23a",
 			"originalText": "fm-BTC"
-		},
-		{
-			"type": "text",
-			"version": 541,
-			"versionNonce": 1257701463,
-			"isDeleted": false,
-			"id": "A18kGqI5",
-			"fillStyle": "solid",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 5.8815020660337884,
-			"x": -570.9709527552013,
-			"y": 98.66408123516226,
-			"strokeColor": "#000000",
-			"backgroundColor": "#fff",
-			"width": 134,
-			"height": 56,
-			"seed": 1349029911,
-			"groupIds": [
-				"23Y9XBOcMIptNMkvlshHh"
-			],
-			"strokeSharpness": "sharp",
-			"boundElements": [
-				{
-					"id": "QFb48Q3idqZKSqUMMA7fe",
-					"type": "arrow"
-				}
-			],
-			"updated": 1659663157877,
-			"link": null,
-			"locked": false,
-			"fontSize": 22.611423046137283,
-			"fontFamily": 1,
-			"text": "Alice's Fedi \nWallet",
-			"rawText": "Alice's Fedi \nWallet",
-			"baseline": 48,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Alice's Fedi \nWallet"
 		},
 		{
 			"type": "text",
@@ -3896,8 +3848,8 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 		},
 		{
 			"type": "text",
-			"version": 688,
-			"versionNonce": 2108703385,
+			"version": 690,
+			"versionNonce": 67661921,
 			"isDeleted": false,
 			"id": "OO1wt5IY",
 			"fillStyle": "solid",
@@ -3906,11 +3858,11 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 5.8815020660337884,
-			"x": -130.73871799197786,
+			"x": -126.23871799197786,
 			"y": 289.28250038555393,
 			"strokeColor": "#000000",
 			"backgroundColor": "#fff",
-			"width": 87,
+			"width": 78,
 			"height": 42,
 			"seed": 1243270073,
 			"groupIds": [
@@ -3918,18 +3870,18 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 			],
 			"strokeSharpness": "sharp",
 			"boundElements": [],
-			"updated": 1659663157878,
+			"updated": 1661771689004,
 			"link": null,
 			"locked": false,
 			"fontSize": 16.603791257044264,
 			"fontFamily": 1,
-			"text": "Bobs Fedi \nWallet",
-			"rawText": "Bobs Fedi \nWallet",
+			"text": "Bobs FM \nWallet",
+			"rawText": "Bobs FM \nWallet",
 			"baseline": 36,
 			"textAlign": "center",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Bobs Fedi \nWallet"
+			"originalText": "Bobs FM \nWallet"
 		},
 		{
 			"type": "ellipse",
@@ -4118,43 +4070,6 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 		},
 		{
 			"type": "text",
-			"version": 688,
-			"versionNonce": 1815854393,
-			"isDeleted": false,
-			"id": "ALgI3lIy",
-			"fillStyle": "solid",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 5.8815020660337884,
-			"x": -130.73871799197786,
-			"y": 289.28250038555393,
-			"strokeColor": "#000000",
-			"backgroundColor": "#fff",
-			"width": 87,
-			"height": 42,
-			"seed": 1243270073,
-			"groupIds": [
-				"wiq9X9za92SlsnIHfTlRM"
-			],
-			"strokeSharpness": "sharp",
-			"boundElements": [],
-			"updated": 1659663157878,
-			"link": null,
-			"locked": false,
-			"fontSize": 16.603791257044264,
-			"fontFamily": 1,
-			"text": "Bobs Fedi \nWallet",
-			"rawText": "Bobs Fedi \nWallet",
-			"baseline": 36,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Bobs Fedi \nWallet"
-		},
-		{
-			"type": "text",
 			"version": 925,
 			"versionNonce": 1414827735,
 			"isDeleted": false,
@@ -4192,8 +4107,8 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 		},
 		{
 			"type": "arrow",
-			"version": 1193,
-			"versionNonce": 739948759,
+			"version": 1194,
+			"versionNonce": 391888943,
 			"isDeleted": false,
 			"id": "mc2XioDH09Uf2lmTWFb5q",
 			"fillStyle": "solid",
@@ -4212,7 +4127,7 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 			"groupIds": [],
 			"strokeSharpness": "round",
 			"boundElements": [],
-			"updated": 1659664312233,
+			"updated": 1661771666916,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -4555,8 +4470,8 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 		},
 		{
 			"type": "arrow",
-			"version": 810,
-			"versionNonce": 1964458391,
+			"version": 811,
+			"versionNonce": 560036225,
 			"isDeleted": false,
 			"id": "QFb48Q3idqZKSqUMMA7fe",
 			"fillStyle": "solid",
@@ -4575,7 +4490,7 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 			"groupIds": [],
 			"strokeSharpness": "round",
 			"boundElements": [],
-			"updated": 1659663157879,
+			"updated": 1661771676417,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -5472,27 +5387,27 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 			"originalText": "3"
 		},
 		{
-			"id": "Sm6FQ4bxsqlLTItIdYsP5",
 			"type": "rectangle",
-			"x": -764.8540666795948,
-			"y": -350.5084760193779,
-			"width": 97.08455795137363,
-			"height": 337.24109604161424,
-			"angle": 0,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
+			"version": 155,
+			"versionNonce": 408607287,
+			"isDeleted": false,
+			"id": "Sm6FQ4bxsqlLTItIdYsP5",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
+			"angle": 0,
+			"x": -764.8540666795948,
+			"y": -350.5084760193779,
+			"strokeColor": "#ffffff",
+			"backgroundColor": "transparent",
+			"width": 97.08455795137363,
+			"height": 337.24109604161424,
+			"seed": 432093433,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"seed": 432093433,
-			"version": 155,
-			"versionNonce": 408607287,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1659664384474,
 			"link": null,
 			"locked": false
@@ -5522,6 +5437,85 @@ b6006f6fbb812d167ceadeb56de54e1ed4a70543: [[static/Pasted Image 20220805093223_3
 			"updated": 1659664384474,
 			"link": null,
 			"locked": false
+		},
+		{
+			"type": "text",
+			"version": 544,
+			"versionNonce": 1372557551,
+			"isDeleted": true,
+			"id": "A18kGqI5",
+			"fillStyle": "solid",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 5.8815020660337884,
+			"x": -564.4709527552013,
+			"y": 98.66408123516226,
+			"strokeColor": "#000000",
+			"backgroundColor": "#fff",
+			"width": 121,
+			"height": 56,
+			"seed": 1349029911,
+			"groupIds": [
+				"23Y9XBOcMIptNMkvlshHh"
+			],
+			"strokeSharpness": "sharp",
+			"boundElements": [
+				{
+					"id": "QFb48Q3idqZKSqUMMA7fe",
+					"type": "arrow"
+				}
+			],
+			"updated": 1661771676417,
+			"link": null,
+			"locked": false,
+			"fontSize": 22.611423046137283,
+			"fontFamily": 1,
+			"text": "Alice's FM \nWallet",
+			"rawText": "Alice's FM \nWallet",
+			"baseline": 48,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Alice's FM \nWallet"
+		},
+		{
+			"type": "text",
+			"version": 690,
+			"versionNonce": 1994379695,
+			"isDeleted": true,
+			"id": "ALgI3lIy",
+			"fillStyle": "solid",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 5.8815020660337884,
+			"x": -95.84388364751207,
+			"y": 290.1182562381505,
+			"strokeColor": "#000000",
+			"backgroundColor": "#fff",
+			"width": 9,
+			"height": 21,
+			"seed": 1243270073,
+			"groupIds": [
+				"wiq9X9za92SlsnIHfTlRM"
+			],
+			"strokeSharpness": "sharp",
+			"boundElements": [],
+			"updated": 1661771685491,
+			"link": null,
+			"locked": false,
+			"fontSize": 16.603791257044264,
+			"fontFamily": 1,
+			"text": "",
+			"rawText": "",
+			"baseline": 15,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": ""
 		}
 	],
 	"appState": {

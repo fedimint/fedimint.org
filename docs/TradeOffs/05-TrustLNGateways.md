@@ -1,12 +1,12 @@
 # LN Gateway Risk
 
 :::caution
-This guide has been developed as a community project and is a live document. We would advise you to fully consider your own risk model and mitigations before running Fedimint. We also appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
+This guide has been developed as a community project and is a live document. We would advise you to fully consider your own risk model and mitigation's before running Fedimint. We also appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
 :::
 
 Lightning Gateways provide a service to the federation users which allows them to connect with the wider bitcoin ecosystem. 
 
-Without this service the ability to transact is heavily impaired impact the user experience of the Fedimint user.
+Without this service the ability to transact is heavily impaired which will impact the user experience of the Fedimint user.
 
 This focus of this risk is on the situation in which an LN Gateway restricts service to Fedimint users through either (1) technical issue or (2) malice. 
 
