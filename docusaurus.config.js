@@ -11,7 +11,7 @@ const config = {
   title: "Fedimint",
   tagline:
     "An open source protocol to custody and transact bitcoin in a community context, built on a strong foundation of privacy.",
-  url: "https://staging.fedimint.org", // Set up for github pages FLAG Set to fedimint.org
+  url: "https://fedimint.org", // Set up for github pages FLAG Set to fedimint.org
   baseUrl: "/", //FLAG - Set to /
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -20,7 +20,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "fedimint", // Usually your GitHub org/user name. FLAG set to "fedimint"
-  projectName: "wiki_fedimint", // Usually your repo name. FLAG set to "fedimint.org"
+  projectName: "fedimint.org", // Usually your repo name. FLAG set to "fedimint.org"
   deploymentBranch: "gh-pages",
   trailingSlash: false,
   // Even if you don't use internalization, you can use this field to set useful
