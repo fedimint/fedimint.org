@@ -3,7 +3,7 @@ sidebar_position: 3
 katex: true
 ---
 
-# Minimint Consensus
+# Fedimint Consensus
 
 Because it takes such a central part in a federated mint we will begin with explaining the properties of
 [Byzantine Fault Tolerant (BFT)](https://en.wikipedia.org/wiki/Byzantine_fault) consensus algorithms.

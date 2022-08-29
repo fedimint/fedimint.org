@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Minimint Wallet
+# Fedimint Wallet
 
 To be backed by Bitcoin the federation needs a federated on-chain wallet. It is used to receive deposits that clients
 exchange for blind tokens and to make payouts when clients want to withdraw. Generally it is just a multisig wallet
@@ -93,7 +93,7 @@ generate new addresses from the wallet descriptor, but a custom derivation schem
 construction where a "contract" is hashed and added to all keys in the descriptor (added in the exponent in case of the
 pub key). A descriptor with derived keys can then trivially be transformed into an address.
 
-In MiniMint the "contract" is just a public key that can later be used to tie the deposit to a issuance transaction.
+In Fedimint the "contract" is just a public key that can later be used to tie the deposit to a issuance transaction.
 
 ## Receiving Bitcoin
 
