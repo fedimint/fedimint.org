@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Fedimint Blog</title>
-        <link>https://staging.fedimint.org/blog</link>
+        <link>https://fedimint.org/blog</link>
         <description>Fedimint Blog</description>
         <lastBuildDate>Fri, 19 Aug 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,7 +10,7 @@
         <language>en</language>
         <item>
             <title><![CDATA[Blockstream Research Update on Fedimint]]></title>
-            <link>https://staging.fedimint.org/blog/blockstream-minimint</link>
+            <link>https://fedimint.org/blog/blockstream-minimint</link>
             <guid>blockstream-minimint</guid>
             <pubDate>Fri, 19 Aug 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[An update on the research supported by Blockstream on the Fedimint opensource protocol and how it has developed over the last year.]]></description>
@@ -23,7 +23,7 @@
         </item>
         <item>
             <title><![CDATA[Can Fedimints Help Bitcoin Scale To The World?]]></title>
-            <link>https://staging.fedimint.org/blog/bitcoin-mag-agfm</link>
+            <link>https://fedimint.org/blog/bitcoin-mag-agfm</link>
             <guid>bitcoin-mag-agfm</guid>
             <pubDate>Tue, 26 Jul 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Alex Gladstein provides a detailed walk through of the history of eCash, the early days of Fedimint and the potential of Federated Chaumian eCash to provide a highly scalable community custody model for bitcoin.]]></description>
@@ -35,7 +35,7 @@
         </item>
         <item>
             <title><![CDATA[Federated Chaumian Mints Provide A Way For Bitcoin Users To Distribute Trust]]></title>
-            <link>https://staging.fedimint.org/blog/bitcoin-mag-mb</link>
+            <link>https://fedimint.org/blog/bitcoin-mag-mb</link>
             <guid>bitcoin-mag-mb</guid>
             <pubDate>Fri, 15 Apr 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Marty Bent provides an overview of Eric Sirion's and Obi Nwosu's talks at Bitcoin Miami in 2022 and his excitement around the build out of the technology.]]></description>
@@ -47,7 +47,7 @@
         </item>
         <item>
             <title><![CDATA[Fedimint – The Evolution Of Bitcoin Custody]]></title>
-            <link>https://staging.fedimint.org/blog/BitcoinMag-ONFM</link>
+            <link>https://fedimint.org/blog/BitcoinMag-ONFM</link>
             <guid>BitcoinMag-ONFM</guid>
             <pubDate>Sat, 12 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Obi Nwosu provides an overview of Fedimint as a second party custody model with the power to transform self custody and community banking.]]></description>
@@ -58,7 +58,7 @@
         </item>
         <item>
             <title><![CDATA[Bitcoin Explained with Ruben Somsen about federated e-cash]]></title>
-            <link>https://staging.fedimint.org/blog/bitcoin-explained-22</link>
+            <link>https://fedimint.org/blog/bitcoin-explained-22</link>
             <guid>bitcoin-explained-22</guid>
             <pubDate>Sat, 15 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[An episode of Bitcoin Explained with Ruben Somsen, recorded in January 2022 all about federated e-cash]]></description>
@@ -70,7 +70,7 @@
         </item>
         <item>
             <title><![CDATA[Eric Sirion on Stephan Livera Podcast 331]]></title>
-            <link>https://staging.fedimint.org/blog/eric-slp331</link>
+            <link>https://fedimint.org/blog/eric-slp331</link>
             <guid>eric-slp331</guid>
             <pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Eric discusses the latest progress on MiniMint and the use of Federated Mints for Bitcoin scaling and privacy, on Stephan Livera Podcast Episode 331.]]></description>
@@ -81,7 +81,7 @@
         </item>
         <item>
             <title><![CDATA[Federated Chaumian Mints on Lightning a Twitter Spaces Discussion]]></title>
-            <link>https://staging.fedimint.org/blog/fed-cm-spaces</link>
+            <link>https://fedimint.org/blog/fed-cm-spaces</link>
             <guid>fed-cm-spaces</guid>
             <pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[A recording of a Bitcoin Magazine Twitter space exploring the use of Federated Chaumian Mints on lightning.]]></description>
@@ -93,7 +93,7 @@
         </item>
         <item>
             <title><![CDATA[Citadel Dispatch 45 - The future of mobile lightning wallets]]></title>
-            <link>https://staging.fedimint.org/blog/Citadel-Dispatch-45</link>
+            <link>https://fedimint.org/blog/Citadel-Dispatch-45</link>
             <guid>Citadel-Dispatch-45</guid>
             <pubDate>Wed, 24 Nov 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Eric Sirion (representing Fedimints) appeared alongside @fiatjaf and @akumaigorodski to discuss scaling mobile lightning wallets with eCash and hosted channels.]]></description>
@@ -104,7 +104,7 @@
         </item>
         <item>
             <title><![CDATA[Improving Bitcoin Privacy with Federated eCash @ Adopting Bitcoin]]></title>
-            <link>https://staging.fedimint.org/blog/adopting21</link>
+            <link>https://fedimint.org/blog/adopting21</link>
             <guid>adopting21</guid>
             <pubDate>Wed, 17 Nov 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Eric Sirion, talks about the opportunities to improve bitcoin privacy through the adoption of Federated eCash systems and how integrating with lightning provides an interesting set of trade offs for privacy in spending and community banking.]]></description>
@@ -115,7 +115,7 @@
         </item>
         <item>
             <title><![CDATA[Blockstream Announces Support for Minimint!]]></title>
-            <link>https://staging.fedimint.org/blog/blockstream-mm</link>
+            <link>https://fedimint.org/blog/blockstream-mm</link>
             <guid>blockstream-mm</guid>
             <pubDate>Wed, 27 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[This article provides an overview of the funding provided to Eric Sirion for the development of Minimint.]]></description>
@@ -129,7 +129,7 @@
         </item>
         <item>
             <title><![CDATA[HCPP21 interview with elsirion and smuggler]]></title>
-            <link>https://staging.fedimint.org/blog/hcpp-21</link>
+            <link>https://fedimint.org/blog/hcpp-21</link>
             <guid>hcpp-21</guid>
             <pubDate>Sun, 03 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[An interview from HCPP21 with smuggler and elsirion about both SCRIT and MiniMint.]]></description>
