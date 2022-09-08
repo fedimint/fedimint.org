@@ -105,7 +105,7 @@ Whilst several mitigation activities will be outlined, the tl;dr is that a user 
 
 ### In Mint Audits
 
-During each consensus epoch, code is in place to balance the known assets and liabilities of the mint. This will allow guardians to monitor for bugs which cause an debasements and raise the alarm / act accordingly. 
+During each consensus epoch, code is in place to balance the known assets and liabilities of the mint. This will allow guardians to monitor for bugs which cause debasements and raise the alarm / act accordingly. 
 
 It should be noted that if there is a quorum of bad guardians then these liabilities would be "unknown" to the Fedimint and so would not be identified by this process. 
 
