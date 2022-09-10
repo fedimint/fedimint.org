@@ -16,24 +16,24 @@ This guide has been developed as a community project and is a live document. We 
 
 The canonical explanation of blind signatures was given by David Chaum in terms of imprinting a signature on a message using carbon copy paper.
 
-As highlighted in the figure above imagine obtaining a signature on a document as follows:
+As highlighted in the figure above, imagine obtaining a signature on a document as follows:
 
 1. Create a document and seal the document into an envelope along with carbon copy paper.
 2. You pass the envelope to the signer who can sign the outside of the envelope.
 3. This creates an internal signature onto the document from the carbon paper. .
 4. If you were to reveal your document at a later date, the signer could confirm that they did indeed sign that document.
 
-This is concept is utilized inside eCash to allow an eCash mint to issue "IOUs" that it can confirm are valid, whilst retaining the privacy of the user.
+This is the concept utilized inside eCash to allow an eCash mint to issue "IOUs" that it can confirm are valid, whilst retaining the privacy of the user.
 
 ![Community Custody on a spectrum](/img/Fedimint-ecashtoken-verify.png)
 
 A user can present a mint with a random identifier and request a blind signature from the mint. The mint signs different denominations with different private keys (for example a 10k Sats private key, a 5k sats private key and so on).
 
-So when a deposit (lets say 10,000 satoshis) is made, I present the mint with a random identifier and ask a blind signature with their 10,000 satoshi private key.
+So when a deposit (lets say 10,000 satoshis) is made, the user presents the mint with a random identifier and requests a blind signature with their 10,000 satoshi private key.
 
 These two piece of data make up an eCash token.
 
-When it comes time to redeem these satoshis, I provide the mint with the eCash token and it performs two checks:
+When it comes time to redeem these satoshis, the user0 provides the mint with the eCash token and it performs two checks:
 
 1. The mint confirms the signature was made with their 10,000 satoshi private key.
 2. The mint checks it has not previously redeemed an eCash token with this unique reference number.
