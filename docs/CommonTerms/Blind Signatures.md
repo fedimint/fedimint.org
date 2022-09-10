@@ -33,7 +33,7 @@ So when a deposit (lets say 10,000 satoshis) is made, the user presents the mint
 
 These two piece of data make up an eCash token.
 
-When it comes time to redeem these satoshis, the user0 provides the mint with the eCash token and it performs two checks:
+When it comes time to redeem these satoshis, the user provides the mint with the eCash token and it performs two checks:
 
 1. The mint confirms the signature was made with their 10,000 satoshi private key.
 2. The mint checks it has not previously redeemed an eCash token with this unique reference number.
