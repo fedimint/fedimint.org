@@ -13,7 +13,7 @@ Fedimint started out as a federated chaumian e-cash prototype. By now it is a mo
 To implement the federated e-cash functionality there currently exist two modules:
 
 - Fediwallet: a federated on-chain wallet, supporting deposits and withdrawals
-- Fedimint: a federated e-cash mint, supporting issuance and spending of blind signed tokens of diiferent denominations
+- Fedimint: a federated e-cash mint, supporting issuance and spending of blind signed notes of different denominations
 
 In the future other modules, e.g. to integrate Lightning, smart contracts or even a federated market place could be implemented.
 

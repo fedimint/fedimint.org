@@ -10,11 +10,11 @@ The federation is the collective term for the guardians who actively run the Fed
 
 The federation guardians utilize bitcoin multi signiture wallet to manage the on chain funds. 
 
-These are used to redeem federation tokens for bitcoin on chain. 
+These are used to redeem federation eCash notes for bitcoin on chain. 
 
 ## Is there some ability to set limitations on withdrawals if a user requests it (max withdrawal per day, one off, etc.)?
 
-This is possible in theory but the most practical implementations would require the introduction of some form of account based system, which would not be compatible with the Chaumian mint protocol.  One potential option would be to have the potential to keep a proportion of funds in an account based system where withdrawal thresholds can be enforced while a user’s remaining balance is held in chaumian e-cash tokens.
+This is possible in theory but the most practical implementations would require the introduction of some form of account based system, which would not be compatible with the Chaumian mint protocol.  One potential option would be to have the potential to keep a proportion of funds in an account based system where withdrawal thresholds can be enforced while a user’s remaining balance is held in chaumian e-cash notes.
 
 ## Can the federation guardians collude and steal from me?
 
@@ -24,7 +24,7 @@ Within fedimint you are explicitly trusting that the federation will not collude
 
 ## Can a single bad guardian, rewrite my transaction to steal coins?
 
-On receipt of a payment, you will want to swap out the eCash tokens you received for new eCash tokens. 
+On receipt of a payment, you will want to swap out the eCash notes you received for new eCash notes. 
 
 When you submit this transaction, you will specify the input coins provided and the new blind signature requests that you are trading them for.
 
@@ -68,4 +68,4 @@ There are a few differences:
 
 In summary, compared to Liquid, Fedimint doesn't require a side chain, has better privacy, faster transactions, will be more decentralized, and is interoperable with Lightning.
 
-However, the increased privacy means that Fedimint has a greater risk of inflation on tokens within the system (but not on the Bitcoin main chain). This is mitigated (but not eliminated) by the requirement for second party trust in choice of Fedimint guardians, and in future, the ability to perform attestations.
+However, the increased privacy means that Fedimint has a greater risk of inflation on bitcoin denominated eCash notes within the system (but not on the Bitcoin main chain). This is mitigated (but not eliminated) by the requirement for second party trust in choice of Fedimint guardians, and in future, the ability to perform attestations.

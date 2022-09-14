@@ -13,9 +13,9 @@ A common and reasonable critique of the Fedimint protocol is the level of trust 
 
 ![Not your keys not your coins](/img/raw-figures/fm-notyourkeys.excalidraw.png)
 
-The context here is that whilst you control your own eCash tokens, you are very much giving up custody of your bitcoin to the federation guardians.  
+The context here is that whilst you control your own eCash notes, you are very much giving up custody of your bitcoin to the federation guardians.  
 
-In this  eCash Tokens are IOUs redeemable to the Fedimint for bitcoin.
+In this eCash notes are IOUs redeemable to the Fedimint for bitcoin.
 
 This is a reasonable concern for bitcoiners coming from a full self sovereign custody arrangement, in which they hold and backup their own private keys. 
 

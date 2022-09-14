@@ -30,7 +30,7 @@ All of these are supported by three core technology components, discussed in gre
 
 ### Fedimint Guardians
 
-Fedimint guardians are the technical community members responsible for setting up and running the Federated Chaumian eCash system. They custody and backup funds and are responsible for the minting and redemption of eCash token claims against the Bitcoin reserves. A fedimint member is explicitly trusting that the federation guardians will not form a majority quorum to collude to steal user funds.
+Fedimint guardians are the technical community members responsible for setting up and running the Federated Chaumian eCash system. They custody and backup funds and are responsible for the minting and redemption of eCash notes, that are claims against the Bitcoin reserves. A fedimint member is explicitly trusting that the federation guardians will not form a majority quorum to collude to steal user funds.
 
 The guardians coordinate using a [distributed consensus protocol (HBBFT)](../CommonTerms/HBBFTConsensus) which is part of the Fedimint software deployed on personal servers. The consensus mechanism is Asynchronous, Byzantine Fault Tolerant, and can survive and operate even if a minority of individual federation guardians disconnect from the network. If a majority of the federation guardians disconnect, the consensus protocol will halt execution until a quorum of guardians come back online, at which point the consensus will continue.
 
@@ -48,7 +48,7 @@ The users of the Fedimint use Fedimint compatible wallet software like [Fedi](ht
 We assume no specific technical knowledge in order for Fedimint users to send and receive Bitcoin through the Fedimint model. Our initial usecase for Fedimint is as an extremely private, federated custodial wallet.
 
 - **Account & Onboard:** Users must ensure they are happy with the reputation of the guardians for the chosen Fedimint, then they would simply scan a QR code to connect an account.
-- **Custody & Redemption:** Users can submit a request to deposit bitcoin, "pegging in", in exchange for fm-BTC eCash tokens or use the fm-BTC eCash tokens in their wallet in order to redeem on-chain bitcoin (note: users could also transfer out to themselves via the LN Gateway)
+- **Custody & Redemption:** Users can submit a request to deposit bitcoin, "pegging in", in exchange for fm-BTC eCash notes or use the fm-BTC eCash notes in their wallet in order to redeem on-chain bitcoin (note: users could also transfer out to themselves via the LN Gateway)
 - **Backup & Recovery:** The user will encrypt and shard their data to be backed up to the federation by their wallet application.
 - **Transaction Processing:** The user could submit transactions that transfer fm-BTC to other users. Alternatively the user can redeem transfered fm-BTC for newly issued fm-BTC, settling a paid transaction ([see how do FM transactions work?](How-FM-Transactions-Work)).
 - **LN Gateway:** As an alternative to transacting inside the Fedimint, a user can create contracts (enforced by the Fedimint consensus) that will pay the lightning gateway persona to pay LN invoices on their behalf or generate lightning invoices to be paid.
@@ -56,7 +56,7 @@ We assume no specific technical knowledge in order for Fedimint users to send an
 In principle anyone can become a Fedimint user as long as they have access to the onboarding link / QR code. The onboarding process itself is subject to the specific implementations by the Federations.
 
 :::note
-The money "fm-BTC" held by the user are actually "digital bearer certificates" or "eCash tokens" stored on the users phone.
+The money "fm-BTC" held by the user are actually "digital bearer certificates" or "eCash notes" stored on the users phone.
 
 These are not account balances but equivalent to digital banknotes of specific set values. As these are digital, they can be encrypted and backed up.
 :::
@@ -69,9 +69,9 @@ A federation may opt to run its own lightning gateway as well, but we have inten
 
 The Lightning Gateway monitors the Federation for user requests to pay Lightning invoices or receive lightning payments. 
 
-To send a lightning payment, the Fedimint User locks eCash tokens to a contract which contains a lightning invoice. The lightning gateway can sweep the eCash tokens from the contract by paying the lightning invoice. 
+To send a lightning payment, the Fedimint User locks eCash notes to a contract which contains a lightning invoice. The lightning gateway can sweep the eCash notes from the contract by paying the lightning invoice. 
 
-To receive a payment, the Fedimint User broadcasts a tweaked invoice to the lightning gateway. The User reveals the tweak, allowing the gateway to receive the lightning payment, in exchange for eCash tokens.
+To receive a payment, the Fedimint User broadcasts a tweaked invoice to the lightning gateway. The User reveals the tweak, allowing the gateway to receive the lightning payment, in exchange for eCash notes.
 
 - **Account & Onboard:** Similar to a user the Lightning Service provider will need to be comfortable accepting the federations fm-BTC in exchange for providing a liquidity bridge to the lightning network.
 - **Custody & Redemption:** As per user persona. It is more likely a Lightning Gateway user would require the redemption and deposit service in order to more actively balance fm-BTC, lighting and on-chain balances.

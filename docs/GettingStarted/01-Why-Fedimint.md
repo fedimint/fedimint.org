@@ -52,21 +52,21 @@ There is a [trade off ](../TradeOffs/NotYOurKeys) here as you are trusting a fed
 
 ## Financial Privacy
 
-Fedimint uses [Chaumain e-cash tokens and blinded signatures](/docs/CommonTerms/Blind%20Signatures) to achieve privacy for federation members. Federation guardians cannot correlate inputs and outputs of federation members' transactions, and cannot see the holdings of any individual federation member.
+Fedimint uses [Chaumain e-cash notes and blinded signatures](/docs/CommonTerms/Blind%20Signatures) to achieve privacy for federation members. Federation guardians cannot correlate inputs and outputs of federation members' transactions, and cannot see the holdings of any individual federation member.
 
 ![The spectrum and trade offs for Fedimint Custody](/img/raw-figures/fm-privacy-firewall.excalidraw.png)
 
 The mint guardians will be aware of:
 
 - The **total amount** of bitcoin held in the community multi-sig wallet.
-- The **total amount** of eCash tokens outstanding for redemption.
+- The **total amount** of eCash notes outstanding for redemption.
 
 They will be entirely unaware of:
 
-- The **individual account balance** of a user (i.e. how many tokens a user has).
-- The **identity of the user** to whom a particular eCash token was issued to.
-- The **identity of the user** who redeems an eCash token.
-- Any **transactions of the token** which are made between issuance and redemption.
+- The **individual account balance** of a user (i.e. how many notes a user has).
+- The **identity of the user** to whom a particular eCash note was issued to.
+- The **identity of the user** who redeems an eCash note.
+- Any **transactions of the note** which are made between issuance and redemption.
 
 This is among the most important benefits of Fedimint over 3rd party custodians. Today, if you or anyone you transact with uses money through a custodian like an exchange, that custodian can see who you are, who you're paying, where the funds came from, and sometimes where they go afterward. Fedimint guardians see none of this information.
 

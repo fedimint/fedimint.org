@@ -18,17 +18,17 @@ All three technologies come together to users to delegate the complicated tasks 
 
 ## Chaumian eCash
 
-Chaumian e-cash allows the Fedimint to create and redeem IOU tokens that represent claims on bitcoin.
+Chaumian e-cash allows the Fedimint to create and redeem IOU notes that represent claims on bitcoin.
 
 The technology was originally developed in 1983 by [David Chaum](https://en.wikipedia.org/wiki/David_Chaum) and realized through the company [Digicash](https://en.wikipedia.org/wiki/Digicash).
 
-Digicash, allowed users to purchase $ denominated eCash tokens, that could be transferred over the internet to perform payments, in effect creating the worlds first internet bank.
+Digicash, allowed users to purchase $ denominated eCash bank notes, that could be transferred over the internet to perform payments, in effect creating the worlds first internet bank.
 
-The process of issuing and redeeming eCash tokens was made anonymous through the use of Blind Signatures.
+The process of issuing and redeeming eCash notes was made anonymous through the use of Blind Signatures.
 
 [This is covered in detail at Definitions and Terms > Blind Signatures & Chaumian eCash](../CommonTerms/Blind%20Signatures).
 
-This process relied on a centralized server to confirm authenticity of certificates and eliminate double spend issues, however, the server had no knowledge who the eCash tokens belonged to.
+This process relied on a centralized server to confirm authenticity of certificates and eliminate double spend issues, however, the server had no knowledge who the eCash notes belonged to.
 
 This allowed users to transact privately on the internet without the bank being aware of the specific transactions and payments made, or the balances held by any specific user.
 

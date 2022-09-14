@@ -31,17 +31,17 @@ That means if the participants are sufficiently distributed not even a nation st
 
 Bitcoin is the first asset in human history that can truly be held in a federated manner, meaning only being accessible if a certain quorum of people agrees. It is thus the perfect backing asset for a federated mint. A first, primitive version could work as follows:
 
-- **deposit**: A User sends BTC to the federation’s wallet and in turn receives the corresponding amount of tokens.
-- **transfer**: The user can then pay someone else using these tokens, which works as follows:
-    -   The payer selects appropriately many tokens and sends them to the payee
-    -   The payee exchanges these tokens for new ones using the federated mint
+- **deposit**: A User sends BTC to the federation’s wallet and in turn receives the corresponding amount of eCash notes.
+- **transfer**: The user can then pay someone else using these notes, which works as follows:
+    -   The payer selects appropriately many notes and sends them to the payee
+    -   The payee exchanges these notes for new ones using the federated mint
     -   Only then the payee accepts the transaction, as the exchange may fail in case of a double spend
-- **withdraw**: Finally any user can redeem tokens for BTC again.
+- **withdraw**: Finally any user can redeem notes for BTC again.
 
-We see that between deposit and withdrawal there can be many internal transactions, so federated mints do not only provide excellent privacy but also scaling. One problem with this primitive version is the enormous centralization pressure it exerts, as two federated mints won’t accept each other’s tokens, making big mints more attractive. This can be mitigated by integrating with Lightning. For this the federation needs to support two more operations:
+We see that between deposit and withdrawal there can be many internal transactions, so federated mints do not only provide excellent privacy but also scaling. One problem with this primitive version is the enormous centralization pressure it exerts, as two federated mints won’t accept each other’s notes, making big mints more attractive. This can be mitigated by integrating with Lightning. For this the federation needs to support two more operations:
 
-- **ln-send**: pay an LN invoice using tokens.
-- **ln-receive**: issue an invoice to a user. Once it is paid the user receives the appropriate amount of tokens.
+- **ln-send**: pay an LN invoice using eCash notes.
+- **ln-receive**: issue an invoice to a user. Once it is paid the user receives the appropriate amount of eCash notes.
 
 With these two operations any federated mint suddenly becomes interoperable with any other Lightning node, including other federated mints. The federation essentially becomes a hosted but federated Lightning wallet.
 

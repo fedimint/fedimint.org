@@ -8,7 +8,7 @@ sidebar_position: 3
 This guide has been developed as a community project and is a live document. We would advise you to fully consider your own risk model and mitigations before running Fedimint. We also appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
 :::
 
-[eCash tokens](/docs/CommonTerms/eCashToken) represent a claim on bitcoin held by the federation guardians.
+[eCash notes](/docs/CommonTerms/eCashToken) represent a claim on bitcoin held by the federation guardians.
 
 As such there is a possibility that the mint could generate more claims for bitcoin than there are bitcoin in the custody of the guardians. 
 
@@ -19,14 +19,14 @@ This could have multiple impacts including violating the norms of the 21 million
 
 ## The Risk
 
-This risk to a user is that they may be left holding eCash tokens, that are not matched to bitcoin in the federation vault.  
+This risk to a user is that they may be left holding eCash notes, that are not matched to bitcoin in the federation vault.  
 
-This risk is caused by a balance sheet audit and verification problem that exists in eCash due to the anonymous nature of blinded eCash tokens. 
+This risk is caused by a balance sheet audit and verification problem that exists in eCash due to the anonymous nature of blinded eCash notes. 
 
 To expand on this, at all times the mint has both assets and liabilities which should balance:
 
 - **Assets:** The bitcoin held in the on chain multi signature wallet controlled by the federation guardians. 
-- **Liabilities:** The outstanding number of eCash tokens that have been issued by the mint.  
+- **Liabilities:** The outstanding number of eCash notes that have been issued by the mint.  
 
 ![Balance sheet options](/img/raw-figures/fm-debasement-balance-combined.png)
 
@@ -46,7 +46,7 @@ This is complicated further if we consider the situation in which there is a "co
 
 Only guardians are able to create and sign false claims and this is done with a threshold of guardians requiring many corrupt guardians. 
 
-So in order to realize this risk in a Fedimint, a quorum of corrupt guardians (66% or in our figure guardian 1 & 2) would need to collude to create new eCash tokens that had no bitcoin backing as shown below.
+So in order to realize this risk in a Fedimint, a quorum of corrupt guardians (66% or in our figure guardian 1 & 2) would need to collude to create new eCash notes that had no bitcoin backing as shown below.
 
 ![Balance sheet options](/img/raw-figures/fm-debasement-corrupt.png)
 
@@ -82,7 +82,7 @@ Here the corrupt guardians are able to acquire real world goods and services fro
 
 The LN gateway attack is similar to attack two, only instead of cashing out to real world goods the claims are paid to the LN gateway in order to pay invoices over lightning e.g. to the corrupt guardians external lightning wallet. 
 
-This version, has potentially more risk for the corrupt guardians as it is expected that LN gateways would more frequently redeem these eCash tokens for on-chain bitcoin than a user / merchant in order to balance liquidity.
+This version, has potentially more risk for the corrupt guardians as it is expected that LN gateways would more frequently redeem these eCash notes for on-chain bitcoin than a user / merchant in order to balance liquidity.
 
 In this way an LN Gateway could also act as an early warning on mint liquidity, where a trend is observed of bitcoin constantly flowing out of the mint and not being received inbound.
 
@@ -111,7 +111,7 @@ It should be noted that if there is a quorum of bad guardians then these liabili
 
 ### Guardian "Mexican Stand-off"
 
-An honest guardian could track the volume and value of eCash tokens that have been signed whilst they have been in the quorum. They would also be aware of their own up-time.
+An honest guardian could track the volume and value of eCash notes that have been signed whilst they have been in the quorum. They would also be aware of their own up-time.
 
 Using these two data points they could estimate the likely hood of debasement if the level of redemptions to the mint causes the can raise alarm on increased redemptions of honest 
 
@@ -133,11 +133,11 @@ As a user could be a member of multiple federations there could be consideration
 
 ### Re-keying Event 
 
-It is possible to perform an attestation to show that the number of issued tokens and the Bitcoin balance held by the federation match at points when a “re-keying checkpoint” is made. 
+It is possible to perform an attestation to show that the number of issued notes and the Bitcoin balance held by the federation match at points when a “re-keying checkpoint” is made. 
 
 This is a mechanism to periodically switch out private keys and prevent database bloat.
 
-Users are required to exchange their old tokens for new ones before each such re-keying checkpoint. This limits the frequency with which the procedure can be performed.
+Users are required to exchange their old notes for new ones before each such re-keying checkpoint. This limits the frequency with which the procedure can be performed.
 
 ### In App Monitoring
 

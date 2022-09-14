@@ -20,17 +20,17 @@ This represents how a transaction would settle entirely within the same Fedimint
 
 An invoice (in the form of data) is passed from Bob's wallet to Alice's wallet asking for payment to be forwarded for 15,000 sats.
 
-### Step 2: Share tokens
+### Step 2: Share the notes
 
-Alice's wallet responds by checking the tokens it holds and selecting tokens that total 15,000 sats in this case a 10k sats and a 5k sats eCash token.
+Alice's wallet responds by checking the notes it holds and selecting eCash notes that total 15,000 sats in this case a 10k sats and a 5k sats eCash note.
 
-It then forwards these tokens to Bob's wallet.
+It then forwards these notes to Bob's wallet.
 
-### Step 3: Settle the transaction with new eCash tokens
+### Step 3: Settle the transaction with new eCash notes
 
-Bob now has the eCash files and can redeem them from the Fedimint. However, there is a risk that Alice still has the eCash tokens copied and could redeem them first. As such the payment is not yet settled.
+Bob now has the eCash files and can redeem them from the Fedimint. However, there is a risk that Alice still has the eCash notes copied and could redeem them first. As such the payment is not yet settled.
 
-To settle the payment Bob submits the eCash tokens to the mint and instead of redeeming for bitcoin, asks to swap them out for fresh eCash tokens, in this instance a 15,000 sats eCash token.
+To settle the payment Bob submits the eCash notes to the mint and instead of redeeming for bitcoin, asks to swap them out for fresh eCash notes, in this instance a 15,000 sats eCash note.
 
 :::note
 During implementation it is suspected that users will not use "pay me in the mint" invoices and would instead always assume they are paying Lightning invoices.

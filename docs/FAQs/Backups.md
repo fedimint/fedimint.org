@@ -16,7 +16,7 @@ It is envisaged that after joining a federation, which only requires scanning a 
 
 This will be used to encrypt the user private key along with a pepper (secret salt) before it is sharded and backed up to the guardians’ federation servers.
 
-If a user loses their phone or can no longer access their tokens, they can personally verify themselves to the federation guardians (where there is a strong second party trust relationship with the guardians) and once a quorum of guardians verify the identity of the user, they can send the shards that relate to their name and the user can reconstitute them locally.
+If a user loses their phone or can no longer access their eCash notes, they can personally verify themselves to the federation guardians (where there is a strong second party trust relationship with the guardians) and once a quorum of guardians verify the identity of the user, they can send the shards that relate to their name and the user can reconstitute them locally.
 
 This process can be thought of as an encrypted password backup to a mini private DropBox or Google Drive run by the federation.
 
@@ -28,7 +28,7 @@ Given the multiple second party trust model that already exists, this approach d
 
 Yes.  Building on the recovery process above, it is feasible to securely store one’s will with the Fedimint federation such that it can only be revealed upon your passing.  
 
-Even without this, it is possible for suitably appointed executors to a Will to provide sufficient evidence to enable the guardians to release the late users tokens to them.
+Even without this, it is possible for suitably appointed executors to a Will to provide sufficient evidence to enable the guardians to release the late users eCash notes to them.
 
 This process would likely differ in implementation between federations.
 
