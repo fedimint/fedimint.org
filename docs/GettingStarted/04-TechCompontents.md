@@ -46,7 +46,7 @@ By federating the operation, Fedimint gains several advantages over single serve
 
 1. The bitcoin held in the mint is never subject to the control of a single individual making it harder for a corrupt guardian to steal funds.
 2. Increases redundancy as guardians can go offline and transactions will still be processed where a quorum is reached.
-3. Changes the regulatory space of the federation as now single individual controls coin issuance and redemption.
+3. Changes the regulatory space of the federation as no single individual controls coin issuance and redemption.
 
 This replicates the best practice model of multi-signature custody, used in exchanges and custody providers globally.
 
