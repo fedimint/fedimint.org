@@ -117,9 +117,9 @@ Bob would love to pay the 10,000 sats, but his wallet doesn't have a lightning n
 
 Instead he follows the previous payment flow and posts a contract to Fedimint 2 that will pay 10,200 fm-sats to buy **_"pre-image-A"_** and let's Lightning Gateway B know about it, by providing the invoice with the route hint to Lightning Gateway A.
 
-### Step 4: Lighting Gateway B pays Lightning Gateway B
+### Step 4: Lighting Gateway B pays Lightning Gateway A
 
-Lighting Gateway B routes 10,000 sats over the lightning network to Lightning Network A seeking a pre-image!
+Lighting Gateway B routes 10,000 sats over the lightning network to Lightning Gateway A seeking a pre-image!
 
 ### Step 5: Lightning Gateway A settles in Fedimint 1
 
