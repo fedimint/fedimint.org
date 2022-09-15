@@ -52,7 +52,7 @@ There is a [trade off ](../TradeOffs/NotYOurKeys) here as you are trusting a fed
 
 ## Financial Privacy
 
-Fedimint uses [Chaumain e-cash notes and blinded signatures](/docs/CommonTerms/Blind%20Signatures) to achieve privacy for federation members. Federation guardians cannot correlate inputs and outputs of federation members' transactions, and cannot see the holdings of any individual federation member.
+Fedimint uses [Chaumain e-cash notes](/docs/CommonTerms/Blind%20Signatures) by utilizing blinded signatures to achieve privacy for federation members. Federation guardians cannot correlate inputs and outputs of federation members' transactions, and cannot see the holdings of any individual federation member.
 
 ![The spectrum and trade offs for Fedimint Custody](/img/raw-figures/fm-privacy-firewall.excalidraw.png)
 
