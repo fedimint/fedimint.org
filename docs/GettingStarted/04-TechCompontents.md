@@ -56,7 +56,11 @@ Integration with the lightning network is achieved using lightning swaps that ar
 
 A simple way to think about this is by imagining a man with two bags. One bag is full of Fedimint bitcoin, one bag is full of Lightning bitcoin and he is willing to sell either for the other.
 
+<div style={{textAlign: 'center'}}>
+
 ![lightnig swap operator](/img/raw-figures/fm-lightning-swaps.excalidraw.png)
+
+</div>
 
 This is how lightning gateways work.
 

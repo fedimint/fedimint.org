@@ -14,7 +14,11 @@ Key to this is the word community, which can mean many things and obviously the 
 
 There are likely to be many hundreds of thousands of Fedimints all with unique setups. We will consider the following groupings as a starting point, evaluated on a scale of membership size:
 
+<div style={{textAlign: 'center'}}>
+
 ![The Spectrum of Mints](/img/raw-figures/fm-community-scope.excalidraw.png)
+
+</div>
 
 On the left side of the spectrum, we have a family federation which would have very high levels 2nd party trust, but a lower anonymity set. On the right side of the spectrum, we could imagine a fully private online federation with very low trust, but an extremely large anonymity set.
 

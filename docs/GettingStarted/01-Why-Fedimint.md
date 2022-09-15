@@ -16,29 +16,37 @@ We believe that creating simpler, private user experiences will be critical in p
 
 Fedimint is built on three guiding pillars.
 
+<div style={{textAlign: 'center'}}>
+
 ![The spectrum and trade offs for Fedimint Custody](/img/raw-figures/fm-benefits.excalidraw.png)
+
+</div>
 
 ## Community Custody
 
 Ideally bitcoiners should run their own nodes and custody their own funds.
 
-Many people find the technical challenges of running their own nodes and holding their own funds through recovery phrase management prohibitively difficult, and opt into trusting a third party custodian like exchanges or custodial wallets. 
+Many people find the technical challenges of running their own nodes and holding their own funds through recovery phrase management prohibitively difficult, and opt into trusting a third party custodian like exchanges or custodial wallets.
 
 These users sacrifice their privacy and security in favor of speed and convenience. This represents a systemic risk to the bitcoin network as large quantities of bitcoin are aggregated into single custodians.
 
-Fedimint aims to address this by distributing custodianship across millions of communities, making it simple for them to bank themselves. These community focused 'banks' are known as Fedimint Federations.  
+Fedimint aims to address this by distributing custodianship across millions of communities, making it simple for them to bank themselves. These community focused 'banks' are known as Fedimint Federations.
 
 We are building a solution which allows users to onboard to Bitcoin in a manner they find extremely convenient, without sacrificing privacy and security.
 
 Fedimint allows bitcoiners to onboard new users, assisting them in their custody and payment model. Instead of referring a new bitcoiner to a third party custodian, you can onboard them yourself as part of a Federation.
 
-Put another way it allows you to **be your mum's / friends / villages bank**. 
+Put another way it allows you to **be your mum's / friends / villages bank**.
 
 We call these close, trusted relationships "2nd party custodians". Fedimint federation guardians should be close friends and family members that you know personally, and can directly influence should they ever attempt to violate your trust.
 
 This provides bitcoiners with a third option between 3rd party centralized custodians and self custody as shown in the figure below.
 
+<div style={{textAlign: 'center'}}>
+
 ![The spectrum and trade offs for Fedimint Custody](/img/raw-figures/fm-spectrum-custody.excalidraw.png)
+
+</div>
 
 Most importantly, Fedimint is interoperable with the Lightning Network. Fedimint users can at any time move their funds into their own self-custody lightning wallet.
 
@@ -54,7 +62,11 @@ There is a [trade off ](../TradeOffs/NotYOurKeys) here as you are trusting a fed
 
 Fedimint uses [Chaumain e-cash notes and blinded signatures](/docs/CommonTerms/Blind%20Signatures) to achieve privacy for federation members. Federation guardians cannot correlate inputs and outputs of federation members' transactions, and cannot see the holdings of any individual federation member.
 
-![The spectrum and trade offs for Fedimint Custody](/img/raw-figures/fm-privacy-firewall.excalidraw.png)
+<div style={{textAlign: 'center'}}>
+
+![Knowledge firewall](/img/raw-figures/fm-privacy-firewall.excalidraw.png)
+
+</div>
 
 The mint guardians will be aware of:
 
@@ -82,7 +94,11 @@ Fedimint takes the economic density of an entire community and collapses it into
 
 A great way to understand this is to consider the different levels of detail in a road network connecting multiple towns.
 
+<div style={{textAlign: 'center'}}>
+
 ![Roadmap Analogy](/img/raw-figures/fm-roadmap-analogy.excalidraw.png)
+
+</div>
 
 The Fedimint map (right) clearly shows the many different roads that connect different users in a town. You could imagine this as many different direct interactions and commercial activity that remains in town and doesn't clog the "regional road network".
 

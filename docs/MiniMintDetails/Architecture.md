@@ -21,7 +21,11 @@ In the future other modules, e.g. to integrate Lightning, smart contracts or eve
 
 The main functionality is implemented in one big loop shown below.
 
+<div style={{textAlign: 'center'}}>
+
 ![](/img/architecture.svg)
+
+</div>
 
 A BFT consensus algorithm is used to agree on a set of consensus items. These consist of transactions submitted by clients and other data proposed by modules. This globally agreed-upon set is then split into module-specific items and transactions. Module specific items are given to the respective modules first to prepare them for the consensus round.
 
