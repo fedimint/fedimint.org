@@ -47,7 +47,7 @@ With these two operations any federated mint suddenly becomes interoperable with
 
 ## What about centralization
 
-Yes, a federated mint requires more trust than a self-hosted Lighning node or on-chain Bitcoin. But we think that the risk can be minimized sufficiently by distributing the federation members. 
+Yes, a federated mint requires more trust than a self-hosted Lightning node or on-chain Bitcoin. But we think that the risk can be minimized sufficiently by distributing the federation members. 
 
 There are many people that can not or do not want to run their own lightning wallet, be it because of fees or maintenance effort. 
 

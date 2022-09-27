@@ -8,7 +8,7 @@ The federation is the collective term for the guardians who actively run the Fed
 
 ## How does the federation custody the bitcoin?
 
-The federation guardians utilize bitcoin multi signiture wallet to manage the on chain funds. 
+The federation guardians utilize bitcoin multi signature wallet to manage the on chain funds. 
 
 These are used to redeem federation eCash notes for bitcoin on chain. 
 
