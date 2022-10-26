@@ -42,7 +42,7 @@ In this case the payment is being sent from a Fedimint user to pay a lightning i
 
 This works by setting up a situation in which a lightning gateway provider is incentivised to pay the lightning invoice in **sats** in order to receive a **hash pre-image** that allows them to claim **fm-sats**.
 
-We will unpick this below.
+We will unpack this below.
 
 ![Pay Fedimint to Lightning](/img/raw-figures/fm-Pay-MintToLN.excalidraw.png)
 
