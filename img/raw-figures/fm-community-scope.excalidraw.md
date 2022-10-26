@@ -28,10 +28,8 @@ Lowest 3rd party trust
 
 Focus of fedimint.org ^D52vRJD8
 
-Perfectly possible...
-less public discussion, 
-problematic regulatory space,
-harder to trust guardians
+Possible... harder to reason 
+trust assumptions
  ^DklPbt4W
 
 %%
@@ -12331,8 +12329,8 @@ harder to trust guardians
 		},
 		{
 			"type": "text",
-			"version": 444,
-			"versionNonce": 1119316480,
+			"version": 491,
+			"versionNonce": 318779475,
 			"isDeleted": false,
 			"id": "DklPbt4W",
 			"fillStyle": "solid",
@@ -12341,28 +12339,28 @@ harder to trust guardians
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 281.38852965846706,
+			"x": 285.38852965846706,
 			"y": 400.8926720604118,
 			"strokeColor": "#495057",
 			"backgroundColor": "#12b886",
-			"width": 403,
-			"height": 175,
+			"width": 395,
+			"height": 105,
 			"seed": 690763392,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
 			"boundElements": [],
-			"updated": 1661601441520,
+			"updated": 1666770002598,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
 			"fontFamily": 1,
-			"text": "Perfectly possible...\nless public discussion, \nproblematic regulatory space,\nharder to trust guardians\n",
-			"rawText": "Perfectly possible...\nless public discussion, \nproblematic regulatory space,\nharder to trust guardians\n",
-			"baseline": 165,
+			"text": "Possible... harder to reason \ntrust assumptions\n",
+			"rawText": "Possible... harder to reason \ntrust assumptions\n",
+			"baseline": 95,
 			"textAlign": "center",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Perfectly possible...\nless public discussion, \nproblematic regulatory space,\nharder to trust guardians\n"
+			"originalText": "Possible... harder to reason \ntrust assumptions\n"
 		}
 	],
 	"appState": {
