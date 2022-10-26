@@ -26,6 +26,6 @@ The following high level overview of the documentation was recorded for the [bit
 
 <div style={{textAlign: 'center'}}>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/G4iclApJL0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/G4iclApJL0c?start=42" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
