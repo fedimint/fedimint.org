@@ -4,10 +4,21 @@
         <title>Fedimint Blog</title>
         <link>https://fedimint.org/blog</link>
         <description>Fedimint Blog</description>
-        <lastBuildDate>Fri, 19 Aug 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 19 Oct 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[What is Fedimint - Juan en Cripto]]></title>
+            <link>https://fedimint.org/blog/fedimint-juancripto</link>
+            <guid>fedimint-juancripto</guid>
+            <pubDate>Wed, 19 Oct 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Juan en Cripto interview with Obi Nwosu discussing how Fedimint can help scale to bitcoin to billions]]></description>
+            <content:encoded><![CDATA[<p>Juan en Cripto interview with Obi Nwosu discussing how Fedimint can help scale to bitcoin to billions</p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZLWDzAk_Mbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><p><a href="https://www.youtube.com/watch?v=ZLWDzAk_Mbk" target="_blank" rel="noopener noreferrer">Here's the link to view on You Tube</a>.</p>]]></content:encoded>
+            <category>fedimint</category>
+            <category>Obi Nwosu</category>
+            <category>2022</category>
+        </item>
         <item>
             <title><![CDATA[Blockstream Research Update on Fedimint]]></title>
             <link>https://fedimint.org/blog/blockstream-minimint</link>

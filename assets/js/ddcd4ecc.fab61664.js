@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwiki_fedimint=self.webpackChunkwiki_fedimint||[]).push([[8915],{3717:i=>{i.exports=JSON.parse('{"label":"Obi Nwosu","permalink":"/blog/tags/obi-nwosu","allTagsPath":"/blog/tags","count":1}')}}]);
