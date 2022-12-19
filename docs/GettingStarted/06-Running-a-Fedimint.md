@@ -23,13 +23,13 @@ Some examples of this second party trust relationship could be:
 
 This is a broad membership base of society and as such there is likely to be a very wide range of practical use cases and varied implementation patterns for fedimints.
 
-As such, it is not the scope of the protocol to define how or why fedimints are deployed in practice, and no such specific templates are given, due to the variation in need and requirements of the community.
+Therefore, it is not the scope of the protocol to define how or why fedimints are deployed in practice, and no such specific templates are given, due to the variation in need and requirements of the community.
 
 Instead we expect to see a world where there a wide range (millions of individual fedimints) [deployed across the full spectrum of custody](https://fedimint.org/docs/GettingStarted/Who-are-the-fms).
 
 To support this approach Fedimint provides the protocol with minimal tools to run, monitor and manage operations.
 
-A set of APIs is then used to support 3rd party applications and services to extend these services and meet specific user needs, allowing for innovation in a competitive ecosystem outside of the core protocol.
+A set of APIs is to be used to support 3rd party applications and services. This will allow other projects and businesses to extend these services and meet specific user needs, allowing for innovation in a competitive ecosystem outside of the core protocol.
 
 ## Deployment Concepts
 
@@ -42,15 +42,19 @@ Whilst the specific deployment, configuration and tools used to manage a fedimin
 5. The specific configuration ad module install base of a fedimint node will be driven by the needs of the fedimint community.
 6. Fedimint nodes will come to consensus on installed modules.
 
-Fedimint guardians as the custodians of the fedimint nodes will have responsibility for backing up an private keys and custodying the hardware on behalf of the community.
+Fedimint guardians, as the custodians of the fedimint nodes, will have responsibility for backing up any private keys and ensuring the physical (or virtual) custody of the hardware on behalf of the community.
 
-Each fedimint node would be lightweight in practice, akin to a pruned bitcoin node. There will however be growth in the storage requirement which whilst small at first will grow as more eCash is spent and redeemed.
+Each fedimint node would be lightweight in practice, similar to a pruned bitcoin node. There will however, be a linear growth in the storage requirement which whilst small at first will grow as more eCash is spent and redeemed.
 
-The form factor of fedimint nodes could be any number of options from laptops, towers, smartphones, single board systems or remotely operated computers in the cloud - as long as the system can run the bitcoind and fedimintd daemons and connect to the internet.
+:::note
+Whilst the actual growth will need to be tested in a real life enviornment at a high usage of ~1 transaction per second of 10 tokens per transaction would result in ~10GB a year of storage growth.
+:::
+
+The form factor of fedimint nodes could be any combination from a number of options from laptops, towers, smartphones, mobile phones, single board systems or remotely operated computers in the cloud - as long as the system can run the bitcoind and fedimintd daemons and connect to the internet.
 
 ### Deployment UI
 
-The deployment of fedimint, currently utilizes a simple UI which allows a user to view thier private key and build a federation by adding additional "peer" private keys from the other federation guardians.
+The deployment of fedimint, currently utilizes a simple UI which allows a user to view their private key and build a federation by adding additional "peer" private keys from the other federation guardians.
 
 This allows the fedimint scripts to collect the appropriate information before automating the remainder of the deployment.
 
