@@ -64,12 +64,12 @@ A simple way to think about this is by imagining a man with two bags. One bag is
 
 This is how lightning gateways work.
 
-These users will except Fedimint bitcoin to pay a lightning invoice on your behalf, or accept incoming lightning invoices and pay you in Fedimint bitcoin.
+These users will accept Fedimint bitcoin to pay a lightning invoice on your behalf, or accept incoming lightning invoices and pay you in Fedimint bitcoin.
 
 These payments are secured in both the Fedimint and the lightning network using a common Hash Time Lock Contract.
 
 This in effect "extends" the lightning route 1 more hop into the federation and ties together the success of both payments.
 
-The lightning never "transforms" into Fedimint bitcoin it is more a balance sheet exercise for the lightning gateway operator.
+Lightning bitcoin never "transforms" into Fedimint bitcoin, completing the swap is more like a balance sheet exercise for the lightning gateway operator.
 
 It is also possible to run multiple lightning gateways on a Fedimint and for any users to become a lightning gateway as long as they run a lightning node.
