@@ -26,7 +26,7 @@ Fedimint is built on three guiding pillars.
 
 Ideally bitcoiners should run their own nodes and custody their own funds.
 
-Many people find the technical challenges of running their own nodes and holding their own funds through recovery phrase management prohibitively difficult, and opt into trusting a third party custodian like exchanges or custodial wallets.
+Many people find the technical challenges of running their own nodes and holding their own funds through recovery phrase (aka seed phrase) management prohibitively difficult, and opt into trusting a third party custodian like exchanges or custodial wallets.
 
 These users sacrifice their privacy and security in favor of speed and convenience. This represents a systemic risk to the bitcoin network as large quantities of bitcoin are aggregated into single custodians.
 
@@ -38,7 +38,7 @@ Fedimint allows bitcoiners to onboard new users, assisting them in their custody
 
 Put another way it allows you to **be your mum's / friends / villages bank**.
 
-We call these close, trusted relationships "2nd party custodians". Fedimint federation guardians should be close friends and family members that you know personally, and can directly influence should they ever attempt to violate your trust.
+We call these close, trusted relationships "2nd party custodians". Fedimint federation guardians should be people you know personally, such as friends or family members, and who you trust to act in your best interests. If there were ever a situation where a "2nd party custodian" might violate your trust, you should feel confident that you have a strong enough relationship with them to address the issue and resolve it.
 
 This provides bitcoiners with a third option between 3rd party centralized custodians and self custody as shown in the figure below.
 
