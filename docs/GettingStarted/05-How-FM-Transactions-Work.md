@@ -161,4 +161,4 @@ You may be thinking - hang on if I can receive lightning payments and send light
 
 The answer is yes, sort of.
 
-This will be explored more in the FAQs as it has some interesting implications for use cases privacy and computational use cases.
+This will be explored more in the FAQs as it has some interesting implications for privacy and computational use cases.
