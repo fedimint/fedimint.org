@@ -68,7 +68,7 @@ Given the intense competition in country ₿ it would always be harder to find a
 
 As such you might expect the banks to differentiate based on their close ties to the user, reputation, great UX and ability to always place the needs of customers first.
 
-A much better country to be a customer.
+Country ₿ is a much better country to be a customer.
 
 ---
 
