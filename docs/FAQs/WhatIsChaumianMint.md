@@ -19,7 +19,7 @@ This means trading these IOUs is completely anonymous.
 
 One big problem of chaumian mints is that they are a single point of failure and an easy target for regulation and other attacks. Most countries financial regulations disallow anonymous payments to some degree, so running a mint in the open is a bad idea.
 
-Running one anonymously brings with it the problem of trust, the operator could run away with the money at any point. This combination of problems relegated the concept to a very small, low value market, e.g. [to pay for watchtower fees](https://lightning-wallet.com/storage-tokens#storage-tokens) in lightning.
+Running one anonymously brings with it the problem of trust, the operator could run away with the money at any point. This combination of problems relegated the concept to a very small, low value market, e.g. [to pay for watchtower fees](https://web.archive.org/web/20210518075600/https://lightning-wallet.com/storage-tokens) in lightning.
 
 ## What is a Federated Mint?
 
