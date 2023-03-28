@@ -90,7 +90,7 @@ By linking the HTLCs with the same pre-image between the lightning route and the
 
 ## Transactions from Fedimint to Other Fedimints
 
-This transaction both represents a payment from a Fedimint to a Fedimint. As a payment between FMs is routed over the lightning network we can also imply in the same use case, how a lightning node to Fedimint payment would be completed.
+This transaction represents a payment from a Fedimint to a Fedimint. As a payment between FMs is routed over the lightning network we can also imply in the same use case, how a lightning node to Fedimint payment would be completed.
 
 In this instance Alice (in Fedimint 1) will receive a payment of 10,000 sats from Bob (in Fedimint 2).
 
@@ -102,7 +102,7 @@ Alice want's to receive 10,000 sats, but her wallet doesn't have a lightning nod
 
 Instead her wallet creates a contract in Fedimint 1 which will sell the pre-image to a hash for 9,800 fm-sats, we'll call this **_"pre-image-A"_**.
 
-### Step 2: Alice let's Bob know how to pay
+### Step 2: Alice lets Bob know how to pay
 
 Alice now sends Bob a Lightning invoice for 10,000 sats which includes two pieces of important information:
 
@@ -115,7 +115,7 @@ This provides Bob with the information required to pay this invoice over lightni
 
 Bob would love to pay the 10,000 sats, but his wallet doesn't have a lightning node.
 
-Instead he follows the previous payment flow and posts a contract to Fedimint 2 that will pay 10,200 fm-sats to buy **_"pre-image-A"_** and let's Lightning Gateway B know about it, by providing the invoice with the route hint to Lightning Gateway A.
+Instead he follows the previous payment flow and posts a contract to Fedimint 2 that will pay 10,200 fm-sats to buy **_"pre-image-A"_** and lets Lightning Gateway B know about it, by providing the invoice with the route hint to Lightning Gateway A.
 
 ### Step 4: Lighting Gateway B pays Lightning Gateway A
 
@@ -151,13 +151,13 @@ The final balance sheet for Lightning Gateway B is:
 
 The process by which you would make a payment from a lightning wallet into a Fedimint wallet is a simplified case of paying from Mint 2 to Mint 1.
 
-If Bob had a lightning wallet instead of "buying a pre-image" in step 3, he would have skipped directly to step 4 and paid Lightning Gateway A himself.
+If Bob had a lightning wallet, instead of "buying a pre-image" in step 3, he would have skipped directly to step 4 and paid Lightning Gateway A himself.
 
 There would also have been no requirement for step 7.
 
 ### Lightning Routing
 
-You may be thinking - hang on if I can receive lightning payments and send lightning payments can I route lightning payments.
+You may be thinking - hang on if I can receive lightning payments and send lightning payments can I route lightning payments?
 
 The answer is yes, sort of.
 

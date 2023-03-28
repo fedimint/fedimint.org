@@ -28,7 +28,7 @@ The risk with letting other people hold your bitcoin keys has always been the ri
 
 1. The custodian simply refuses to give your bitcoin back or steals it.
 2. The custodian loses access to your bitcoin and can't return them when required.
-3. The custodian is big enough to be a "honeypot" that is hacked and looses access to your bitcoin.
+3. The custodian is big enough to be a "honeypot" that is hacked and loses access to your bitcoin.
 4. The custodian is impaired by government regulation and has to give up access to your bitcoin ([covered separately in trade off 3](RegulatoryRisk)).
 
 Whilst the likelihood of each of these scenarios differs depending on the implementation of the mint, the end result is always the same, you lose access to your bitcoin, which can represent a significant part of your savings.

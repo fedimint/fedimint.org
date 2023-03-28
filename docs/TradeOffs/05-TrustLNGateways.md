@@ -8,7 +8,7 @@ Lightning Gateways provide a service to the federation users which allows them t
 
 Without this service the ability to transact is heavily impaired which will impact the user experience of the Fedimint user.
 
-This focus of this risk is on the situation in which an LN Gateway restricts service to Fedimint users through either (1) technical issue or (2) malice. 
+The focus of this risk is on the situation in which an LN Gateway restricts service to Fedimint users through either (1) technical issue or (2) malice. 
 
 Both situations carry a similar impact profile, in that the users of the Fedimint may not be able to transact outside the boundary of their mint. This is not a loss of funds, but an impairment of some functionality. 
 
