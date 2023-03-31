@@ -27,7 +27,7 @@ In a federated mint the required trust is split over multiple parties. It employ
 
 That means if the participants are sufficiently distributed not even a nation state level attacker can harm the federation. Running it anonymously also becomes much more attractive since there is no single party anymore that could run away with the backing funds.
 
-## How does it relate to Bitcoin
+## How does it relate to Bitcoin?
 
 Bitcoin is the first asset in human history that can truly be held in a federated manner, meaning only being accessible if a certain quorum of people agrees. It is thus the perfect backing asset for a federated mint. A first, primitive version could work as follows:
 
@@ -35,7 +35,7 @@ Bitcoin is the first asset in human history that can truly be held in a federate
 - **transfer**: The user can then pay someone else using these notes, which works as follows:
     -   The payer selects appropriately many notes and sends them to the payee
     -   The payee exchanges these notes for new ones using the federated mint
-    -   Only then the payee accepts the transaction, as the exchange may fail in case of a double spend
+    -   Only then does the payee accepts the transaction, as the exchange may fail in case of a double spend
 - **withdraw**: Finally any user can redeem notes for BTC again.
 
 We see that between deposit and withdrawal there can be many internal transactions, so federated mints do not only provide excellent privacy but also scaling. One problem with this primitive version is the enormous centralization pressure it exerts, as two federated mints won’t accept each other’s notes, making big mints more attractive. This can be mitigated by integrating with Lightning. For this the federation needs to support two more operations:
@@ -45,7 +45,7 @@ We see that between deposit and withdrawal there can be many internal transactio
 
 With these two operations any federated mint suddenly becomes interoperable with any other Lightning node, including other federated mints. The federation essentially becomes a hosted but federated Lightning wallet.
 
-## What about centralization
+## What about centralization?
 
 Yes, a federated mint requires more trust than a self-hosted Lightning node or on-chain Bitcoin. But we think that the risk can be minimized sufficiently by distributing the federation members. 
 

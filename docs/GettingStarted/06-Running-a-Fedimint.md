@@ -39,7 +39,7 @@ Whilst the specific deployment, configuration and tools used to manage a fedimin
 2. Fedimint nodes will be connected via public networks and may utilize different anonymous networking protocols or overlay networks for speed, simplicity or security.
 3. All fedimint nodes are modular in design.
 4. Any particular node may run both core modules (eCash, multisig) as well as 3rd party modules.
-5. The specific configuration ad module install base of a fedimint node will be driven by the needs of the fedimint community.
+5. The specific configuration and module install base of a fedimint node will be driven by the needs of the fedimint community.
 6. Fedimint nodes will come to consensus on installed modules.
 
 Fedimint guardians, as the custodians of the fedimint nodes, will have responsibility for backing up any private keys and ensuring the physical (or virtual) custody of the hardware on behalf of the community.

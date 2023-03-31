@@ -6,7 +6,7 @@ This guide has been developed as a community project and is a live document. We 
 
 The backup process in Fedimint is out of scope of the main protocol and is likely to differ depending on the particular federation implementation.
 
-In particular large federations with weaker the second party trust may approach this process very differently to smaller federations.
+In particular large federations with weaker second party trust may approach this process very differently to smaller federations.
 
 Here we will focus on the community federation with stronger second party trust assumptions. 
 
@@ -28,7 +28,7 @@ Given the multiple second party trust model that already exists, this approach d
 
 Yes.  Building on the recovery process above, it is feasible to securely store one’s will with the Fedimint federation such that it can only be revealed upon your passing.  
 
-Even without this, it is possible for suitably appointed executors to a Will to provide sufficient evidence to enable the guardians to release the late users eCash notes to them.
+Even without this, it is possible for suitably appointed executors to a will to provide sufficient evidence to enable the guardians to release the late users eCash notes to them.
 
 This process would likely differ in implementation between federations.
 

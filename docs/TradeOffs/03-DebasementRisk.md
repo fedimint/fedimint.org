@@ -37,7 +37,7 @@ The guardians of the federation have access to the required information that all
 
 For the user however, whilst they can see the assets on chain, they have no view of the total number of outstanding liabilities and so the users is always "unable to verify" the total asset and liability balance of the federation, as such they are trusting the guardians to manage this balance.
 
-This mismatch is at the core of this risk as it means that no external party to the guardians who can audit the supply and marks the importance strong 2nd party trust in federation guardians.
+This mismatch is at the core of this risk as it means that no external party to the guardians can audit the supply and marks the importance of strong 2nd party trust in federation guardians.
 
 :::info
 For completeness this risk also exists in any custodial bitcoin arrangement (for example with exchanges) in which the user gives up access to their keys.
@@ -57,7 +57,7 @@ Three points to make at this point are:
 
 1. No additional bitcoins exist, only additional claims to bitcoin that circulate within a specific limited economic community.
 2. This is a fraud exercised by a subset of federation guardians on both the Fedimint users who have honestly deposited funds (loss of funds impact) and the honest Guardian (reputation impact).
-3. In order to realize this fraud the corrupt quorum of will need to exercise a redemption of the "false eCash claims".
+3. In order to realize this fraud the corrupt quorum of guardians will need to exercise a redemption of the "false eCash claims".
 
 To understand the impact we need to consider **_how_** corrupt guardians would redeem these false "claims" on the bitcoin. These claims could be transferred to any of the parties who accept fm-BTC:
 
@@ -116,11 +116,11 @@ It should be noted that if there is a quorum of bad guardians then these liabili
 
 An honest guardian could track the volume and value of eCash notes that have been signed whilst they have been in the quorum. They would also be aware of their own up-time.
 
-Using these two data points they could estimate the likely hood of debasement if the level of redemptions to the mint causes the can raise alarm on increased redemptions of honest
+Using these two data points they could estimate the likelihood of debasement if the level of redemptions to the mint causes the can raise alarm on increased redemptions of honest
 
 ### Know Your Federation
 
-You're already trusting the mint with all of your bitcoin. As such you should only utilise federations that you personal know and trust with your funds.
+You're already trusting the mint with all of your bitcoin. As such you should only utilise federations that you personally know and trust with your funds.
 
 The main line of defence against debasement risk is choosing to only place your bitcoin in the hands of honest guardians.
 
@@ -128,7 +128,7 @@ The main line of defence against debasement risk is choosing to only place your 
 
 It is possible (and recommended) to separate both the key sets and thresholds required to perform transaction signing and management of the multi-signature vault.
 
-In effect this means you can set a higher threshold of trust for users to redeem the on-chain bitcoin form the mint. This protects users
+In effect this means you can set a higher threshold of trust for users to redeem the on-chain bitcoin from the mint. This protects users.
 
 ### Bank Runs
 
@@ -144,7 +144,7 @@ Users are required to exchange their old notes for new ones before each such re-
 
 ### In App Monitoring
 
-in app monitoring of LN flows and redemption's could be used to trigger early warning signs for "strange activitiy" within the mint. This could provide users an opportunity to conduct a "bank run" on the Fedimint or trigger a re-keying event to prove solvency.
+In app monitoring of LN flows and redemption's could be used to trigger early warning signs for "strange activitiy" within the mint. This could provide users an opportunity to conduct a "bank run" on the Fedimint or trigger a re-keying event to prove solvency.
 
 ### Existing Risk
 

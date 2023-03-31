@@ -76,7 +76,7 @@ To receive a payment, the Fedimint User broadcasts a tweaked invoice to the ligh
 - **Account & Onboard:** Similar to a user the Lightning Service provider will need to be comfortable accepting the federations fm-BTC in exchange for providing a liquidity bridge to the lightning network.
 - **Custody & Redemption:** As per user persona. It is more likely a Lightning Gateway user would require the redemption and deposit service in order to more actively balance fm-BTC, lighting and on-chain balances.
 - **Backup & Recovery:** As per user persona.
-- **Transaction Processing:** As per user persona. The Lightning Gateway would also be running additional daemon software to automate the process of accepting contracts for lighting services ([more details in FAQs > Lightning Network Integration](How-FM-Transactions-Work)
+- **Transaction Processing:** As per user persona. The Lightning Gateway would also be running additional daemon software to automate the process of accepting contracts for lighting services ([more details in FAQs > Lightning Network Integration](How-FM-Transactions-Work))
 
 There will need to be a market discovery process, by which users of a Fedimint are able to contract with the Lightning Gateways, the specifics of this is still to be documented.
 

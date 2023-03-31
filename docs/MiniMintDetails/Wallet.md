@@ -15,7 +15,7 @@ wsh(sortedmulti(3,A,B,C,D))
 where `A`, `B`, `C` and `D` are the public keys of the federation members.
 
 Yet, notable differences exist. Other than most wallets we do not require extended public keys since we define our own
-derivation scheme. Furthermore, the wallet can not rely on local fee estimation and the local chain tip since these
+derivation scheme. Furthermore, the wallet cannot rely on local fee estimation and the local chain tip since these
 might be different for all members. Instead it uses the consensus algorithm to agree on these. Our particular protocol
 will also use a randomness beacon.
 
@@ -40,7 +40,7 @@ Due to the assumption that less than
 
 $$\frac{1}{3}$$
 
-of the participants are malicious, this will always leads to a value that either was proposed by a honest participant or lies between two honest values to be chosen. Let's say that all
+of the participants are malicious, this will always lead to a value that either was proposed by an honest participant or lies between two honest values to be chosen. Let's say that all
 
 $$f$$
 
@@ -69,14 +69,14 @@ the fees. But to avoid depletion attacks by overpaying fees we need to agree on 
 
 Naively we could use an algorithm that uses on-chain analysis to determine proper fee levels. But we only agree on
 a tip buried 100 blocks deep, which would make the algorithm quite unresponsive. Furthermore other algorithms that take
-the mempool into account may be preferable, but agreeing on the mempool is a fools errand. Instead we use a modified
-version of the algorithm used for the chain tip consensus. Each round each participant does the following:
+the mempool into account may be preferable, but agreeing on the mempool is a fool's errand. Instead we use a modified
+version of the algorithm used for the chain tip consensus. During each round each, participant does the following:
 
 1. Query `bitcoind` for the current optimal fee rate
 2. Propose said rate as the consensus fee rate
 3. Receive peer proposals and use median as the new consensus height
 
-The median argument works similarly and we achieve a honest consensus on fee rates.
+The median argument works similarly and we achieve an honest consensus on fee rates.
 
 ## Randomness beacon
 
@@ -93,7 +93,7 @@ generate new addresses from the wallet descriptor, but a custom derivation schem
 construction where a "contract" is hashed and added to all keys in the descriptor (added in the exponent in case of the
 pub key). A descriptor with derived keys can then trivially be transformed into an address.
 
-In Fedimint the "contract" is just a public key that can later be used to tie the deposit to a issuance transaction.
+In Fedimint the "contract" is just a public key that can later be used to tie the deposit to an issuance transaction.
 
 ## Receiving Bitcoin
 
@@ -107,7 +107,7 @@ When depositing Bitcoin into the federation a client proceeds as follows:
 5. The tweak together with the TxOutProof and the raw transaction can now be sent to the federation to prove money was
    deposited. The federation should require a signature using the secret key.
 
-Note that only once the federation is in possession of the tweak they can actually spend the funds as it is also needed
+Note that only once the federation is in possession of the tweak can they actually spend the funds as it is also needed
 to tweak the private keys.
 
 [txoutproof]: https://bitcoincore.org/en/doc/0.21.0/rpc/blockchain/gettxoutproof/

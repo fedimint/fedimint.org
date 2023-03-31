@@ -19,7 +19,7 @@ These trust assumptions are:
 1. **Custody:** The user must trust the Federation Guardians with custody of their funds which introduces custodial risk. 
 2. **LN Pay:** The user must trust "1 of n" Lightning Gateways to pay lightning invoices outside of the mint. 
 3. **LN Receive:** The user must trust "1 of n" Lightning Gateways to receive lightning payments into the mint. 
-4. **Tx Execution:** The user must trust a quorum of Federation a Guardians to process transactions (deposit, redeem, swap, contract enforcement). 
+4. **Tx Execution:** The user must trust a quorum of Federation Guardians to process transactions (deposit, redeem, swap, contract enforcement). 
 
 On the flip side the user benefits from the following positive attributes:
 
