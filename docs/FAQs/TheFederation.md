@@ -14,7 +14,7 @@ These are used to redeem federation eCash notes for bitcoin on chain.
 
 ## Is there some ability to set limitations on withdrawals if a user requests it (max withdrawal per day, one off, etc.)?
 
-This is possible in theory but the most practical implementations would require the introduction of some form of account based system, which would not be compatible with the Chaumian mint protocol.  One potential option would be to have the potential to keep a proportion of funds in an account based system where withdrawal thresholds can be enforced while a user’s remaining balance is held in chaumian e-cash notes.
+This is possible in theory but the most practical implementations would require the introduction of some form of account based system, which would not be compatible with the Chaumian mint protocol.  One potential option would be to have the potential to keep a proportion of funds in an account based system where withdrawal thresholds can be enforced while a user’s remaining balance is held in chaumian eCash notes.
 
 ## Can the federation guardians collude and steal from me?
 
@@ -60,7 +60,7 @@ There are a few differences:
  - The Liquid network is a blockchain,
  - Fedimint is a Federated server system,
  - Liquid uses Confidential Transactions to blind payment amounts but not transaction flows
- - Fedimint uses the Chaumian Mint protocol to create anonymous e-cash to make almost all transaction information private
+ - Fedimint uses the Chaumian Mint protocol to create anonymous eCash to make almost all transaction information private
  - Liquid is designed to enable a few financial institutions to form one federation
  - Fedimint is designed to enable arbitrary diverse communities — ranging from friends to companies — to form thousands of independent federations
  - Liquid doesn't currently support Lightning

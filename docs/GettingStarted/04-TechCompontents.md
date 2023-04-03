@@ -10,7 +10,7 @@ This guide has been developed as a community project and is a live document. We 
 
 Fedimints use three powerful technical components, that come together to offer great privacy and interoperability:
 
-1. **Chaumian e-cash:** Privacy preserving online digital cash, pioneered by David Chaum.
+1. **Chaumian eCash:** Privacy preserving online digital cash, pioneered by David Chaum.
 2. **Federations:** Shared control of assets and system enabled by threshold signatures and consensus algorithms.
 3. **Lightning swaps:** economic transactions to swap a common asset between different layers.
 
@@ -18,7 +18,7 @@ All three technologies come together to users to delegate the complicated tasks 
 
 ## Chaumian eCash
 
-Chaumian e-cash allows the Fedimint to create and redeem IOU notes that represent claims on bitcoin.
+Chaumian eCash allows the Fedimint to create and redeem IOU notes that represent claims on bitcoin.
 
 The technology was originally developed in 1983 by [David Chaum](https://en.wikipedia.org/wiki/David_Chaum) and realized through the company [Digicash](https://en.wikipedia.org/wiki/Digicash).
 
