@@ -35,7 +35,7 @@ Bitcoin is the first asset in human history that can truly be held in a federate
 - **transfer**: The user can then pay someone else using these notes, which works as follows:
     -   The payer selects appropriately many notes and sends them to the payee
     -   The payee exchanges these notes for new ones using the federated mint
-    -   Only then does the payee accepts the transaction, as the exchange may fail in case of a double spend
+    -   Only then does the payee accept the transaction, as the exchange may fail in case of a double spend
 - **withdraw**: Finally any user can redeem notes for BTC again.
 
 We see that between deposit and withdrawal there can be many internal transactions, so federated mints do not only provide excellent privacy but also scaling. One problem with this primitive version is the enormous centralization pressure it exerts, as two federated mints won’t accept each other’s notes, making big mints more attractive. This can be mitigated by integrating with Lightning. For this the federation needs to support two more operations:
