@@ -10,7 +10,7 @@ const katex = require("rehype-katex");
 const config = {
   title: "Fedimint",
   tagline:
-    "An open source protocol to custody and transact bitcoin in a community context, built on a strong foundation of privacy.",
+    "A modular open source protocol to custody and transact bitcoin in a community context, built on a strong foundation of privacy.",
   url: "https://fedimint.org", // Set up for github pages FLAG Set to fedimint.org
   baseUrl: "/", //FLAG - Set to /
   onBrokenLinks: "throw",
