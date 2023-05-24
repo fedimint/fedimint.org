@@ -77,10 +77,10 @@ export default function Home() {
                           Fedimint:
                         </a>
                       </b>{" "}
-                      A modular federated e-cash prototype still under heavy
+                      A modular federated eCash prototype still under heavy
                       development written in Rust. It already supports all main
                       operations (deposit/withdraw via both on-chain Bitcoin and
-                      Lightning, e-cash transfers) and comes with a rudimentary
+                      Lightning, eCash transfers) and comes with a rudimentary
                       CLI client. Some features are still missing and blocking
                       mainnet deployments, but the project is moving quickly. If
                       you are interested in contributing check out the GitHub
@@ -109,9 +109,9 @@ export default function Home() {
                     <li>
                       <b>Open Transactions:</b> Open Transactions also deserves
                       a honorable mention since it already allowed for the
-                      issuance of e-cash tokens backed by Bitcoin held in a
+                      issuance of eCash tokens backed by Bitcoin held in a
                       multisig wallet. It does not appear to support threshold
-                      issuance of e-cash tokens though.
+                      issuance of eCash tokens though.
                     </li>
                   </ul>
                 </p>

@@ -7,7 +7,7 @@ title: What is a Chaumian Mint
 This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
 :::
 
-One of the (if not the) earliest e-cash schemes were [Chaumian mints or banks](http://www.hit.bme.hu/~buttyan/courses/BMEVIHIM219/2009/Chaum.BlindSigForPayment.1982.PDF). They use blind signatures to allow the anonymous transfer of backing assets held by the mint. 
+One of the (if not the) earliest eCash schemes were [Chaumian mints or banks](http://www.hit.bme.hu/~buttyan/courses/BMEVIHIM219/2009/Chaum.BlindSigForPayment.1982.PDF). They use blind signatures to allow the anonymous transfer of backing assets held by the mint. 
 
 The basic idea is that a user can give the mint some amount x of an asset and the mint in turn blind signs x IOUs that allow the user to either withdraw the asset or exchange them for new IOUs or products. 
 

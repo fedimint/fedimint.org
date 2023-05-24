@@ -48,7 +48,7 @@ This provides bitcoiners with a third option between 3rd party centralized custo
 
 </div>
 
-Most importantly, Fedimint is interoperable with the Lightning Network. Fedimint users can at any time move their funds into their own self-custody lightning wallet.
+Most importantly, Fedimint is interoperable with the Lightning Network. Fedimint users can at any time move their funds into their own self custody lightning wallet.
 
 This allows Fedimint users to remain apart of the wider lightning network, making it possible to pay merchants, other users, or even move between Fedimints.
 
@@ -60,7 +60,7 @@ There is a [trade off ](../TradeOffs/NotYOurKeys) here as you are trusting a fed
 
 ## Financial Privacy
 
-Fedimint uses [Chaumain e-cash notes and blinded signatures](/docs/CommonTerms/Blind%20Signatures) to achieve privacy for federation members. Federation guardians cannot correlate inputs and outputs of federation members' transactions, and cannot see the holdings of any individual federation member.
+Fedimint uses [Chaumain eCash notes and blinded signatures](/docs/CommonTerms/Blind%20Signatures) to achieve privacy for federation members. Federation guardians cannot correlate inputs and outputs of federation members' transactions, and cannot see the holdings of any individual federation member.
 
 <div style={{textAlign: 'center'}}>
 

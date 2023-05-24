@@ -1,5 +1,7 @@
 # Dependencies
 /node_modules
+TODO.md
+yarn.lock
 
 # Production
 /build
