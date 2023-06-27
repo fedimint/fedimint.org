@@ -60,7 +60,7 @@ There is a [trade off ](../TradeOffs/NotYOurKeys) here as you are trusting a fed
 
 ## Financial Privacy
 
-Fedimint uses [Chaumain eCash notes and blinded signatures](/docs/CommonTerms/Blind%20Signatures) to achieve privacy for federation members. Federation guardians cannot correlate inputs and outputs of federation members' transactions, and cannot see the holdings of any individual federation member.
+Fedimint uses [Chaumian eCash notes and blinded signatures](/docs/CommonTerms/Blind%20Signatures) to achieve privacy for federation members. Federation guardians cannot correlate inputs and outputs of federation members' transactions, and cannot see the holdings of any individual federation member.
 
 <div style={{textAlign: 'center'}}>
 
