@@ -35,7 +35,7 @@ To expand on this, at all times the mint has both assets and liabilities which s
 
 The guardians of the federation have access to the required information that allows them to balance the books between the eCash outstanding and the assets held on chain.
 
-For the user however, whilst they can see the assets on chain, they have no view of the total number of outstanding liabilities and so the users is always "unable to verify" the total asset and liability balance of the federation, as such they are trusting the guardians to manage this balance.
+For the user however, whilst they can see the assets on chain, they have no view of the total number of outstanding liabilities and so the user is always "unable to verify" the total asset and liability balance of the federation, as such they are trusting the guardians to manage this balance.
 
 This mismatch is at the core of this risk as it means that no external party to the guardians can audit the supply and marks the importance of strong 2nd party trust in federation guardians.
 
@@ -99,12 +99,12 @@ The impact of this activity is two fold:
 ## The Mitigation
 
 :::info
-This section is under active review. PRs and discussion are appreciated on the Fedimint telgram, discord or github.
+This section is under active review. PRs and discussions are appreciated on the Fedimint telgram, discord or github.
 :::
 
 In mitigating this risk we should consider the options to both stop false claims and raise the alarm on discovery of false claims.
 
-Whilst several mitigation activities will be outlined, the tl;dr is that a user can't verify the holdings of mint, however, several activities and alerts can be built around the mint to trigger warnings of misconduct.
+Whilst several mitigation activities will be outlined, the tl;dr is that a user can't verify the holdings of the mint, however, several activities and alerts can be built around the mint to trigger warnings of misconduct.
 
 ### In Mint Audits
 
@@ -116,7 +116,7 @@ It should be noted that if there is a quorum of bad guardians then these liabili
 
 An honest guardian could track the volume and value of eCash notes that have been signed whilst they have been in the quorum. They would also be aware of their own up-time.
 
-Using these two data points they could estimate the likelihood of debasement if the level of redemptions to the mint causes the can raise alarm on increased redemptions of honest
+Using these two data points they could estimate the likelihood of debasement if the level of redemptions to the mint causes concern and can raise alarm on the increased rate of redemptions.
 
 ### Know Your Federation
 
