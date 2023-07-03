@@ -6,7 +6,7 @@ This guide has been developed as a community project and is a live document. We 
 
 The Fedimint protocol has been designed to fit a particular regulatory niche. One in which people custody assets for friends, family and community interests, where there is no profit motive. 
 
-This risk deals with the threat of changing regulations meaning this is no longer the case and the mint is forced to shut down or divulge user information. 
+This risk deals with the threat of changing regulations, meaning this is no longer the case, and the mint is forced to shut down or divulge user information.
 
 This is a nuanced area that will need to be explored on a per Fedimint basis dependant on the laws in the local jurisdiction and the way a Fedimint is set up and operated. 
 
