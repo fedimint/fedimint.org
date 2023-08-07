@@ -167,5 +167,6 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  plugins: [[require.resolve("docusaurus-lunr-search"), { excludeRoutes: [] }]],
 };
 module.exports = config;
