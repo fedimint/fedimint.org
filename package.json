@@ -26,7 +26,8 @@
     "remark-math": "^3.0.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.0.0-rc.1"
+    "@docusaurus/module-type-aliases": "2.0.0-rc.1",
+    "docusaurus-lunr-search": "^2.3.2"
   },
   "browserslist": {
     "production": [
