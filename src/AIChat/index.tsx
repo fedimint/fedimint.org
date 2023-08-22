@@ -6,53 +6,6 @@ import { marked } from "marked";
 import DOMPurify from "isomorphic-dompurify";
 import { Trash, User, X } from "react-feather";
 
-// destructure the L402 headers from the URL
-function destructL402Authenticate(header) {
-  // strip off "L402 " from the beginning of the header
-  const l402Header = header.slice(5);
-  let [token, invoice] = l402Header.split(", ")
-  console.log("token:", token)
-  console.log("invoice:", invoice)
-  // strip off "token=" and "invoice=" from the beginning of the token and invoice
-  token = token.replace(/"/g, "");
-  invoice = invoice.replace(/"/g, "");
-  console.log("token:", token)
-  console.log("invoice:", invoice)
-
-  return [token, invoice];
-}
-
-async function fetchWithL402(url: string, fetchArgs: Record<string, any>) {
-  let res = await fetch(url, fetchArgs);
-  if (res.status === 402) {
-    const [token, invoice] = destructL402Authenticate(res.headers.get("WWW-Authenticate"));
-
-    if (typeof window.webln !== "undefined") {
-      await window.webln.enable();
-      const { preimage } = await window.webln.sendPayment(invoice);
-      if (!!preimage) {
-        let authorizationValue = `L402 ${token}:${preimage}`;
-        fetchArgs.headers["Authorization"] = authorizationValue;
-
-        res = await fetch(url, fetchArgs);
-        if (res.status === 402) {
-          alert("Payment failed");
-        } else if (res.status === 200) {
-          return res;
-        }
-      } else {
-        alert("Payment failed");
-      }
-    } else {
-      throw new Error("Payment required. L402 header displayed.");
-    }
-  } else if (res.status === 200) {
-    const data = await res.json();
-    return data;
-  }
-  return res;
-}
-
 export interface MessageType {
   role: "system" | "user";
   message: string;
@@ -119,10 +72,6 @@ export default function AIChat() {
         setText("");
         setLoading(false);
       });
-
-    fetchWithL402("https://fedidocsopenai.ironcladdev.repl.co/pay", {
-      method: "POST",
-    }).then(console.log)
   };
 
   useEffect(() => {

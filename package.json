@@ -11,8 +11,7 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids",
-    "format": "prettier -w -l **/*.{ts,tsx,js,jsx,css} *.{ts,tsx,js,jsx,css}"
+    "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-rc.1",
@@ -30,8 +29,7 @@
     "react-dom": "^17.0.2",
     "react-feather": "^2.0.10",
     "rehype-katex": "^5.0.0",
-    "remark-math": "^3.0.1",
-    "webln": "^0.3.2"
+    "remark-math": "^3.0.1"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "2.0.0-rc.1"
