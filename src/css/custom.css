@@ -6,10 +6,11 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #170022;
-  --ifm-color-primary-dark: #15001f;
-  --ifm-color-primary-darker: #14001d;
-  --ifm-color-primary-darkest: #100018;
+  --ifm-color-primary: #2f70bd;
+  --ifm-color-primary-dark: #5389ca;
+  --ifm-color-primary-darker: #3b9fdb;
+  --ifm-color-primary-darkest: #4ad6ff;
+
   --ifm-color-primary-light: #190025;
   --ifm-color-primary-lighter: #1a0027;
   --ifm-color-primary-lightest: #1e002d;
@@ -22,15 +23,41 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #e8d1f3;
-  --ifm-color-primary-dark: #d6adea;
-  --ifm-color-primary-darker: #cd9be5;
-  --ifm-color-primary-darkest: #b265d7;
-  --ifm-color-primary-light: #faf5fc;
-  --ifm-color-primary-lighter: #ffffff;
-  --ifm-color-primary-lightest: #ffffff;
-  --ifm-background-color: #170022;
+  --ifm-color-primary: #4ad6ff;
+  --ifm-color-primary-dark: #3b9fdb;
+  --ifm-color-primary-darker: #2f70bd;
+  --ifm-color-primary-darkest: #223d9c;
+  --ifm-color-primary-light: #9e9fa3;
+  --ifm-color-primary-lighter: #d1d1d7;
+  --ifm-color-primary-lightest: #ebecff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ifm-background-color: #191d29 !important;
+  --ifm-background-surface-color: #202531 !important;
+
+  --ifm-color-emphasis-0: #202531;
+  --ifm-color-emphasis-100: #363a53;
+  --ifm-color-emphasis-200: #4c4f75;
+  --ifm-color-emphasis-300: #626497;
+  --ifm-color-emphasis-400: #7879b9;
+  --ifm-color-emphasis-500: #8e8edb;
+  --ifm-color-emphasis-600: #a4a4fd;
+  --ifm-color-emphasis-700: #bacbfe;
+  --ifm-color-emphasis-800: #d0e1ff;
+  --ifm-color-emphasis-900: #e6f8ff;
+  --ifm-color-emphasis-1000: #f0f2ff;
+
+  --ifm-hero-background-color: var(--ifm-color-primary-darkest) !important;
+
+  --ifm-heading-color: var(--ifm-color-emphasis-1000) !important;
+}
+
+.menu__link {
+  color: var(--ifm-color-emphasis-800);
+}
+
+.menu__link--active {
+  color: var(--ifm-color-primary);
 }
 
 .heroBanner_src-pages-index-module {
@@ -54,103 +81,22 @@
   padding: 0px 10px 0px 10px;
 }
 
-p a {
-  color: #852eb0;
-}
-
 section p {
   padding: 0px 10px 0px 10px;
 }
 
-/** Copy of Fedimint Site CSS as a reference
-
-
-:root {
-    --header-background: #E8FFF2;
-    --header-font-color: #170022;
-
-    --body-background: #E8FFF2;
-    --body-font-color: #170022;
-
-    --accent-color: rgba(23, 0, 34, 0.05);
-    --accent-color-lite: rgba(23, 0, 34, 0.05);
+.hero--primary {
+  background-image: url(/img/cover.png);
+  background-size: cover;
+  background-position: center;
 }
 
-:root,
-:root[color-mode="light"] {
-    --header-background: #E8FFF2;
-    --header-font-color: #170022;
-
-    --body-background: #E8FFF2;
-    --body-font-color: #170022;
-
-    --accent-color: rgba(23, 0, 34, 0.05);
-    --accent-color-lite: rgba(23, 0, 34, 0.05);
+.hero__title,
+.hero__subtitle {
+  color: #ebecff;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
-@media (prefers-color-scheme: light) {
-    :root {
-        --header-background: #E8FFF2;
-        --header-font-color: #170022;
-
-        --body-background: #E8FFF2;
-        --body-font-color: #170022;
-
-        --accent-color: rgba(23, 0, 34, 0.05);
-        --accent-color-lite: rgba(23, 0, 34, 0.05);
-    }
+[data-theme="dark"] .t1 {
+  color: var(--ifm-color-emphasis-1000);
 }
-
-:root[color-mode="dark"] {
-    --header-background: #170022;
-    --header-font-color: #E8FFF2;
-
-    --body-background: #170022;
-    --body-font-color: #E8FFF2;
-
-    --accent-color: rgba(232, 255, 221, 0.1);
-    --accent-color-lite: rgba(232, 255, 221, 0.1);
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --header-background: #170022;
-        --header-font-color: #E8FFF2;
-
-        --body-background: #170022;
-        --body-font-color: #E8FFF2;
-
-        --accent-color: rgba(232, 255, 221, 0.1);
-        --accent-color-lite: rgba(232, 255, 221, 0.1);
-    }
-
-    .gdoc-brand_img{
-        content:url("fedimint-mark-light.svg");
-    }
-}
-
-.gdoc-brand_img{
-    margin-right: 1rem;
-    height: 2rem
-}
-
-:root[color-mode="dark"] .gdoc-brand_img{
-    content:url("fedimint-mark-light.svg");
-}
-
-:root[color-mode="light"] .gdoc-brand_img{
-    content:url("fedimint-mark.svg");
-}
-
-.gdoc-search__input {
-    background: transparent;
-    border: 2px solid rgba(23, 0, 34, 0.2);
-    border-radius: 4px;
-}
-
-:root[color-mode="dark"] .gdoc-search__input {
-    background: transparent;
-    border: 2px solid rgba(232, 255, 221, 0.2);
-    border-radius: 4px;
-}
-**/

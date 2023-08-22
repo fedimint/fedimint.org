@@ -71,8 +71,8 @@ const config = {
     ({
       colorMode: {
         defaultMode: "light",
-        disableSwitch: true, //FLAG - Curruntly set to avoid having to customise dark mode CSS
-        respectPrefersColorScheme: false,
+        disableSwitch: false, //FLAG - Curruntly set to avoid having to customise dark mode CSS
+        respectPrefersColorScheme: true,
       },
       navbar: {
         title: "Fedimint",

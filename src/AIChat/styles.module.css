@@ -1,0 +1,128 @@
+.container {
+  position: fixed !important;
+  top: 60px;
+  right: 0;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  display: flex;
+  z-index: 201;
+}
+
+.overlay {
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.chat {
+  background: var(--ifm-background-surface-color);
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  width: 40vw;
+  max-width: 600px;
+  border-top: solid 1px var(--ifm-color-emphasis-200);
+  border-left: solid 1px var(--ifm-color-emphasis-200);
+}
+
+@media (max-width: 500px) {
+  .chat {
+    width: 100vw;
+    min-width: 100vw;
+    border-left: none;
+  }
+}
+
+.input {
+  display: flex;
+  border-top: solid 1px var(--ifm-color-emphasis-300);
+}
+
+.input input {
+  flex-grow: 1;
+  background: var(--ifm-background-surface-color);
+  border: none;
+  padding: 16px;
+  color: var(--ifm-color-primary-lightest);
+  outline: none;
+}
+
+.input input:disabled {
+  opacity: 0.5;
+}
+
+.input:focus-within {
+  border-top: solid 1px var(--ifm-color-primary-dark);
+}
+
+.messageContainer {
+  flex-grow: 1;
+  position: relative;
+}
+
+.messages {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  overflow-y: auto;
+}
+
+.message {
+  display: flex;
+  padding: 8px 0;
+}
+
+.messageUser {
+  margin-right: 8px;
+  padding: 2px;
+  border-radius: 8px;
+  border: solid 1px var(--ifm-color-emphasis-300);
+  display: flex;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+}
+
+.messageContent {
+  flex-grow: 1;
+}
+
+.message.system {
+  border-top: solid 1px var(--ifm-color-emphasis-200);
+  border-bottom: solid 1px var(--ifm-color-emphasis-200);
+}
+
+.submit {
+  background: var(--ifm-color-emphasis-300);
+  color: var(--ifm-color-emphasis-1000);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: var(--ifm-color-emphasis-400);
+}
+
+.submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: solid 1px var(--ifm-color-emphasis-300);
+}
+
+.iconButton {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
