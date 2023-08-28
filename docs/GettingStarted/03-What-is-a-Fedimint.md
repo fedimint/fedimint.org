@@ -74,7 +74,7 @@ To send a lightning payment, the Fedimint User locks eCash notes to a contract w
 To receive a payment, the Fedimint User broadcasts a tweaked invoice to the lightning gateway. The User reveals the tweak, allowing the gateway to receive the lightning payment, in exchange for eCash notes.
 
 - **Account & Onboard:** Similar to a user the Lightning Service provider will need to be comfortable accepting the federations fm-BTC in exchange for providing a liquidity bridge to the lightning network.
-- **Custody & Redemption:** As per user persona. It is more likely a Lightning Gateway user would require the redemption and deposit service in order to more actively balance fm-BTC, lighting and on-chain balances.
+- **Custody & Redemption:** Similar to the federation guardians, the Lightning Gateway user can use the redemption and deposit service in order to more actively balance fm-BTC, lightning, and on-chain bitcoin balances.
 - **Backup & Recovery:** As per user persona.
 - **Transaction Processing:** As per user persona. The Lightning Gateway would also be running additional daemon software to automate the process of accepting contracts for lighting services ([more details in FAQs > Lightning Network Integration](How-FM-Transactions-Work))
 
