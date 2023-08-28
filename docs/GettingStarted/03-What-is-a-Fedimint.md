@@ -39,7 +39,7 @@ The federation guardians are specific roles within the system that can only be a
 - **Account & Onboard:** The federation guardians will run the Fedimint protocol software stack. This will allow the guardians to generate a "joining a federation QR Code".
 - **Custody & Redemption:** The federation guardians will hold private keys to the threshold multi signature contract into which bitcoin is deposited. When a user executes a deposit process they will also blind sign eCash certificates to an amount equivalent to the deposited bitcoin.
 - **Backup & Recovery:** Federation members will manage the back up of "shards" (individual parts of complete file) of users' wallet data. When a recovery request is made they will manage an out of band process to confirm the authenticity of the recovery request, the identity of the federation member attempting to recover funds, and coordinate with other federation members to reconstruct the shard and recover the user's funds.
-- **Transaction Processing:** review transactions submitted to the federation to ensure that only valid eCash certificates are redeemed and that new eCash certificates are generated where required ([see how do FM transactions work?](How-FM-Transactions-Work)).
+- **Transaction Processing:** The federation guardians review transactions submitted to the federation to ensure that only valid eCash certificates are redeemed and that new eCash certificates are generated where required ([see how do FM transactions work?](How-FM-Transactions-Work)).
 
 ### Fedimint Users
 
@@ -63,13 +63,13 @@ These are not account balances but equivalent to digital banknotes of specific s
 
 ### Lightning Gateway Provider
 
-The Lighting Gateway is a Fedimint User who also runs a lightning node. 
+The Lighting Gateway is a Fedimint User who also runs a lightning node.
 
 A federation may opt to run its own lightning gateway as well, but we have intentionally architected Fedimint such that any user can act as a lightning gateway to interact with the broader lighting network outside of the mint.
 
-The Lightning Gateway monitors the Federation for user requests to pay Lightning invoices or receive lightning payments. 
+The Lightning Gateway monitors the Federation for user requests to pay Lightning invoices or receive lightning payments.
 
-To send a lightning payment, the Fedimint User locks eCash notes to a contract which contains a lightning invoice. The lightning gateway can sweep the eCash notes from the contract by paying the lightning invoice. 
+To send a lightning payment, the Fedimint User locks eCash notes to a contract which contains a lightning invoice. The lightning gateway can sweep the eCash notes from the contract by paying the lightning invoice.
 
 To receive a payment, the Fedimint User broadcasts a tweaked invoice to the lightning gateway. The User reveals the tweak, allowing the gateway to receive the lightning payment, in exchange for eCash notes.
 
