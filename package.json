@@ -9,9 +9,10 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "serve": "tsx src/chatbot/initializeStore.ts && tsx server.ts"
+    "server": "tsx src/chatbot/initializeStore.ts && tsx server.ts"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-rc.1",
