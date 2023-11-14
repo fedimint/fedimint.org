@@ -24,3 +24,5 @@ yarn-error.log*
 
 # Ignore for note local editing
 **/.obsidian/
+
+local.flake.nix
