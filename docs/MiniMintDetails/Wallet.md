@@ -83,7 +83,7 @@ The median argument works similarly and we achieve an honest consensus on fee ra
 In some cases it is useful to have access to agreed-upon, fair randomness. Thus every round every participant also
 proposes 32bytes of random data. The ones included in the consensus outcome are then XORed to form the round's
 randomness beacon. We note that this is only safe if the items proposed to the consensus are encrypted till there is
-agreement on which contributions will be included. This is the case for HBBFT. Otherwise an attacker could wait for the
+agreement on which contributions will be included. This is the case for AlephBFT. Otherwise an attacker could wait for the
 other participants to announce their contribution and then adaptively chose his own to influence the outcome.
 
 ## Address Derivation
