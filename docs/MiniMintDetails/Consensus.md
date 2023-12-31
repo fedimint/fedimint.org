@@ -24,7 +24,7 @@ set of items as long as less or equal than
 
 $$f$$
 
-of the participants are malicious. These items may be contributed by any participant and there should be no risk of targeted censorship of items. One such protocol is [Honey Badger] BFT (HBBFT). We will mainly use it as a reference for BFT consensus properties but note that similar but more efficient ones exist (most notably [Dumbo] and [hybrids] built on top of it).
+of the participants are malicious. These items may be contributed by any participant and there should be no risk of targeted censorship of items. One such protocol is [AlephBFT]. We will mainly use it as a reference for BFT consensus properties but note that similar but more efficient ones exist (most notably [Dumbo] and [hybrids] built on top of it).
 
 We generally assume the consensus to run in rounds, producing a common subset of the contributions made by the
 participants. At the start of each round each participant
@@ -64,6 +64,6 @@ $$\frac{1}{3}$$
 
 faulty nodes, so this will also be our assumption when building our protocol on top if not stated otherwise.
 
-[honey badger]: https://eprint.iacr.org/2016/199.pdf
+[alephbft]: https://arxiv.org/pdf/1908.05156.pdf
 [dumbo]: https://eprint.iacr.org/2020/841.pdf
 [hybrids]: https://arxiv.org/pdf/2103.09425

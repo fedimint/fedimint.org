@@ -32,7 +32,7 @@ All of these are supported by three core technology components, discussed in gre
 
 Fedimint guardians are the technical community members responsible for setting up and running the Federated Chaumian eCash system. They custody and backup funds and are responsible for the minting and redemption of eCash notes, that are claims against the Bitcoin reserves. A fedimint member is explicitly trusting that the federation guardians will not form a majority quorum to collude to steal user funds.
 
-The guardians coordinate using a [distributed consensus protocol (HBBFT)](../CommonTerms/HBBFTConsensus) which is part of the Fedimint software deployed on personal servers. The consensus mechanism is Asynchronous, Byzantine Fault Tolerant, and can survive and operate even if a minority of individual federation guardians disconnect from the network. If a majority of the federation guardians disconnect, the consensus protocol will halt execution until a quorum of guardians come back online, at which point the consensus will continue.
+The guardians coordinate using a [distributed consensus protocol (AlephBFT)](../CommonTerms/AlephBFTConsensus) which is part of the Fedimint software deployed on personal servers. The consensus mechanism is Asynchronous, Byzantine Fault Tolerant, and can survive and operate even if a minority of individual federation guardians disconnect from the network. If a majority of the federation guardians disconnect, the consensus protocol will halt execution until a quorum of guardians come back online, at which point the consensus will continue.
 
 The federation guardians are specific roles within the system that can only be added or removed with consensus of the existing set of guardians.
 
