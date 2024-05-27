@@ -12,7 +12,7 @@ The focus of this risk is on the situation in which an LN Gateway restricts serv
 
 Both situations carry a similar impact profile, in that the users of the Fedimint may not be able to transact outside the boundary of their mint. This is not a loss of funds, but an impairment of some functionality. 
 
-The first line of mitigation in this instance is for the user to simply select a new LN gateway as a mint could have more than 1 gateway. As such if a mint was down due to malice or technical issue the users wallet would simply utilise an alternate LN gateway. 
+The first line of mitigation in this instance is for the user to simply select a new LN gateway as a mint could have more than 1 gateway. As such if an LN gateway was down due to malice or technical issue the users wallet would simply utilise an alternate LN gateway. 
 
 Also it should be noted that the LN gateway represents an economic actor in the system. As such the incentive is for the LN gateway to continue processing payments in order to earn fees. 
 
