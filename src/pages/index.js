@@ -156,6 +156,16 @@ export default function Home() {
                       <b>Spiral</b>
                     </a>
                   </li>
+                  <li>
+                    <a href="https://opensats.org/" target="_blank">
+                      <b>OpenSats</b>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.fedi.xyz/" target="_blank">
+                      <b>Fedi</b>
+                    </a>
+                  </li>
                 </ul>
               </p>
             </div>
