@@ -50,7 +50,7 @@ This provides bitcoiners with a third option between 3rd party centralized custo
 
 Most importantly, Fedimint is interoperable with the Lightning Network. Fedimint users can at any time move their funds into their own self custody lightning wallet.
 
-This allows Fedimint users to remain apart of the wider lightning network, making it possible to pay merchants, other users, or even move between Fedimints.
+This allows Fedimint users to remain a part of the wider lightning network, making it possible to pay merchants, other users, or even move between Fedimints.
 
 As such, a user who previously used a 3rd party custodian for convenience can retain that convenience whilst improving their privacy and control of their finances.
 
