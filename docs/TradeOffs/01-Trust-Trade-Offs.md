@@ -10,7 +10,7 @@ This guide has been developed as a community project and is a live document. We 
 
 The Fedimint protocol is an optional opensource protocol which can be utilized alongside bitcoin and the lightning network. 
 
-The protocol makes a number of trade offs in order to provide benefits including Financial Privacy, Community Custody and Transnational Scaling.
+The protocol makes a number of trade offs in order to provide benefits including Financial Privacy, Community Custody and Transactional Scaling.
 
 These trade offs are largely based on the trust assumptions in the system which is explored below and detailed over the coming pages. 
 
