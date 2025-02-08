@@ -23,6 +23,7 @@ This is a quick tour through the protocol to help you understand how it works an
 The purpose of this documentation is to explain how Fedimint works, in a manner that is easily digestible by a non technical audience, inspired by the bitcoin.org wiki.
 
 The following high level overview of the documentation was recorded for the [bitcoin design community](https://bitcoin.design) on 20th September 2022.
+Fedimint is more than a protocol—it’s a movement. Together, we can reshape how communities engage with Bitcoin and build a more inclusive financial future.
 
 <div style={{textAlign: 'center'}}>
 
