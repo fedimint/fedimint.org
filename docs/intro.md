@@ -5,7 +5,7 @@ sidebar_position: 1
 # Getting Started
 
 :::info
-This guide is a living, community-driven project designed to grow and evolve alongside the Fedimint ecosystem. We thrive on your insights—whether it’s edits, corrections, or creative ideas, your contributions matter. Feel free to submit them through the link at the bottom of each page. Let’s build the future of Bitcoin custody together!
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page. Let’s build the future of Bitcoin custody together!
 :::
 
 Imagine a world where your community becomes its own bank, collectively managing and transacting Bitcoin while prioritizing privacy and accountability. That’s the power of Fedimint.
