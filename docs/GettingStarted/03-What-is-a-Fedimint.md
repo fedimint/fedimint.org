@@ -5,7 +5,7 @@ sidebar_position: 3
 # What is a Fedimint
 
 :::info
-This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page. Let's build the future of Bitcoin custody together!
 :::
 
 A Fedimint - or "Federated Mint" is an implementation of [Chaumian eCash](../CommonTerms/Blind%20Signatures) with a federation of guardians to custody funds, instead of a centralized actor, and is natively interoperable with Bitcoin's Lightning Network.
@@ -14,7 +14,7 @@ The user experience of a Fedimint is designed to be similar to that of a custodi
 
 It is anticipated there will be multiple federated mints deployed globally in both small and large community instances.
 
-It makes sense to consider Fedimints deployed on a small scale for example, as a community bank for a small community with a robust circular economy and remember there will be many Fedimints deployed on the lightning network and not a single global implementation.
+Fedimints can be deployed on a small scale, functioning like community banks for local groups with robust circular economies. Rather than a single global implementation, many Fedimints will operate independently on the Lightning Network.
 
 The open protocol enables communities of Bitcoiners to come together at their own discretion, assist each other with their custody and backup arrangements and make lightning payments through a privacy preserving wallet.
 
@@ -80,4 +80,4 @@ To receive a payment, the Fedimint User broadcasts a tweaked invoice to the ligh
 
 There will need to be a market discovery process, by which users of a Fedimint are able to contract with the Lightning Gateways, the specifics of this is still to be documented.
 
-It is anticipated there will be a process by which a Lightning Gateway registers it's service with the federation to ease discovery, but it would also be possible to have multiple unannounced gateways that users could contract with directly.
+It is anticipated there will be a process by which a Lightning Gateway registers its service with the federation to ease discovery, but it would also be possible to have multiple unannounced gateways that users could contract with directly.
