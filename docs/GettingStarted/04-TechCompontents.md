@@ -5,7 +5,7 @@ sidebar_position: 4
 # Core Technology Components
 
 :::info
-This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page. Let's build the future of Bitcoin custody together!
 :::
 
 Fedimints use three powerful technical components, that come together to offer great privacy and interoperability:
@@ -14,7 +14,7 @@ Fedimints use three powerful technical components, that come together to offer g
 2. **Federations:** Shared control of assets and system enabled by threshold signatures and consensus algorithms.
 3. **Lightning swaps:** economic transactions to swap a common asset between different layers.
 
-All three technologies come together to users to delegate the complicated tasks of managing their bitcoin holdings and lightning nodes, whilst retaining financial privacy.
+All three technologies come together to allow users to delegate the complicated tasks of managing their bitcoin holdings and lightning nodes, whilst retaining financial privacy.
 
 ## Chaumian eCash
 
