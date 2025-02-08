@@ -5,7 +5,7 @@ sidebar_position: 1
 # Why Fedimint
 
 :::info
-This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page. Let's build the future of Bitcoin custody together!
 :::
 
 Bitcoin is a powerful human rights technology that enables anybody in the world to **be their own bank**.
