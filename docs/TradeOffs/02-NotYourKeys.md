@@ -39,11 +39,11 @@ As outlined in "[Why Fedimint](../GettingStarted/Why-Fedimint)" the purpose of t
 
 ![Spectrum of custody](/img/raw-figures/fm-spectrum-custody.excalidraw.png)
 
-Where users are comfortable and capable with self custody this would be a better solution for eliminating this risk.
+Where users are comfortable and capable with self custody, this remains a better solution for eliminating this risk.
 
-There are however, some options to mitigate this risk.
+There are, however, some options to mitigate this risk.
 
-First some setting.
+First some context:
 
 In Fedimint you make some trade offs to your custody arrangements in return for benefits that include:
 
@@ -68,4 +68,4 @@ The likelihood of this risk is increased where you have a more distant relations
 
 A second mitigation would be to limit the exposure of funds to the federation guardians in terms of both size and time.
 
-For instance keeping only smaller amounts of satoshis in larger federations; or where larger denominations are needed only moving the coins in for a small period of time that covers the spending.
+For instance, keeping only smaller amounts of satoshis in larger federations, or when larger denominations are needed, moving the coins in only for a short period to cover the spending.
