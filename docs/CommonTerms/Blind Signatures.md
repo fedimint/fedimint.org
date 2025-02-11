@@ -23,7 +23,7 @@ As highlighted in the figure above, imagine obtaining a signature on a document 
 3. This creates an internal signature onto the document from the carbon paper. .
 4. If you were to reveal your document at a later date, the signer could confirm that they did indeed sign that document.
 
-This is the concept utilized inside eCash to allow an eCash mint to issue "IOUs" that it can confirm are valid, whilst retaining the privacy of the user.
+This is the concept utilized inside eCash, allowing an eCash mint to issue "IOUs" that it can confirm are valid, whilst retaining the privacy of the user.
 
 ![Community Custody on a spectrum](/img/Fedimint-ecashtoken-verify.png)
 
