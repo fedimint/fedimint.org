@@ -38,7 +38,7 @@ Fedimint allows bitcoiners to onboard new users, assisting them in their custody
 
 Put in another way, it allows you to **be your mum's / friends / villages bank**.
 
-We call these close, trusted relationships "2nd party custodians".Fedimint federation guardians should be individuals you know personally, such as close friends or family members, whom you can directly influence if they ever attempt to breach your trust.
+We call these close, trusted relationships "2nd party custodians". Fedimint federation guardians should be individuals you know personally, such as close friends or family members, whom you can directly influence if they ever attempt to breach your trust.
 
 This provides bitcoiners with a third option between 3rd party centralized custodians and self custody as shown in the figure below.
 
