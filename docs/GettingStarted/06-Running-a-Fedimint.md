@@ -5,7 +5,7 @@ sidebar_position: 6
 # Running a Fedimint
 
 :::info
-This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page. Let's build the future of Bitcoin custody together!
 :::
 
 A fedimint requires a set of trusted guardians to establish the federation, hold the keys to the bitcoin multisig and to custody the hardware that runs the fedimint nodes.
@@ -47,10 +47,10 @@ Fedimint guardians, as the custodians of the fedimint nodes, will have responsib
 Each fedimint node would be lightweight in practice, similar to a pruned bitcoin node. There will however, be a linear growth in the storage requirement which whilst small at first will grow as more eCash is spent and redeemed.
 
 :::note
-Whilst the actual growth will need to be tested in a real life environment at a high usage of ~1 transaction per second of 10 tokens per transaction would result in ~10GB a year of storage growth.
+Whilst the actual growth will need to be tested in a real life environment, a high usage of ~1 transaction per second, with 10 tokens per transaction, would result in ~10GB a year of storage growth.
 :::
 
-The form factor of fedimint nodes could be any combination from a number of options from laptops, towers, smartphones, mobile phones, single board systems or remotely operated computers in the cloud - as long as the system can run the bitcoind and fedimintd daemons and connect to the internet.
+The form factor of fedimint nodes could be any combination from a number of options including laptops, towers, smartphones, mobile phones, single board systems or remotely operated computers in the cloud - as long as the system can run the bitcoind and fedimintd daemons and connect to the internet.
 
 ### Deployment UI
 
