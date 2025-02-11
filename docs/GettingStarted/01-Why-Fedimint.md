@@ -5,7 +5,7 @@ sidebar_position: 1
 # Why Fedimint
 
 :::info
-This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page. Let's build the future of Bitcoin custody together!
 :::
 
 Bitcoin is a powerful human rights technology that enables anybody in the world to **be their own bank**.
@@ -36,9 +36,9 @@ We are building a solution which allows users to onboard to Bitcoin in a manner 
 
 Fedimint allows bitcoiners to onboard new users, assisting them in their custody and payment model. Instead of referring a new bitcoiner to a third party custodian, you can onboard them yourself as part of a Federation.
 
-Put another way it allows you to **be your mum's / friends / villages bank**.
+Put in another way, it allows you to **be your mum's / friends / villages bank**.
 
-We call these close, trusted relationships "2nd party custodians". Fedimint federation guardians should be close friends and family members that you know personally, and can directly influence should they ever attempt to violate your trust.
+We call these close, trusted relationships "2nd party custodians". Fedimint federation guardians should be individuals you know personally, such as close friends or family members, whom you can directly influence if they ever attempt to breach your trust.
 
 This provides bitcoiners with a third option between 3rd party centralized custodians and self custody as shown in the figure below.
 
