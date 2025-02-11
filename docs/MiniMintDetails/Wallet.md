@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Fedimint Wallet
 
-To be backed by Bitcoin the federation needs a federated on-chain wallet. It is used to receive deposits that clients
+To be backed by Bitcoin, the federation needs a federated on-chain wallet. It is used to receive deposits that clients
 exchange for blind tokens and to make payouts when clients want to withdraw. Generally it is just a multisig wallet
 defined by a script descriptor. For example
 
@@ -21,7 +21,7 @@ will also use a randomness beacon.
 
 ## Chain tip consensus
 
-To validate transactions a wallet needs to know the current chain tip. The problem with this is that different
+To validate transactions, a wallet needs to know the current chain tip. The problem with this is that different
 federation members might see different chain tips either due to latency or even shallow forks.
 
 To avoid the forking
@@ -58,19 +58,19 @@ $$f$$
 
 malicious proposals do not suffice to meaningfully alter the median.
 
-Of course this assumes that all honest participants stay reasonable close to the real chain tip, but this is the task
+Of course this assumes that all honest participants stay reasonably close to the real chain tip, but this is the task
 of the operators and outside our protocol.
 
 ## Fee consensus
 
 We also face a similar problem when spending Bitcoin. While the destinations and amounts are generally assumed to be
-outputs of the consensus protocol and thus unproblematic one factor of transactions is not easily made deterministic:
-the fees. But to avoid depletion attacks by overpaying fees we need to agree on them.
+outputs of the consensus protocol and thus unproblematic, one factor of transactions is not easily made deterministic:
+the fees. To avoid depletion attacks by overpaying fees we need to agree on them.
 
 Naively we could use an algorithm that uses on-chain analysis to determine proper fee levels. But we only agree on
 a tip buried 100 blocks deep, which would make the algorithm quite unresponsive. Furthermore other algorithms that take
-the mempool into account may be preferable, but agreeing on the mempool is a fool's errand. Instead we use a modified
-version of the algorithm used for the chain tip consensus. During each round each, participant does the following:
+the mempool into account may be preferable, but agreeing on the mempool is a fool's errand. Instead, we use a modified
+version of the algorithm used for the chain tip consensus. During each round each participant does the following:
 
 1. Query `bitcoind` for the current optimal fee rate
 2. Propose said rate as the consensus fee rate
@@ -82,9 +82,9 @@ The median argument works similarly and we achieve an honest consensus on fee ra
 
 In some cases it is useful to have access to agreed-upon, fair randomness. Thus every round every participant also
 proposes 32bytes of random data. The ones included in the consensus outcome are then XORed to form the round's
-randomness beacon. We note that this is only safe if the items proposed to the consensus are encrypted till there is
+randomness beacon. It is important to note that this is only safe if the items proposed to the consensus are encrypted till there is
 agreement on which contributions will be included. This is the case for AlephBFT. Otherwise an attacker could wait for the
-other participants to announce their contribution and then adaptively chose his own to influence the outcome.
+other participants to announce their contributions and then adaptively choose his own to influence the outcome.
 
 ## Address Derivation
 
@@ -104,7 +104,7 @@ When depositing Bitcoin into the federation a client proceeds as follows:
 3. Send BTC to the resulting address
 4. Generate [TxOutProof] and fetch raw transaction. These compact data structures allow the federation to verify the
    deposit with only the block hashes being synced and not the whole chain.
-5. The tweak together with the TxOutProof and the raw transaction can now be sent to the federation to prove money was
+5. The tweak, together with the TxOutProof and the raw transaction, can now be sent to the federation to prove money was
    deposited. The federation should require a signature using the secret key.
 
 Note that only once the federation is in possession of the tweak can they actually spend the funds as it is also needed
@@ -114,11 +114,11 @@ to tweak the private keys.
 
 ## Sending Bitcoin
 
-Once the federation agrees on paying Bitcoin to a set of destinations every participant deterministically selects
-the necessary outputs. The previously agreed-upon fee rate is used to determine the fee. In case a change address is needed
+Once the federation agrees on paying Bitcoin to a set of destinations, every participant deterministically selects
+the necessary outputs. The previously agreed-upon fee rate is used to determine the fee. In case a change address is needed,
 the randomness beacon is used to derive a random change address just as a deposit address would be derived.
 
 This transaction is then signed by each participant individually and the signatures broadcasted via the consensus
 protocol. Note that due to the transaction being generated deterministically it does not need to be exchanged itself.
 
-After receiving sufficient signatures each party can assemble the final transaction and broadcast it.
+After receiving sufficient signatures, each party can assemble the final transaction and broadcast it.
