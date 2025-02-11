@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Fedimint is a highly experimental Rust implementation of a federated chaumian mint on top of Bitcoin. If you are interested in taking a look feel free to [reach out](mailto:elsirion@protonmail.com).
 
-In the following we will try to illuminate the high level architecture. Since this is probably not the only way to build such a federated mint we will only talk about Fedimint in particular here. Other projects like SCRIT made other design decisions that are not reflected. Maybe a more comprehensive comparison can be written at a later date.
+In the following, we will try to illuminate the high level architecture. Since this is probably not the only way to build such a federated mint, we will focus specifically on Fedimint. Other projects, like SCRIT, have made different design decisions that are not reflected here. Perhaps a more comprehensive comparison can be written at a later date.
 
 Fedimint started out as a federated chaumian eCash prototype. By now it is a more general framework for federated financial applications. At its core lies the ability to agree on and process transactions. The possible input and output types of these transactions are defined by modules.
 
@@ -29,9 +29,9 @@ The main functionality is implemented in one big loop shown below.
 
 A BFT consensus algorithm is used to agree on a set of consensus items. These consist of transactions submitted by clients and other data proposed by modules. This globally agreed-upon set is then split into module-specific items and transactions. Module specific items are given to the respective modules first to prepare them for the consensus round.
 
-After that the transactions are processed by checking that the sum of input amounts is greater than or equal to outputs plus fees. If that is the case the inputs and outputs are delegated to their respective module for processing. If any is deemed invalid by a module (e.g. invalid signature) the transaction is discarded.
+After that the transactions are processed by checking that the sum of input amounts is greater than or equal to outputs plus fees. If that is the case, the inputs and outputs are delegated to their respective module for processing. If any is deemed invalid by a module (e.g. invalid signature) the transaction is discarded.
 
-After all transactions have been processed the next consensus proposal is prepared. It consists of transactions submitted by clients and module specific items.
+After all transactions have been processed, the next consensus proposal is prepared. It consists of transactions submitted by clients and module specific items.
 
 ## Modules
 
