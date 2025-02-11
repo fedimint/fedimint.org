@@ -16,7 +16,7 @@ These terms have been chosen to represent the fact that the circulating currency
 
 In reality the eCash tokens are claims against the bitcoin that is held in a multi-signature vault by the federation guardians. See [What is a Fedimint](/docs/GettingStarted/What-is-a-Fedimint).
 
-The fm-BTC therefore is a means of the federation keeping track of the outstanding claims for the bitcoin which is held. 
+The fm-BTC, therefore, is a means for the federation to keep track of the outstanding claims on the bitcoin it holds. 
 
 These claims are not cryptographically enforced, but instead rely on honest federation guardians to honor the withdrawals. 
 
