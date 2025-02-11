@@ -11,6 +11,6 @@ This is in effect an operational risk.  The idea that once I have committed my f
 This would be a failure of the mint to operate either through (1) operational failure or (2) 
 malice.
 
-With regards to (1) this is mitigated through the deployment of a federation as only a sub group of guardians have to be online at any point in time in order to transact. This allows for some hardware failure, downtime or reboots to occur. 
+With regards to (1), this is mitigated through the deployment of a federation, as only a sub group of guardians needs to be online at any point in time in order to transact. This allows for some hardware failures, downtime or reboots to occur. 
 
-Considering (2) this needs to be mitigated through a process of "knowing your federation". Please only commit funds to guardians you believe you can trust. 
+Considering (2), this needs to be mitigated through a process of "knowing your federation". Please only commit funds to guardians you believe you can trust. 
