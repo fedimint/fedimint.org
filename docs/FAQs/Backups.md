@@ -20,7 +20,7 @@ If a user loses their phone or can no longer access their eCash notes, they can 
 
 This process can be thought of as an encrypted password backup to a mini private DropBox or Google Drive run by the federation.
 
-In this way, no one guardian is able to access a user’s credentials but a minority of guardians losing their federation private keys will not prevent recovery of the user’s private key.  
+In this way, no single guardian can access a user’s credentials, but the loss of federation private keys by a minority of guardians will not prevent the recovery of the user’s private key.  
 
 Given the multiple second party trust model that already exists, this approach does not introduce additional risk to users but does provide greater convenience and lower risk than storing it with a third party such as a cloud backup service provider.
 
