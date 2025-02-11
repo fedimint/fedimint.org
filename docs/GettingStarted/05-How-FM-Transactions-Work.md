@@ -5,7 +5,7 @@ sidebar_position: 5
 # How do Fedimint transactions work?
 
 :::info
-This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page.
+This guide has been developed as a community project and is a live document. We would appreciate any feedback you may have and you can submit edits, corrections and pull requests through the link at the bottom of each page. Let's build the future of Bitcoin custody together!
 :::
 
 This is a set of simplified transactions flows to explain how transaction processing works inside the Fedimint, with integration to the wider lightning network and between different mints.
@@ -157,7 +157,7 @@ There would also have been no requirement for step 7.
 
 ### Lightning Routing
 
-You may be thinking - hang on if I can receive lightning payments and send lightning payments can I route lightning payments?
+You may be wondering - hang on, if I can receive lightning payments and send lightning payments, does that mean I can route lightning payments?
 
 The answer is yes, sort of.
 
