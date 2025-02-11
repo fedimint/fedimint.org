@@ -19,6 +19,6 @@ After the BFT consensus algorithm has finished (note: this involves a lot of bac
 
 The consensus set `C` contains at least `n − f` contributions from different participants. 
 
-Note how this implies that if more than `f` participants propose the same item said item is guaranteed to be included in the next consensus output.
+Note how this implies that if more than `f` participants propose the same item, the said item is guaranteed to be included in the next consensus output.
 
-The consensus protocols we are discussing, asynchronous ones, can only handle about `n/3` faulty nodes, so this will also be our assumption when building our protocol on top if not stated otherwise.
+The consensus protocols we are discussing, asynchronous ones, can only handle about `n/3` faulty nodes, so this will also be our assumption when building our protocol on top unless stated otherwise.
