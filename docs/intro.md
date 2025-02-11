@@ -25,7 +25,7 @@ Fedimint unlocks new possibilities for Bitcoiners by bringing together trust, ac
 Think of it as community banking—but with Bitcoin, greater privacy, and no central bank.
 
 
-Here’s a quick tour to get you up to speed on the Fedimint protocol. We’ll break down key concepts, trade-offs, technologies, and essential terms so you can navigate this innovative solution with confidence.We close this tour with an overview of several use cases we believe Fedimint can help with.
+Here’s a quick tour to get you up to speed on the Fedimint protocol. We’ll break down key concepts, trade-offs, technologies, and essential terms so you can navigate this innovative solution with confidence. We close this tour with an overview of several use cases we believe Fedimint can help with.
 
 
 Our goal is simple: make understanding Fedimint as easy and engaging as possible.This documentation explains how Fedimint works, in a manner that is easily digestible by a non technical audience, inspired by the bitcoin.org wiki.
