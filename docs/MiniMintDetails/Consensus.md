@@ -5,7 +5,7 @@ katex: true
 
 # Fedimint Consensus
 
-Because it takes such a central part in a federated mint we will begin with explaining the properties of
+Because it takes such a central part in a federated mint, we will begin with explaining the properties of
 [Byzantine Fault Tolerant (BFT)](https://en.wikipedia.org/wiki/Byzantine_fault) consensus algorithms.
 
 A byzantine fault does not only allow a party to go offline, but also to maliciously continue participating in the
@@ -55,7 +55,7 @@ if more than
 
 $$f$$
 
-participants propose the same item said item is guaranteed to be included in the next consensus
+participants propose the same item, the said item is guaranteed to be included in the next consensus
 output.
 
 The consensus protocols we are discussing, asynchronous ones, can only handle about
