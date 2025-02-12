@@ -20,7 +20,7 @@ This is possible in theory but the most practical implementations would require 
 
 Guardian collusion is prevented by the configuration of the federation and the selection of its guardians. The federation uses an asynchronous BFT consensus, e.g. 3/5 or 7/13 that would require a majority to collude to steal your coins.
 
-Within fedimint you are explicitly trusting that the federation will not collude, their incentive not to is 2nd degree social connections so a fedimint user should know in person who at least 1 of their federation guardians are and be capable of directly interacting with them.
+Within fedimint, you are explicitly trusting that the federation will not collude. Their incentive not to do so is based on 2nd degree social connections. A fedimint user should personally know at least 1 of their federation guardians and be capable of directly interacting with them.
 
 ## Can a single bad guardian rewrite my transaction to steal coins?
 
