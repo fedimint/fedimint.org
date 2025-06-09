@@ -2,11 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fedimint.org/blog</id>
     <title>Fedimint Blog</title>
-    <updated>2022-10-19T00:00:00.000Z</updated>
+    <updated>2025-04-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fedimint.org/blog"/>
     <subtitle>Fedimint Blog</subtitle>
     <icon>https://fedimint.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Eric and Joschi on Stephan Livera Podcast 651]]></title>
+        <id>eric-joschi-slp651</id>
+        <link href="https://fedimint.org/blog/eric-joschi-slp651"/>
+        <updated>2025-04-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Eric and Joschi discuss the latest updates on Fedimint 0.7, focusing on Iroh integration, LNURL enhancements, and the implications for Bitcoin privacy and community custody, on Stephan Livera Podcast Episode 651.]]></summary>
+        <content type="html"><![CDATA[<p>Eric and Joschi discuss the latest updates on Fedimint 0.7, focusing on Iroh integration, LNURL enhancements, and the implications for Bitcoin privacy and community custody, <a href="https://stephanlivera.com/episode/651/" target="blank" rel="noopener noreferrer">on Stephan Livera Podcast Episode 651.</a></p><iframe width="560" height="315" src="https://www.youtube.com/embed/mo73liEs69I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><p><a href="https://www.youtube.com/watch?v=mo73liEs69I&amp;ab_channel=StephanLivera" target="_blank" rel="noopener noreferrer">YouTube link</a></p>]]></content>
+        <category label="fedimint" term="fedimint"/>
+        <category label="podcast" term="podcast"/>
+        <category label="2025" term="2025"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[What is Fedimint - Juan en Cripto]]></title>
         <id>fedimint-juancripto</id>

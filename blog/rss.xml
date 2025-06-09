@@ -4,10 +4,21 @@
         <title>Fedimint Blog</title>
         <link>https://fedimint.org/blog</link>
         <description>Fedimint Blog</description>
-        <lastBuildDate>Wed, 19 Oct 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 12 Apr 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Eric and Joschi on Stephan Livera Podcast 651]]></title>
+            <link>https://fedimint.org/blog/eric-joschi-slp651</link>
+            <guid>eric-joschi-slp651</guid>
+            <pubDate>Sat, 12 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Eric and Joschi discuss the latest updates on Fedimint 0.7, focusing on Iroh integration, LNURL enhancements, and the implications for Bitcoin privacy and community custody, on Stephan Livera Podcast Episode 651.]]></description>
+            <content:encoded><![CDATA[<p>Eric and Joschi discuss the latest updates on Fedimint 0.7, focusing on Iroh integration, LNURL enhancements, and the implications for Bitcoin privacy and community custody, <a href="https://stephanlivera.com/episode/651/" target="blank" rel="noopener noreferrer">on Stephan Livera Podcast Episode 651.</a></p><iframe width="560" height="315" src="https://www.youtube.com/embed/mo73liEs69I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><p><a href="https://www.youtube.com/watch?v=mo73liEs69I&amp;ab_channel=StephanLivera" target="_blank" rel="noopener noreferrer">YouTube link</a></p>]]></content:encoded>
+            <category>fedimint</category>
+            <category>podcast</category>
+            <category>2025</category>
+        </item>
         <item>
             <title><![CDATA[What is Fedimint - Juan en Cripto]]></title>
             <link>https://fedimint.org/blog/fedimint-juancripto</link>
