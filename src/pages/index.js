@@ -7,23 +7,161 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 
 import styles from "./index.module.css";
 
-function HomepageHeader() {
+function HeroSection() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+    <section
+      style={{
+        background: "var(--body-background)",
+        color: "var(--header-font-color)",
+        padding: "4rem 0 2rem 0",
+        textAlign: "center",
+      }}
+    >
+      <div style={{ maxWidth: 1000, margin: "0 auto" }}>
+        <img
+          src={require("@site/static/img/fedimint-icon.png").default}
+          alt="Fedimint Logo"
+          style={{ width: 160, height: 160, marginBottom: 24 }}
+        />
+        <h1 style={{ fontSize: "3rem", fontWeight: 700, margin: "0.5em 0" }}>
+          Fedimint: Community Custody, Private by Design
+        </h1>
+        <p style={{ fontSize: "1.5rem", maxWidth: 600, margin: "0 auto 2em auto" }}>
+          Open-source federated e-cash for Bitcoin, built for privacy and scale.
+        </p>
+        <Link
+          className="button button--primary button--lg"
+          to="/docs/intro"
+          style={{
+            background: "var(--ifm-color-primary)",
+            color: "#fff",
+            border: "none",
+            fontWeight: 600,
+            fontSize: "1.2rem",
+          }}
+        >
+          Learn more
+        </Link>
+      </div>
+    </section>
+  );
+}
+
+function HowItWorksSection() {
+  return (
+    <section style={{ padding: "4rem 0" }}>
+      <div className="container" style={{ maxWidth: 1000 }}>
+        <h2 style={{ textAlign: "center", fontSize: "2.5rem", fontWeight: 700, marginBottom: 40 }}>
+          How It Works
+        </h2>
+        <div className="row" style={{ display: "flex", justifyContent: "center" }}>
+          <div className="col col--4" style={{ textAlign: "center" }}>
+            <img src={require("@site/static/img/mint-deposit.png").default} alt="Deposit Bitcoin" style={{ width: 100, marginBottom: 16 }} />
+            <h3>Deposit Bitcoin</h3>
+            <p>Send bitcoin to your community's Fedimint and receive via Lightning or on-chain deposits.</p>
+          </div>
+          <div className="col col--4" style={{ textAlign: "center" }}>
+            <img src={require("@site/static/img/mint-ecash.png").default} alt="Mint eCash" style={{ width: 100, marginBottom: 16 }} />
+            <h3>Mint E-Cash</h3>
+            <p>Receive privacy-preserving e-cash notes, spendable like digital cash.</p>
+          </div>
+          <div className="col col--4" style={{ textAlign: "center" }}>
+            <img src={require("@site/static/img/mint-send.png").default} alt="Spend Privately" style={{ width: 100, marginBottom: 16 }} />
+            <h3>Spend Privately</h3>
+            <p>Transact instantly and privately with anyone, anytime, anywhere. Either through e-cash, Lightning or on-chain.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CommunitySection() {
+  // Supporters data
+  const supporters = [
+    {
+      name: "Blockstream",
+      url: "https://blockstream.com/",
+      img: require("@site/static/img/supporters/blockstream.png").default,
+    },
+    {
+      name: "Obi Nwosu",
+      url: "https://twitter.com/obi",
+      img: require("@site/static/img/supporters/obi.jpg").default,
+    },
+    {
+      name: "Einundzwanzig",
+      url: "https://einundzwanzig.space/",
+      img: require("@site/static/img/supporters/einundzwanzig.png").default,
+    },
+    {
+      name: "Human Rights Foundation",
+      url: "https://hrf.org/",
+      img: require("@site/static/img/supporters/hrf.png").default,
+    },
+    {
+      name: "Ten 31",
+      url: "https://ten31.vc/",
+      img: require("@site/static/img/supporters/ten31.png").default,
+    },
+    {
+      name: "Spiral",
+      url: "https://spiral.xyz/",
+      img: require("@site/static/img/supporters/spiral.png").default,
+    },
+    {
+      name: "OpenSats",
+      url: "https://opensats.org/",
+      img: require("@site/static/img/supporters/opensats.png").default,
+    },
+    {
+      name: "Fedi",
+      url: "https://www.fedi.xyz/",
+      img: require("@site/static/img/supporters/fedi.png").default,
+    },
+  ];
+
+  return (
+    <section style={{ background: "var(--body-background)", color: "var(--header-font-color)", padding: "4rem 0" }}>
+      <div className="container" style={{ maxWidth: 1000 }}>
+        <h2 style={{ textAlign: "center", fontSize: "2.5rem", fontWeight: 700, marginBottom: 24 }}>
+          Supporters
+        </h2>
+        <p style={{ textAlign: "center", fontSize: "1.2rem", marginBottom: 32 }}>
+          The Fedimint project is grateful for the generous support and donations we've received from various organisations and individuals including:
+        </p>
+        <div className={styles.supportersRow}>
+          {supporters.map((s) => (
+            <a
+              key={s.name}
+              href={s.url}
+              target="_blank"
+              rel="noopener"
+              className={styles.supporterLink}
+              title={s.name}
+            >
+              <img src={s.img} alt={`${s.name} Logo`} className={styles.supporterLogo} />
+            </a>
+          ))}
+        </div>
+        <div style={{ textAlign: "center", marginTop: 80 }}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro"
+            to="https://chat.fedimint.org"
+            style={{
+              background: "var(--ifm-color-primary)",
+              color: "#fff",
+              border: "none",
+              fontWeight: 600,
+              fontSize: "1.2rem",
+            }}
           >
-            Learn more about Fedimint
+            Join the Community
           </Link>
         </div>
       </div>
-    </header>
+    </section>
   );
 }
 
@@ -32,147 +170,12 @@ export default function Home() {
   return (
     <Layout
       title={`Welcome to ${siteConfig.title}`}
-      description="Fedimint is an opensource protocol to custody and transact bitcoin in a community context, built on a strong foundation of privacy."
+      description="Fedimint is an open-source protocol to custody and transact bitcoin in a community context, built on a strong foundation of privacy."
     >
-      <HomepageHeader />
+      <HeroSection />
       <main>
-        <HomepageFeatures />
-        <section className={styles.features}>
-          <div className="container">
-            <div className="row-spacer">
-              <hr />
-            </div>
-            <div className="row">
-              <h1 className="t1">Welcome to Fedimint.org</h1>
-              <p>
-                This site is intended to collect research and ideas about
-                federated chaumian mints to scale Bitcoin while also making it
-                more private.
-              </p>
-              <p>
-                We have provided a wiki style resource for you to learn more
-                about how the protocol works and the trade offs and benefits
-                that come with running or joining a Fedimint.
-              </p>
-            </div>
-            <div className="row">
-              <h2 className="t1">Prior Art</h2>
-              <div>
-                <p>
-                  We believe it is important to acknowledge the work which has
-                  led up to the current Fedimint opensource protocol design.
-                </p>
-                <p>
-                  We are currently aware of the following efforts to build
-                  federated eCash mints:
-                </p>
-                <p>
-                  <ul>
-                    <li>
-                      <b>
-                        <a
-                          href="https://github.com/fedimint/fedimint"
-                          target="_blank"
-                        >
-                          Fedimint:
-                        </a>
-                      </b>{" "}
-                      A modular federated eCash prototype still under heavy
-                      development written in Rust. It already supports all main
-                      operations (deposit/withdraw via both on-chain Bitcoin and
-                      Lightning, eCash transfers) and comes with a rudimentary
-                      CLI client. Some features are still missing and blocking
-                      mainnet deployments, but the project is moving quickly. If
-                      you are interested in contributing check out the GitHub
-                      repository.
-                    </li>
-                    <li>
-                      <b>
-                        <a href="https://github.com/scritcash" target="_blank">
-                          SCRIT1:
-                        </a>{" "}
-                      </b>
-                      A half-finished implementation of a federated chaumian
-                      mint written in Go, developed by Frank Braun and Jonathan
-                      Logan. It does not implement BTC backing, but was the
-                      first public implementation.
-                    </li>
-                    <li>
-                      <b>SCRIT2:</b> A reimplementation of a federated chaumian
-                      mint written in Go, supporting multiple currencies,
-                      inter-currency swap transactions, receiver- and
-                      sender-initiated half-offline transactions as well as
-                      complex multiparty transactions. It is in private beta and
-                      has no direct linkage with bitcoin yet. You can read more
-                      on Jonathan’s blog.
-                    </li>
-                    <li>
-                      <b>Open Transactions:</b> Open Transactions also deserves
-                      a honorable mention since it already allowed for the
-                      issuance of eCash tokens backed by Bitcoin held in a
-                      multisig wallet. It does not appear to support threshold
-                      issuance of eCash tokens though.
-                    </li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-            <div className="row1">
-              <h2 className="t1">Support and Donations</h2>
-              <p>
-                The Fedimint project is grateful for the generous support and
-                donations we've received from various organisations and
-                individuals including:
-              </p>
-              <p>
-                <ul>
-                  <li>
-                    <a href="https://blockstream.com/" target="_blank">
-                      <b>Blockstream</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/obi" target="_blank">
-                      <b>Obi Nwosu</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://einundzwanzig.space/" target="_blank">
-                      <b>Einundzwanzig</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://hrf.org/" target="_blank">
-                      <b>Human Rights Foundation</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://ten31.vc/" target="_blank">
-                      <b>Ten 31</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://spiral.xyz/" target="_blank">
-                      <b>Spiral</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://opensats.org/" target="_blank">
-                      <b>OpenSats</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.fedi.xyz/" target="_blank">
-                      <b>Fedi</b>
-                    </a>
-                  </li>
-                </ul>
-              </p>
-            </div>
-            <div className="row-spacer"></div>
-          </div>
-        </section>
-        <div></div>
+        <HowItWorksSection />
+        <CommunitySection />
       </main>
     </Layout>
   );

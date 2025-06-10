@@ -6,31 +6,36 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #170022;
-  --ifm-color-primary-dark: #15001f;
-  --ifm-color-primary-darker: #14001d;
-  --ifm-color-primary-darkest: #100018;
-  --ifm-color-primary-light: #190025;
-  --ifm-color-primary-lighter: #1a0027;
-  --ifm-color-primary-lightest: #1e002d;
+  --ifm-color-primary: #2ec4f1;
+  --ifm-color-primary-dark: #1b7ca6;
+  --ifm-color-primary-darker: #176b8a;
+  --ifm-color-primary-darkest: #124e66;
+  --ifm-color-primary-light: #5fd6f7;
+  --ifm-color-primary-lighter: #8fe7fd;
+  --ifm-color-primary-lightest: #c6f4ff;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --header-font-color: #170022;
-  --body-background: #e8fff2;
-  --body-font-color: #170022;
+  --docusaurus-highlighted-code-line-bg: rgba(46, 196, 241, 0.07);
+  --header-font-color: #181c24;
+  --body-background: #f6fcff;
+  --body-font-color: #181c24;
+  --accent-gradient: linear-gradient(90deg, #2e4af1 0%, #5a2ef1 100%);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #e8d1f3;
-  --ifm-color-primary-dark: #d6adea;
-  --ifm-color-primary-darker: #cd9be5;
-  --ifm-color-primary-darkest: #b265d7;
-  --ifm-color-primary-light: #faf5fc;
-  --ifm-color-primary-lighter: #ffffff;
-  --ifm-color-primary-lightest: #ffffff;
-  --ifm-background-color: #170022;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #2ec4f1;
+  --ifm-color-primary-dark: #1b7ca6;
+  --ifm-color-primary-darker: #176b8a;
+  --ifm-color-primary-darkest: #124e66;
+  --ifm-color-primary-light: #5fd6f7;
+  --ifm-color-primary-lighter: #8fe7fd;
+  --ifm-color-primary-lightest: #c6f4ff;
+  --ifm-background-color: #181c24;
+  --docusaurus-highlighted-code-line-bg: rgba(46, 196, 241, 0.13);
+  --header-font-color: #f6fcff;
+  --body-background: #181c24;
+  --body-font-color: #f6fcff;
+  --accent-gradient: linear-gradient(90deg, #2e4af1 0%, #5a2ef1 100%);
 }
 
 .heroBanner_src-pages-index-module {
@@ -50,16 +55,30 @@
 }
 
 .t1 {
-  color: #170022;
+  color: var(--header-font-color);
   padding: 0px 10px 0px 10px;
 }
 
 p a {
-  color: #852eb0;
+  color: #2e4af1;
 }
 
 section p {
   padding: 0px 10px 0px 10px;
+}
+
+.navbar__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer__links {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.navbar__item {
+  margin-right: 1rem;
 }
 
 /** Copy of Fedimint Site CSS as a reference
@@ -154,3 +173,17 @@ section p {
     border-radius: 4px;
 }
 **/
+
+.header-github-link {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('/img/github.svg') no-repeat center;
+  background-size: contain;
+  margin-left: 8px;
+}
+
+/* Optional: Hide text if any accidentally appears */
+.header-github-link span {
+  display: none;
+}

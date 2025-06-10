@@ -24,3 +24,33 @@
 .row {
   padding-top: 6rem;
 }
+
+.supportersRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 2rem;
+}
+
+.supporterLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  transition: transform 0.15s;
+}
+
+.supporterLink:hover {
+  transform: scale(1.07);
+}
+
+.supporterLogo {
+  max-height: 56px;
+  max-width: 160px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.08));
+  background: #fff;
+  border-radius: 8px;
+}

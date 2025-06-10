@@ -15,7 +15,7 @@ const config = {
   baseUrl: "/", //FLAG - Set to /
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -85,27 +85,17 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "right",
-            label: "Learn more",
-          },
-          {
-            href: "/",
-            label: "  |  ",
-            position: "right",
+            label: "Docs",
           },
           {
             to: "blog",
-            label: "Resources & Updates",
-            position: "right",
-          },
-          {
-            href: "/",
-            label: "  |  ",
+            label: "Blog",
             position: "right",
           },
           {
             href: "https://github.com/fedimint",
-            label: "GitHub",
             position: "right",
+            className: "header-github-link",
           },
         ],
       },
@@ -120,8 +110,12 @@ const config = {
                 to: "/docs/intro",
               },
               {
-                label: "Tech Docs",
-                href: "https://github.com/fedimint/fedimint/wiki",
+                label: "WebSDK",
+                to: "https://web.fedimint.org",
+              },
+              {
+                label: "Rust Docs",
+                href: "https://docs.fedimint.org",
               },
             ],
           },
@@ -129,8 +123,8 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Telegram",
-                href: "https://t.me/fedimint",
+                label: "Nostr",
+                href: "https://primal.net/p/nprofile1qqsgwgkrss7gthwkzc49edgxu895664setaevcp57snw2k3wlzdrghswflshg"
               },
               {
                 label: "Twitter",
@@ -140,6 +134,10 @@ const config = {
                 label: "Discord",
                 href: "https://chat.fedimint.org",
               },
+              {
+                label: "Telegram",
+                href: "https://t.me/fedimint",
+              },
             ],
           },
           {
@@ -148,7 +146,12 @@ const config = {
               {
                 label: "GitHub",
                 href: "https://github.com/fedimint",
-              },
+              }
+            ],
+          },
+          {
+            title: "Contact",
+            items: [
               {
                 label: "Mail",
                 href: "mailto:elsirion@protonmail.com",
