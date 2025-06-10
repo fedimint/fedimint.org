@@ -79,6 +79,7 @@ section p {
 
 .navbar__item {
   margin-right: 1rem;
+  font-weight: 600;
 }
 
 /** Copy of Fedimint Site CSS as a reference
