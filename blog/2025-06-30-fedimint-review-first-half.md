@@ -11,6 +11,7 @@ You'll discover:
 
 For those just tuning in, Fedimint is an open-source protocol built by and for communities.
 ![](/static/blog/fedimint-review-2025/unnamed.jpg)
+
 Think of it as a secure and decentralized way for individuals to collectively manage and spend bitcoin privately through "federated ecash." By blending distributed custody with blind-signed digital cash notes, it offers a robust path to using bitcoin as true freedom money, boosting both transaction privacy and scalability. Our core mission? To put powerful bitcoin tools directly into the hands of communities, making the experience of using bitcoin feel more personal and empowering.
 
 ### **Ecosystem & Usability: Expanding the Reach**
