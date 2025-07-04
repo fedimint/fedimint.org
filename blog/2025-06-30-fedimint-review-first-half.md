@@ -1,4 +1,4 @@
-# Fedimint's Momentum: A Look Back at 2025's First Half
+# Fedimint's Ecosystem: A Look Back at 2025's First Half
 
 It’s been quite the ride for the [Fedimint](https://fedimint.org/) project in the first half of 2025—genuinely packed with progress. We're excited to share a rundown of what we’ve been up to.
 
