@@ -102,6 +102,13 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.platformIcon {
+  font-size: 0.9rem;
 }
 
 .platformTag {

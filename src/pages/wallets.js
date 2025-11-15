@@ -2,6 +2,20 @@ import React from "react";
 import Link from "@docusaurus/Link";
 import Layout from "@theme/Layout";
 import styles from "./wallets.module.css";
+import { FaApple, FaAndroid, FaGlobe, FaDesktop, FaTerminal, FaDownload } from "react-icons/fa";
+
+function getPlatformIcon(platform) {
+  const iconMap = {
+    iOS: FaApple,
+    Android: FaAndroid,
+    APK: FaDownload,
+    Web: FaGlobe,
+    Desktop: FaDesktop,
+    CLI: FaTerminal,
+  };
+  const IconComponent = iconMap[platform];
+  return IconComponent ? <IconComponent className={styles.platformIcon} /> : null;
+}
 
 function WalletCard({ wallet }) {
   return (
@@ -30,6 +44,7 @@ function WalletCard({ wallet }) {
         <div className={styles.walletTags}>
           {wallet.platforms.map((platform) => (
             <span key={platform} className={`${styles.tag} ${styles.platformTag}`}>
+              {getPlatformIcon(platform)}
               {platform}
             </span>
           ))}
@@ -55,7 +70,10 @@ function CLISection() {
           Perfect for developers and advanced users who want direct access to Fedimint's core functionality.
         </p>
         <div className={styles.walletTags}>
-          <span className={`${styles.tag} ${styles.platformTag}`}>CLI</span>
+          <span className={`${styles.tag} ${styles.platformTag}`}>
+            {getPlatformIcon("CLI")}
+            CLI
+          </span>
         </div>
         <a
           href="https://github.com/fedimint/fedimint/"
