@@ -23,3 +23,4 @@ yarn-error.log*
 
 # Ignore for note local editing
 **/.obsidian/
+/.direnv
