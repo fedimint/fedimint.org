@@ -38,7 +38,7 @@
 /* Image container - fixed aspect ratio */
 .walletImageContainer {
   width: 100%;
-  height: 400px;
+  aspect-ratio: 4 / 3;
   background: #f6fcff;
   display: flex;
   align-items: center;
