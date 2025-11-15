@@ -88,6 +88,11 @@ const config = {
             label: "Docs",
           },
           {
+            to: "wallets",
+            label: "Wallets",
+            position: "right",
+          },
+          {
             to: "blog",
             label: "Blog",
             position: "right",
