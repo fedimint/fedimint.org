@@ -92,7 +92,7 @@ export default function Wallets() {
   const wallets = [
     {
       name: "Fedi",
-      description: "Source-available mobile app for Fedimint with caht and community features. A fully-featured, production-ready wallet designed for everyday use.",
+      description: "Source-available mobile app for Fedimint with chat and community features. A fully-featured, production-ready wallet designed for everyday use.",
       link: "https://www.fedi.xyz/product/",
       platforms: ["iOS", "Android", "APK"],
       isBeta: false,
