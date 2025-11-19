@@ -115,6 +115,14 @@ export default function Wallets() {
       screenshot: require("@site/static/img/wallets/vipr.png").default,
     },
     {
+      name: "Haze Wallet",
+      description: "Open source Fedimint web wallet that combines power with simplicity, offering a feature rich experience with more controllability, safe to use with small amounts",
+      link: "https://harshdev098.github.io/haze-wallet/wallet",
+      platforms: ["Web"],
+      isBeta: true,
+      screenshot: require("@site/static/img/wallets/haze.png").default,
+    },
+    {
       name: "Harbor",
       description: "Open source Fedimint wallet in very early development. Currently supports signet only, perfect for testing and experimentation.",
       link: "https://github.com/MutinyWallet/harbor",
