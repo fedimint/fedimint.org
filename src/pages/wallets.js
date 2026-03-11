@@ -83,7 +83,7 @@ function WalletCard({ wallet }) {
           })}
         </div>
         <span className={styles.walletLink}>
-          Learn more →
+          Get started →
         </span>
       </div>
     </a>
