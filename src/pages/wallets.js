@@ -263,7 +263,7 @@ export default function Wallets() {
     {
       name: "Conduit",
       description: "Open source Fedimint wallet focused on Lightning, on-chain, and ecash payments. Built for simplicity and direct access to core Fedimint modules.",
-      link: "https://github.com/fedimint/fedimint",
+      link: "https://conduit.cash/",
       platforms: ["iOS", "Android"],
       modules: ["wallet", "mint", "ln-v2"],
       isBeta: false,
