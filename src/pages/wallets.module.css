@@ -1,3 +1,109 @@
+/* Filter bar */
+.filterContainer {
+  margin-bottom: 1.5rem;
+}
+
+.filterToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--body-font-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.filterToggle:hover {
+  border-color: #2e4af1;
+}
+
+.filterToggleActive {
+  border-color: #2e4af1;
+  background: #f0f4ff;
+  color: #2e4af1;
+}
+
+.filterCount {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #2e4af1;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.filterPanel {
+  margin-top: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.filterGroupLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #888;
+}
+
+.filterOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.filterChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  background: #fff;
+  color: var(--body-font-color);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.filterChip:hover {
+  border-color: #2e4af1;
+  background: #f0f4ff;
+}
+
+.filterChipActive {
+  border-color: #2e4af1;
+  background: #2e4af1;
+  color: #fff;
+}
+
+.filterChipActive:hover {
+  background: #1b3ad0;
+  border-color: #1b3ad0;
+}
+
 /* Grid layout for wallets */
 .walletsGrid {
   display: grid;
@@ -119,6 +225,51 @@
 .betaTag {
   background: #fff3cd;
   color: #856404;
+}
+
+/* Module tags row */
+.moduleTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.moduleTag {
+  padding: 0;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  display: inline-flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.moduleTagName {
+  padding: 0.15rem 0.55rem;
+}
+
+.moduleVersion {
+  font-size: 0.6rem;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.12);
+  padding: 0.25rem 0.5rem 0.05rem 0.4rem;
+}
+
+.moduleStable {
+  background: #d4edda;
+  color: #155724;
+}
+
+.moduleExperimental {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.moduleDeprecated {
+  background: #e2e3e5;
+  color: #6c757d;
 }
 
 /* Link styling */
