@@ -255,7 +255,7 @@ export default function Wallets() {
       name: "Ecash App",
       description: "Open source Fedimint wallet under active development. Built with a focus on power-users and exploration of new Fedimint features.",
       link: "https://ecash.love",
-      platforms: ["APK"],
+      platforms: ["APK", "Desktop"],
       modules: [...DEFAULT_MODULES, "ln-v2"],
       isBeta: false,
       screenshot: require("@site/static/img/wallets/ecash-app.png").default,
