@@ -46,6 +46,6 @@ Each Fedimint node is lightweight, system requirements:
 - Disk: 10GB minimum
 - CPU: 1 core minimum, 2 cores recommended
 
-This means it can run on home servers, single-board computers (Raspberry Pi), old laptops, or cloud VPS. Since redundancy is built into the protocol any single guardian doesn't have to run their node one super reliable hardware. The system keeps running even if some guardians are offline.
+This means it can run on home servers, single-board computers (Raspberry Pi), old laptops, or cloud VPS. Since redundancy is built into the protocol any single guardian doesn't have to run their node on super reliable hardware. The system keeps running even if some guardians are offline.
 
 See the [setup overview](/guardians/Setup/overview) for the different supported modes of running Fedimint.
