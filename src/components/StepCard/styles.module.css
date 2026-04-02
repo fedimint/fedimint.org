@@ -1,0 +1,40 @@
+.stepCard {
+  margin: 2rem 0 0.5rem 0;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, rgba(46, 196, 241, 0.04) 0%, rgba(46, 196, 241, 0.01) 100%);
+  border: 1px solid rgba(46, 196, 241, 0.12);
+  border-radius: 10px;
+}
+
+[data-theme="dark"] .stepCard {
+  background: linear-gradient(135deg, rgba(46, 196, 241, 0.06) 0%, rgba(46, 196, 241, 0.02) 100%);
+  border-color: rgba(46, 196, 241, 0.15);
+}
+
+.stepHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0;
+}
+
+.stepNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.stepTitle {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+}

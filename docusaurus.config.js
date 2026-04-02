@@ -24,12 +24,8 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: "./sidebars.js",
-          editUrl: "https://github.com/fedimint/fedimint.org/tree/main/",
-          remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatex],
-        },
+        // Disable the default docs plugin — we use multi-instance below
+        docs: false,
         blog: {
           showReadingTime: true,
           editUrl: "https://github.com/fedimint/fedimint.org/tree/main/",
@@ -40,6 +36,33 @@ const config = {
           customCss: "./src/css/custom.css",
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "users",
+        path: "users",
+        routeBasePath: "users",
+        sidebarPath: "./sidebarsUsers.js",
+        editUrl: "https://github.com/fedimint/fedimint.org/tree/main/",
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "guardians",
+        path: "guardians",
+        routeBasePath: "guardians",
+        sidebarPath: "./sidebarsGuardians.js",
+        editUrl: "https://github.com/fedimint/fedimint.org/tree/main/",
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
+      },
     ],
   ],
 
@@ -69,10 +92,19 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "intro",
+            to: "/users/intro",
+            label: "Users",
             position: "right",
-            label: "Docs",
+          },
+          {
+            to: "/guardians/intro",
+            label: "Guardians",
+            position: "right",
+          },
+          {
+            href: "https://sdk.fedimint.org",
+            label: "Developers",
+            position: "right",
           },
           {
             to: "/wallets",
@@ -95,19 +127,19 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Learn",
             items: [
               {
-                label: "Wiki",
-                to: "/docs/intro",
+                label: "Users",
+                to: "/users/intro",
               },
               {
-                label: "WebSDK",
-                href: "https://web.fedimint.org",
+                label: "Guardians",
+                to: "/guardians/intro",
               },
               {
-                label: "Rust Docs",
-                href: "https://docs.fedimint.org",
+                label: "Developers",
+                href: "https://sdk.fedimint.org",
               },
             ],
           },

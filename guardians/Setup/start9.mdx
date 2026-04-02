@@ -1,0 +1,147 @@
+---
+sidebar_position: 1
+---
+
+import StepCard from '@site/src/components/StepCard';
+import InfoCard from '@site/src/components/InfoCard';
+
+# Start9
+
+Start9 is a personal server platform for self-hosting open-source software. Fedimint is available as a community-maintained service through the Start9 Community Registry.
+
+**Prerequisites:**
+
+- Access to a [StartOS](https://github.com/Start9Labs/start-os) instance
+
+## Install Fedimint
+
+<StepCard step={1} title="Open the Marketplace" images={[
+  { src: "/img/setup/start9/01-01-install-open-marketplace.webp", alt: "StartOS home screen with sidebar navigation" },
+  { src: "/img/setup/start9/01-02-install-open-marketplace.webp", alt: "Sidebar zoomed in showing Marketplace option" },
+  { src: "/img/setup/start9/01-03-install-open-marketplace.webp", alt: "Start9 Registry marketplace page" },
+]} />
+
+From the StartOS home screen, click **Marketplace** in the sidebar. This opens the Start9 Registry — the default source of apps maintained by the Start9 team.
+
+<StepCard step={2} title="Switch to Community Registry" images={[
+  { src: "/img/setup/start9/02-01-install-switch-registry.webp", alt: "Start9 Registry with Change button visible" },
+  { src: "/img/setup/start9/02-02-install-switch-registry.webp", alt: "Change Registry dialog with Community Registry selected" },
+  { src: "/img/setup/start9/02-03-install-switch-registry.webp", alt: "Community Registry marketplace page with purple banner" },
+]} />
+
+Fedimint is published in the **Community Registry**, not the default Start9 Registry. Click **Change** below the registry name, then select **Community Registry**.
+
+<StepCard step={3} title="Find Fedimint" images={[
+  { src: "/img/setup/start9/03-01-install-find-app.webp", alt: "Community Registry search results showing Fedimint" },
+  { src: "/img/setup/start9/03-02-install-find-app.webp", alt: "Fedimint marketplace listing with Install button and Bitcoin Knots dependency" },
+]} />
+
+Search for *fedimint* in the Community Registry. Click the result to open the listing — you'll see version information, a description, and a Bitcoin node listed as a dependency.
+
+:::note
+The listing may show **Bitcoin Knots** specifically, but Fedimint works with any Bitcoin node available on StartOS (Bitcoin Core or Bitcoin Knots).
+:::
+
+<StepCard step={4} title="Install" images={[
+  { src: "/img/setup/start9/04-01-install-install.webp", alt: "Fedimint marketplace listing with Install button" },
+  { src: "/img/setup/start9/04-02-install-install.webp", alt: "Installation progress showing Downloading, Validating, and Unpacking" },
+  { src: "/img/setup/start9/04-03-install-install.webp", alt: "Fedimint service page showing Needs Config status" },
+]} />
+
+Click **Install**. Fedimint requires a Bitcoin node — if one is already installed, continue. If not, you'll need to install one first (Bitcoin Core or Bitcoin Knots) from the Marketplace and return here. After installation completes, Fedimint appears under **Services** with a **Needs Config** status.
+
+:::info
+Fedimint requires the Bitcoin node to be **fully synced** before it can operate. If you just installed a Bitcoin node, initial sync may take hours to days depending on your hardware. This does not apply if you configure Fedimint to use an Esplora API instead.
+:::
+
+<StepCard step={5} title="Configure and start" images={[
+  { src: "/img/setup/start9/05-01-install-required-config.webp", alt: "Service page zoomed in showing Configure and Launch UI buttons" },
+  { src: "/img/setup/start9/05-02-install-required-config.webp", alt: "Config dialog showing Backend Type set to Bitcoin Core (Recommended)" },
+  { src: "/img/setup/start9/01-01-launch-ui.webp", alt: "Fedimint service page showing Stopped status with Start button" },
+]} />
+
+Click **Configure** to review the default settings before first launch — see [Change configuration](#change-configuration) for details on each option. Click **Save**, then **Start** to launch Fedimint.
+
+## Open the Guardian UI
+
+<StepCard step={1} title="Launch the Guardian UI" images={[
+  { src: "/img/setup/start9/01-02-launch-ui.webp", alt: "Fedimint service page showing Running status with Stop, Restart, and Launch UI buttons" },
+  { src: "/img/setup/guardian-ui/setup-landing.webp", alt: "Fedimint Guardian UI setup page" },
+]} />
+
+Once Fedimint is running, click **Launch UI** on the service page. This opens the **Guardian UI** — the web interface you'll use to set up and manage your federation.
+
+The first time you open the Guardian UI, it walks you through the founding process. Follow the [Founding a Federation](/guardians/founding) guide to complete this with your co-guardians.
+
+## Operate Fedimint
+
+All management options are available on the Fedimint service page under **Services** in the sidebar.
+
+<InfoCard title="Management controls" images={[
+  { src: "/img/setup/start9/management-controls.webp", alt: "Fedimint service page showing Menu section with Instructions, Config, Properties, Actions, Interfaces, Logs, and Marketplace Listing" },
+  { src: "/img/setup/start9/management-controls-zoomed.webp", alt: "Menu section zoomed in" },
+]} />
+
+The service page shows the current status, health checks, and a **Menu** section with:
+
+- **Config** — change the backend type or log directives
+- **Properties** — view runtime information and credentials
+- **Actions** — uninstall the service
+- **Interfaces** — view network access points for the Guardian UI
+- **Logs** — view raw service logs
+
+### Start, stop, and restart
+
+<InfoCard title="Service controls" image="/img/setup/start9/stop-restart-launch.webp" alt="Fedimint service page showing Stop, Restart, and Launch UI buttons" />
+
+When Fedimint is running, the service page shows **Stop**, **Restart**, and **Launch UI** buttons at the top. Use these to control the service or re-open the Guardian UI.
+
+### Change configuration
+
+<InfoCard title="Config" images={[
+  { src: "/img/setup/start9/01-config.webp", alt: "Config dialog showing Backend Type and Advanced Settings" },
+  { src: "/img/setup/start9/02-config.webp", alt: "Config dialog with Backend Type dropdown showing Bitcoin Core and Esplora options" },
+]} />
+
+Select **Config** from the menu. You must stop the service before making changes — click **Save** and restart when done.
+
+- **Backend Type**
+  - **Bitcoin Core** (Recommended) — connects to a local Bitcoin node on your Start9 server (Bitcoin Core or Bitcoin Knots).
+  - **Esplora** — connects to an external block explorer API (e.g. `https://mempool.space/api`). No local node required — useful for quick setup or testing.
+- **Advanced Settings**
+  - **Rust Log Directives** — adjust log verbosity (e.g. `info,fm::server=debug,fm::consensus=trace`).
+
+### View logs
+
+<InfoCard title="Service Logs" image="/img/setup/start9/logs.webp" alt="Service Logs viewer showing Fedimint startup output" />
+
+Select **Logs** from the menu to view raw service output. Click **Download** to export them.
+
+### Remove Fedimint
+
+To uninstall, select **Actions** from the menu and click **Uninstall**.
+
+:::warning
+Uninstalling permanently deletes all Fedimint data including federation keys. Make sure you have coordinated with your co-guardians before removing a guardian node.
+:::
+
+### Advanced access
+
+StartOS supports SSH access to the server and direct container access for advanced debugging.
+
+<InfoCard title="SSH terminal" image="/img/setup/start9/start9-ssh-terminal.webp" alt="SSH terminal connected to Start9 server showing StartOS welcome message" />
+
+Connect to your Start9 server over SSH using its `.local` hostname. From here you can inspect system state, view container status, and access the Fedimint container. See the [StartOS SSH guide](https://docs.start9.com/0.3.5.x/user-manual/ssh.html) for setup instructions.
+
+<InfoCard title="Fedimint container shell" images={[
+  { src: "/img/setup/start9/start9-terminal-example-find-containers.webp", alt: "SSH terminal showing podman ps output and exec command to enter the Fedimint container" },
+  { src: "/img/setup/start9/start9-container-shell.webp", alt: "Fedimint container shell showing CLI tools" },
+]} />
+
+From the SSH terminal, list running containers with `sudo podman ps --all`, then enter the Fedimint container:
+
+```bash
+sudo podman exec -it fedimintd.embassy bash
+```
+
+Inside the container you have access to `fedimint-cli`, `fedimint-dbtool`, `fedimint-recoverytool`, and more. See the [StartOS container access guide](https://docs.start9.com/0.3.5.x/user-manual/container-access.html) for more details.

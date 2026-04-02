@@ -3,26 +3,125 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
+/* Hero */
+.hero {
+  background: var(--body-background);
+  color: var(--header-font-color);
+  padding: 4rem 0 2rem 0;
   text-align: center;
-  position: relative;
-  overflow: hidden;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroInner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-.buttons {
+.heroLogo {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 24px;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5em 0;
+  line-height: 1.15;
+}
+
+.heroSubtitle {
+  font-size: 1.4rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.85;
+}
+
+/* Three-path chooser */
+.threePaths {
+  padding: 3rem 0 4rem 0;
+}
+
+.pathGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pathCard {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  text-align: center;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 12px;
+  border: 2px solid rgba(46, 196, 241, 0.15);
+  background: #fff;
+  color: var(--body-font-color);
+  text-decoration: none;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
 }
-.row {
-  padding-top: 6rem;
+
+.pathCard:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 8px 32px rgba(46, 196, 241, 0.12);
+  transform: translateY(-4px);
+  text-decoration: none;
+  color: var(--body-font-color);
+}
+
+.pathIcon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1.5rem;
+}
+
+.pathTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
+}
+
+.pathDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  flex: 1;
+  margin: 0 0 1.5rem 0;
+  opacity: 0.8;
+}
+
+.pathLink {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--ifm-color-primary-dark);
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s;
+}
+
+.pathCard:hover .pathLink {
+  border-bottom-color: var(--ifm-color-primary);
+}
+
+/* Sections */
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.howItWorks {
+  padding: 4rem 0;
+  background: var(--body-background);
+}
+
+.supporters {
+  background: var(--body-background);
+  color: var(--header-font-color);
+  padding: 4rem 0;
 }
 
 .supportersRow {
@@ -50,7 +149,42 @@
   max-height: 56px;
   max-width: 160px;
   object-fit: contain;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.08));
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.08));
   background: #fff;
   border-radius: 8px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.15rem;
+  }
+
+  .heroLogo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .pathGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 1rem;
+  }
+
+  .pathCard {
+    padding: 2rem 1.5rem;
+  }
+
+  .pathIcon {
+    width: 72px;
+    height: 72px;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
 }
