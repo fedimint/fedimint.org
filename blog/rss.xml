@@ -11,19 +11,71 @@
         <item>
             <title><![CDATA[Fedimint's Ecosystem: A Look Back at 2025's First Half]]></title>
             <link>https://fedimint.org/blog/2025/06/30/fedimint-review-first-half</link>
-            <guid>/2025/06/30/fedimint-review-first-half</guid>
+            <guid>https://fedimint.org/blog/2025/06/30/fedimint-review-first-half</guid>
             <pubDate>Mon, 30 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[It’s been quite the ride for the Fedimint project in the first half of 2025—genuinely packed with progress. We're excited to share a rundown of what we’ve been up to.]]></description>
-            <content:encoded><![CDATA[<p>It’s been quite the ride for the <a href="https://fedimint.org/" target="_blank" rel="noopener noreferrer">Fedimint</a> project in the first half of 2025—genuinely packed with progress. We're excited to share a rundown of what we’ve been up to.</p><p>You'll discover:</p><ul><li>An exciting new wallet has joined our growing ecosystem.</li><li>A special look at BitSacco, a truly innovative project building community banking in Kenya, and how they're making waves with a significant grant.</li><li>Game-changing enhancements for our Lightning Gateway, making operations smoother than ever.</li><li>Major new releases, Fedimint v0.6 and v0.7, are packed with capabilities that simplify running Fedimint right from your home.</li></ul><p>For those just tuning in, Fedimint is an open-source protocol built by and for communities.</p><p><img loading="lazy" src="/assets/images/unnamed-7077e2da402ffb487b4b9dc0132ac809.jpg" width="1536" height="1024" class="img_ev3q"></p><p>Think of it as a secure and decentralized way for individuals to collectively manage and spend bitcoin privately through "federated ecash." By blending distributed custody with blind-signed digital cash notes, it offers a robust path to using bitcoin as true freedom money, boosting both transaction privacy, decentralization and scalability. Our core mission? To put powerful bitcoin tools directly into the hands of communities, making the experience of using bitcoin feel more personal and empowering.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="ecosystem--usability-expanding-the-reach"><strong>Ecosystem &amp; Usability: Expanding the Reach</strong><a class="hash-link" href="#ecosystem--usability-expanding-the-reach" title="Direct link to heading">​</a></h3><p>A good part of our energy went into making Fedimint integrate nicely with other services and become more enjoyable for everyone to use. We're consistently broadening our horizons and ensuring the tools are accessible and impactful.</p><ul><li>New Wallet in the Ecosystem:<br>A new project joined our ecosystem, the <a href="https://github.com/ngutech21/vipr-wallet" target="_blank" rel="noopener noreferrer">Vipr Wallet</a>. This fresh web-based application (a PWA, which functions like an app directly in your browser) was built using the <a href="https://web.fedimint.org/" target="_blank" rel="noopener noreferrer">Fedimint WebSDK</a>. It's an independent project, currently in Beta, and a valuable contribution from <a href="https://primal.net/p/nprofile1qqsr6w23dpet8swhtsfvnqp2kttknax4zugp0f4cajtkg7m4uq9rrpqqly37f" target="_blank" rel="noopener noreferrer">@ngutech21</a>. Vipr Wallet comes with all the default goodies you’d expect from Fedimint wallets: Lightning payments, E-Cash, and multi-federation support. But it also introduces some clever innovations, like reimagining the onboarding experience by integrating Nostr mint discovery (<a href="https://github.com/nostr-protocol/nips/pull/1110" target="_blank" rel="noopener noreferrer">NIP-87</a>). Plus, it lets users pay Lightning Invoices directly through Nostr Wallet Connect. We appreciate seeing independent projects like this grow and innovate within our community. If you're working on a project or are interested in starting one, feel free to <a href="https://chat.fedimint.org/" target="_blank" rel="noopener noreferrer">reach out to us on discord</a>.</li></ul><p><img loading="lazy" src="/assets/images/unnamed-76a73f4293e52412299594349a8da1a9.png" width="778" height="557" class="img_ev3q"></p><p>A <em>demo version</em> of the wallet is available at <a href="http://beta.vipr.cash/" target="_blank" rel="noopener noreferrer">beta.vipr.cash</a><u></u></p><ul><li>Highlight: BitSacco - Building Community Banking in Kenya<br>One of the most inspiring developments we've seen is the progress of <a href="https://bitsacco.com/" target="_blank" rel="noopener noreferrer">BitSacco</a>, a project beautifully showcasing Fedimint's real-world potential. Led by <a href="https://x.com/okjodom" target="_blank" rel="noopener noreferrer">@okjodom</a>, BitSacco recently received a significant grant from the <a href="https://hrf.org/" target="_blank" rel="noopener noreferrer">Human Rights Foundation</a> (HRF), supporting their mission to reinvent traditional Kenyan SACCOs using bitcoin.
-BitSacco is an open-source platform designed to bring community banking features, like digital savings groups (called <em>chamas</em>), peer-to-peer payments, and seamless fiat-to-bitcoin conversion, directly to users in emerging markets. Fedimint serves as BitSacco's core for bitcoin custody and payments, simplifying Lightning operations and providing its unique federated custody model for secure, scalable, and private transactions. This offers a compelling alternative to traditional banking for communities.</li></ul><p><img loading="lazy" src="/assets/images/unnamed+1-7d776be22de393f040374bb8966c0095.jpg" width="1024" height="1024" class="img_ev3q"></p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="core-protocol--feature-updates-building-the-foundation"><strong>Core Protocol &amp; Feature Updates: Building the Foundation</strong><a class="hash-link" href="#core-protocol--feature-updates-building-the-foundation" title="Direct link to heading">​</a></h3><p>Beyond the external usability, this past period saw some serious groundwork laid deep within Fedimint. Our focus remained clear: boost reliability, expand capabilities, and strengthen the very foundations of the system.</p><ul><li>Lightning Gateway Gets an Upgrade:<br>A significant upgrade arrived for Lightning Gateways on Fedimint from a collaborative effort within the <a href="https://lightningdevkit.org/" target="_blank" rel="noopener noreferrer">Lightning Dev Kit</a> (LDK) team. The work, highlighted in this <a href="https://lightningdevkit.org/blog/fedimint-lightning-gateway-uses-ldk-node-to-simplify-deployment-and-liquidity-management/" target="_blank" rel="noopener noreferrer">case study</a>, involved integrating the <a href="https://github.com/lightningdevkit/ldk-node" target="_blank" rel="noopener noreferrer">LDK Node</a> directly into our Lightning gateway. This change simplifies deployment of <a href="https://fedimint.org/docs/GettingStarted/What-is-a-Fedimint#lightning-gateway-provider" target="_blank" rel="noopener noreferrer">Lightning gateways</a>, the component connecting Fedimint to the wider Lightning network, by reducing the setup from two daemons (LN node and gatewayd) to one (only gatewayd). LDK also unlocks improved liquidity management for operators in the future by <a href="https://github.com/lightning/blips/blob/master/blip-0050.md" target="_blank" rel="noopener noreferrer">allowing them to use LSPs.</a>The LDK Gateway was already available as a Lightning node in our v0.5 release last year, and with v0.6, it gained the ability to service new federations, really expanding its utility.</li></ul><p><img loading="lazy" src="/assets/images/unnamed+1-871e2ad21371fa1f16805af907d18704.png" width="1536" height="1024" class="img_ev3q"></p><ul><li>Fedimint v0.6:<br>Fedimint v0.6 landed, affectionately called “On-Chain for Everyone.” This update honed in on making on-chain bitcoin transactions smoother. We refined withdrawal fees and made deposits notably more straightforward. This work, building on earlier infrastructure efforts, edges eCash closer to becoming an even more practical tool for everyday bitcoin use.</li></ul><p><img loading="lazy" src="/assets/images/unnamed+2-df790d4aef128556c3cc2fd33ddf95c6.png" width="1164" height="643" class="img_ev3q"></p><ul><li>Fedimint v0.7:<br>Closely following, <strong>Fedimint v0.7</strong> rolled out with a major milestone, a more full-stack experience. This release brought a host of new features, including a fresh UI that lets you run <strong>Fedimint</strong> as a single application—a neat simplification. It also introduced <strong>LNURL</strong> support for recurring Lightning payments (and yes, <strong>BOLT12</strong> support is already on our radar!). Plus, we began integrating a beta version of <strong>Iroh</strong> networking for home setups on Signet.</li></ul><p><img loading="lazy" src="/assets/images/unnamed+3-dc99248d1ca750aed8f529d76bdc1e60.png" width="1132" height="496" class="img_ev3q"></p><ul><li>Running Fedimint from Home:<br>A particularly anticipated development was the announcement of support for running Fedimint on <a href="https://x.com/start9labs" target="_blank" rel="noopener noreferrer">@start9labs</a> using <a href="https://x.com/iroh_n0" target="_blank" rel="noopener noreferrer">Iroh</a> networking. This means you no longer need a public IP address or complex domain setups, as Iroh creates secure, direct connections. We also gave the Guardian UI (that's the interface for managing your Fedimint setup) a sensible revamp, letting it run directly on your local machine (127.0.0.1:8175) without needing a separate web server. We genuinely believe this makes managing your federation at home simpler, cutting down on some of those typical technical hurdles.</li></ul><p><img loading="lazy" src="/assets/images/unnamed+4-a07daeac4dd2cdc6438e30e6ffa639ce.png" width="1600" height="836" class="img_ev3q"></p><p>This overall v0.7 release effectively ties together several of our recent efforts, aiming to make Fedimint feel even more cohesive and seamless. We’re looking forward to a mainnet Start9 release once Iroh finds its stable footing.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="community-contributions"><strong>Community Contributions:</strong><a class="hash-link" href="#community-contributions" title="Direct link to heading">​</a></h3><p>Our community truly is the engine behind Fedimint, and we’re grateful for the contributions pouring in. We want to give a special shout-out to <a href="https://x.com/Harsh_dev098" target="_blank" rel="noopener noreferrer">Harsh Dev Pathak</a> and <a href="https://x.com/OmSwami2004" target="_blank" rel="noopener noreferrer">OmSwami</a>, who joined us as <a href="https://www.summerofbitcoin.org/" target="_blank" rel="noopener noreferrer">@SummerofBitcoin</a> 2025 mentees. They’re diving deep into enhancing the <a href="https://web.fedimint.org/" target="_blank" rel="noopener noreferrer">Fedimint WebSDK</a> to make it even friendlier for developers, and they’re also building an open-source wallet designed to help people use bitcoin with even greater privacy. Let’s just say something’s definitely cooking. Curious about what they’re working on? You can explore their ongoing work at the <a href="https://github.com/fedimint/fedimint-web-sdk" target="_blank" rel="noopener noreferrer">WebSDK repository</a>. Their dedication is truly inspiring!</p><p>Many thanks to all of our contributors, sponsors, integrators, and testers for your continued efforts and support. Together, we’re steadily building a more private, scalable, and trust-minimized future for Bitcoin!</p><p>Stay tuned for more updates!</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>It’s been quite the ride for the <a href="https://fedimint.org/" target="_blank" rel="noopener noreferrer" class="">Fedimint</a> project in the first half of 2025—genuinely packed with progress. We're excited to share a rundown of what we’ve been up to.</p>
+<p>You'll discover:</p>
+<ul>
+<li class="">An exciting new wallet has joined our growing ecosystem.</li>
+<li class="">A special look at BitSacco, a truly innovative project building community banking in Kenya, and how they're making waves with a significant grant.</li>
+<li class="">Game-changing enhancements for our Lightning Gateway, making operations smoother than ever.</li>
+<li class="">Major new releases, Fedimint v0.6 and v0.7, are packed with capabilities that simplify running Fedimint right from your home.</li>
+</ul>
+<p>For those just tuning in, Fedimint is an open-source protocol built by and for communities.</p>
+<p><img decoding="async" loading="lazy" src="https://fedimint.org/assets/images/unnamed-7077e2da402ffb487b4b9dc0132ac809.jpg" width="1536" height="1024" class="img_ev3q"></p>
+<p>Think of it as a secure and decentralized way for individuals to collectively manage and spend bitcoin privately through "federated ecash." By blending distributed custody with blind-signed digital cash notes, it offers a robust path to using bitcoin as true freedom money, boosting both transaction privacy, decentralization and scalability. Our core mission? To put powerful bitcoin tools directly into the hands of communities, making the experience of using bitcoin feel more personal and empowering.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ecosystem--usability-expanding-the-reach"><strong>Ecosystem &amp; Usability: Expanding the Reach</strong><a href="https://fedimint.org/blog/2025/06/30/fedimint-review-first-half#ecosystem--usability-expanding-the-reach" class="hash-link" aria-label="Direct link to ecosystem--usability-expanding-the-reach" title="Direct link to ecosystem--usability-expanding-the-reach" translate="no">​</a></h3>
+<p>A good part of our energy went into making Fedimint integrate nicely with other services and become more enjoyable for everyone to use. We're consistently broadening our horizons and ensuring the tools are accessible and impactful.</p>
+<ul>
+<li class="">New Wallet in the Ecosystem:<br>
+<!-- -->A new project joined our ecosystem, the <a href="https://github.com/ngutech21/vipr-wallet" target="_blank" rel="noopener noreferrer" class="">Vipr Wallet</a>. This fresh web-based application (a PWA, which functions like an app directly in your browser) was built using the <a href="https://web.fedimint.org/" target="_blank" rel="noopener noreferrer" class="">Fedimint WebSDK</a>. It's an independent project, currently in Beta, and a valuable contribution from <a href="https://primal.net/p/nprofile1qqsr6w23dpet8swhtsfvnqp2kttknax4zugp0f4cajtkg7m4uq9rrpqqly37f" target="_blank" rel="noopener noreferrer" class="">@ngutech21</a>. Vipr Wallet comes with all the default goodies you’d expect from Fedimint wallets: Lightning payments, E-Cash, and multi-federation support. But it also introduces some clever innovations, like reimagining the onboarding experience by integrating Nostr mint discovery (<a href="https://github.com/nostr-protocol/nips/pull/1110" target="_blank" rel="noopener noreferrer" class="">NIP-87</a>). Plus, it lets users pay Lightning Invoices directly through Nostr Wallet Connect. We appreciate seeing independent projects like this grow and innovate within our community. If you're working on a project or are interested in starting one, feel free to <a href="https://chat.fedimint.org/" target="_blank" rel="noopener noreferrer" class="">reach out to us on discord</a>.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://fedimint.org/assets/images/unnamed-76a73f4293e52412299594349a8da1a9.png" width="778" height="557" class="img_ev3q"></p>
+<p>A <em>demo version</em> of the wallet is available at <a href="http://beta.vipr.cash/" target="_blank" rel="noopener noreferrer" class="">beta.vipr.cash</a><u></u></p>
+<ul>
+<li class="">Highlight: BitSacco - Building Community Banking in Kenya<br>
+<!-- -->One of the most inspiring developments we've seen is the progress of <a href="https://bitsacco.com/" target="_blank" rel="noopener noreferrer" class="">BitSacco</a>, a project beautifully showcasing Fedimint's real-world potential. Led by <a href="https://x.com/okjodom" target="_blank" rel="noopener noreferrer" class="">@okjodom</a>, BitSacco recently received a significant grant from the <a href="https://hrf.org/" target="_blank" rel="noopener noreferrer" class="">Human Rights Foundation</a> (HRF), supporting their mission to reinvent traditional Kenyan SACCOs using bitcoin.
+BitSacco is an open-source platform designed to bring community banking features, like digital savings groups (called <em>chamas</em>), peer-to-peer payments, and seamless fiat-to-bitcoin conversion, directly to users in emerging markets. Fedimint serves as BitSacco's core for bitcoin custody and payments, simplifying Lightning operations and providing its unique federated custody model for secure, scalable, and private transactions. This offers a compelling alternative to traditional banking for communities.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://fedimint.org/assets/images/unnamed+1-7d776be22de393f040374bb8966c0095.jpg" width="1024" height="1024" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="core-protocol--feature-updates-building-the-foundation"><strong>Core Protocol &amp; Feature Updates: Building the Foundation</strong><a href="https://fedimint.org/blog/2025/06/30/fedimint-review-first-half#core-protocol--feature-updates-building-the-foundation" class="hash-link" aria-label="Direct link to core-protocol--feature-updates-building-the-foundation" title="Direct link to core-protocol--feature-updates-building-the-foundation" translate="no">​</a></h3>
+<p>Beyond the external usability, this past period saw some serious groundwork laid deep within Fedimint. Our focus remained clear: boost reliability, expand capabilities, and strengthen the very foundations of the system.</p>
+<ul>
+<li class="">Lightning Gateway Gets an Upgrade:<br>
+<!-- -->A significant upgrade arrived for Lightning Gateways on Fedimint from a collaborative effort within the <a href="https://lightningdevkit.org/" target="_blank" rel="noopener noreferrer" class="">Lightning Dev Kit</a> (LDK) team. The work, highlighted in this <a href="https://lightningdevkit.org/blog/fedimint-lightning-gateway-uses-ldk-node-to-simplify-deployment-and-liquidity-management/" target="_blank" rel="noopener noreferrer" class="">case study</a>, involved integrating the <a href="https://github.com/lightningdevkit/ldk-node" target="_blank" rel="noopener noreferrer" class="">LDK Node</a> directly into our Lightning gateway. This change simplifies deployment of <a href="https://fedimint.org/docs/GettingStarted/What-is-a-Fedimint#lightning-gateway-provider" target="_blank" rel="noopener noreferrer" class="">Lightning gateways</a>, the component connecting Fedimint to the wider Lightning network, by reducing the setup from two daemons (LN node and gatewayd) to one (only gatewayd). LDK also unlocks improved liquidity management for operators in the future by <a href="https://github.com/lightning/blips/blob/master/blip-0050.md" target="_blank" rel="noopener noreferrer" class="">allowing them to use LSPs.</a>The LDK Gateway was already available as a Lightning node in our v0.5 release last year, and with v0.6, it gained the ability to service new federations, really expanding its utility.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://fedimint.org/assets/images/unnamed+1-871e2ad21371fa1f16805af907d18704.png" width="1536" height="1024" class="img_ev3q"></p>
+<ul>
+<li class="">Fedimint v0.6:<br>
+<!-- -->Fedimint v0.6 landed, affectionately called “On-Chain for Everyone.” This update honed in on making on-chain bitcoin transactions smoother. We refined withdrawal fees and made deposits notably more straightforward. This work, building on earlier infrastructure efforts, edges eCash closer to becoming an even more practical tool for everyday bitcoin use.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://fedimint.org/assets/images/unnamed+2-df790d4aef128556c3cc2fd33ddf95c6.png" width="1164" height="643" class="img_ev3q"></p>
+<ul>
+<li class="">Fedimint v0.7:<br>
+<!-- -->Closely following, <strong>Fedimint v0.7</strong> rolled out with a major milestone, a more full-stack experience. This release brought a host of new features, including a fresh UI that lets you run <strong>Fedimint</strong> as a single application—a neat simplification. It also introduced <strong>LNURL</strong> support for recurring Lightning payments (and yes, <strong>BOLT12</strong> support is already on our radar!). Plus, we began integrating a beta version of <strong>Iroh</strong> networking for home setups on Signet.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://fedimint.org/assets/images/unnamed+3-dc99248d1ca750aed8f529d76bdc1e60.png" width="1132" height="496" class="img_ev3q"></p>
+<ul>
+<li class="">Running Fedimint from Home:<br>
+<!-- -->A particularly anticipated development was the announcement of support for running Fedimint on <a href="https://x.com/start9labs" target="_blank" rel="noopener noreferrer" class="">@start9labs</a> using <a href="https://x.com/iroh_n0" target="_blank" rel="noopener noreferrer" class="">Iroh</a> networking. This means you no longer need a public IP address or complex domain setups, as Iroh creates secure, direct connections. We also gave the Guardian UI (that's the interface for managing your Fedimint setup) a sensible revamp, letting it run directly on your local machine (127.0.0.1:8175) without needing a separate web server. We genuinely believe this makes managing your federation at home simpler, cutting down on some of those typical technical hurdles.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://fedimint.org/assets/images/unnamed+4-a07daeac4dd2cdc6438e30e6ffa639ce.png" width="1600" height="836" class="img_ev3q"></p>
+<p>This overall v0.7 release effectively ties together several of our recent efforts, aiming to make Fedimint feel even more cohesive and seamless. We’re looking forward to a mainnet Start9 release once Iroh finds its stable footing.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="community-contributions"><strong>Community Contributions:</strong><a href="https://fedimint.org/blog/2025/06/30/fedimint-review-first-half#community-contributions" class="hash-link" aria-label="Direct link to community-contributions" title="Direct link to community-contributions" translate="no">​</a></h3>
+<p>Our community truly is the engine behind Fedimint, and we’re grateful for the contributions pouring in. We want to give a special shout-out to <a href="https://x.com/Harsh_dev098" target="_blank" rel="noopener noreferrer" class="">Harsh Dev Pathak</a> and <a href="https://x.com/OmSwami2004" target="_blank" rel="noopener noreferrer" class="">OmSwami</a>, who joined us as <a href="https://www.summerofbitcoin.org/" target="_blank" rel="noopener noreferrer" class="">@SummerofBitcoin</a> 2025 mentees. They’re diving deep into enhancing the <a href="https://web.fedimint.org/" target="_blank" rel="noopener noreferrer" class="">Fedimint WebSDK</a> to make it even friendlier for developers, and they’re also building an open-source wallet designed to help people use bitcoin with even greater privacy. Let’s just say something’s definitely cooking. Curious about what they’re working on? You can explore their ongoing work at the <a href="https://github.com/fedimint/fedimint-web-sdk" target="_blank" rel="noopener noreferrer" class="">WebSDK repository</a>. Their dedication is truly inspiring!</p>
+<p>Many thanks to all of our contributors, sponsors, integrators, and testers for your continued efforts and support. Together, we’re steadily building a more private, scalable, and trust-minimized future for Bitcoin!</p>
+<p>Stay tuned for more updates!</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Eric and Joschi on Stephan Livera Podcast 651]]></title>
             <link>https://fedimint.org/blog/eric-joschi-slp651</link>
-            <guid>eric-joschi-slp651</guid>
+            <guid>https://fedimint.org/blog/eric-joschi-slp651</guid>
             <pubDate>Sat, 12 Apr 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Eric and Joschi discuss the latest updates on Fedimint 0.7, focusing on Iroh integration, LNURL enhancements, and the implications for Bitcoin privacy and community custody, on Stephan Livera Podcast Episode 651.]]></description>
-            <content:encoded><![CDATA[<p>Eric and Joschi discuss the latest updates on Fedimint 0.7, focusing on Iroh integration, LNURL enhancements, and the implications for Bitcoin privacy and community custody, <a href="https://stephanlivera.com/episode/651/" target="blank" rel="noopener noreferrer">on Stephan Livera Podcast Episode 651.</a></p><iframe width="560" height="315" src="https://www.youtube.com/embed/mo73liEs69I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><p><a href="https://www.youtube.com/watch?v=mo73liEs69I&amp;ab_channel=StephanLivera" target="_blank" rel="noopener noreferrer">YouTube link</a></p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>Eric and Joschi discuss the latest updates on Fedimint 0.7, focusing on Iroh integration, LNURL enhancements, and the implications for Bitcoin privacy and community custody, <a href="https://stephanlivera.com/episode/651/" target="blank">on Stephan Livera Podcast Episode 651.</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mo73liEs69I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<p><a href="https://www.youtube.com/watch?v=mo73liEs69I&amp;ab_channel=StephanLivera" target="_blank" rel="noopener noreferrer" class="">YouTube link</a></p>]]></content:encoded>
             <category>fedimint</category>
             <category>podcast</category>
             <category>2025</category>
@@ -31,10 +83,12 @@ BitSacco is an open-source platform designed to bring community banking features
         <item>
             <title><![CDATA[What is Fedimint - Juan en Cripto]]></title>
             <link>https://fedimint.org/blog/fedimint-juancripto</link>
-            <guid>fedimint-juancripto</guid>
+            <guid>https://fedimint.org/blog/fedimint-juancripto</guid>
             <pubDate>Wed, 19 Oct 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Juan en Cripto interview with Obi Nwosu discussing how Fedimint can help scale to bitcoin to billions]]></description>
-            <content:encoded><![CDATA[<p>Juan en Cripto interview with Obi Nwosu discussing how Fedimint can help scale to bitcoin to billions</p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZLWDzAk_Mbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><p><a href="https://www.youtube.com/watch?v=ZLWDzAk_Mbk" target="_blank" rel="noopener noreferrer">Here's the link to view on You Tube</a>.</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>Juan en Cripto interview with Obi Nwosu discussing how Fedimint can help scale to bitcoin to billions</p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZLWDzAk_Mbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<p><a href="https://www.youtube.com/watch?v=ZLWDzAk_Mbk" target="_blank" rel="noopener noreferrer" class="">Here's the link to view on You Tube</a>.</p>]]></content:encoded>
             <category>fedimint</category>
             <category>Obi Nwosu</category>
             <category>2022</category>
@@ -42,10 +96,12 @@ BitSacco is an open-source platform designed to bring community banking features
         <item>
             <title><![CDATA[Blockstream Research Update on Fedimint]]></title>
             <link>https://fedimint.org/blog/blockstream-minimint</link>
-            <guid>blockstream-minimint</guid>
+            <guid>https://fedimint.org/blog/blockstream-minimint</guid>
             <pubDate>Fri, 19 Aug 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[An update on the research supported by Blockstream on the Fedimint opensource protocol and how it has developed over the last year.]]></description>
-            <content:encoded><![CDATA[<p>An update on the research supported by Blockstream on the Fedimint opensource protocol and how it has developed over the last year.</p><p><img loading="lazy" alt="BLockstream Research and Minimint Update" src="/assets/images/Fedimint_Blockstream-9219b903edda9335c9baa7ae049e0d86.png" width="1920" height="1080" class="img_ev3q"></p><p><a href="https://blog.blockstream.com/fedimint-update/" target="_blank" rel="noopener noreferrer">Check out the full article here</a>.</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>An update on the research supported by Blockstream on the Fedimint opensource protocol and how it has developed over the last year.</p>
+<p><img decoding="async" loading="lazy" alt="BLockstream Research and Minimint Update" src="https://fedimint.org/assets/images/Fedimint_Blockstream-9219b903edda9335c9baa7ae049e0d86.png" width="1920" height="1080" class="img_ev3q"></p>
+<p><a href="https://blog.blockstream.com/fedimint-update/" target="_blank" rel="noopener noreferrer" class="">Check out the full article here</a>.</p>]]></content:encoded>
             <category>fedimint</category>
             <category>minimint</category>
             <category>blockstream</category>
@@ -55,10 +111,12 @@ BitSacco is an open-source platform designed to bring community banking features
         <item>
             <title><![CDATA[Can Fedimints Help Bitcoin Scale To The World?]]></title>
             <link>https://fedimint.org/blog/bitcoin-mag-agfm</link>
-            <guid>bitcoin-mag-agfm</guid>
+            <guid>https://fedimint.org/blog/bitcoin-mag-agfm</guid>
             <pubDate>Tue, 26 Jul 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Alex Gladstein provides a detailed walk through of the history of eCash, the early days of Fedimint and the potential of Federated Chaumian eCash to provide a highly scalable community custody model for bitcoin.]]></description>
-            <content:encoded><![CDATA[<p>Alex Gladstein provides a detailed walk through of the history of eCash, the early days of Fedimint and the potential of Federated Chaumian eCash to provide a highly scalable community custody model for bitcoin. </p><p><img loading="lazy" alt="Article Header" src="/assets/images/bm-ag-22-d803c318b96aba7aec475131039b595c.png" width="1265" height="573" class="img_ev3q"></p><p><a href="https://bitcoinmagazine.com/culture/will-fedimints-bring-bitcoin-to-the-world" target="_blank" rel="noopener noreferrer">Check out the full article on Bitcoin Magazine.</a></p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>Alex Gladstein provides a detailed walk through of the history of eCash, the early days of Fedimint and the potential of Federated Chaumian eCash to provide a highly scalable community custody model for bitcoin.</p>
+<p><img decoding="async" loading="lazy" alt="Article Header" src="https://fedimint.org/assets/images/bm-ag-22-d803c318b96aba7aec475131039b595c.png" width="1265" height="573" class="img_ev3q"></p>
+<p><a href="https://bitcoinmagazine.com/culture/will-fedimints-bring-bitcoin-to-the-world" target="_blank" rel="noopener noreferrer" class="">Check out the full article on Bitcoin Magazine.</a></p>]]></content:encoded>
             <category>fedimint</category>
             <category>Custody</category>
             <category>2022</category>
@@ -67,10 +125,12 @@ BitSacco is an open-source platform designed to bring community banking features
         <item>
             <title><![CDATA[Federated Chaumian Mints Provide A Way For Bitcoin Users To Distribute Trust]]></title>
             <link>https://fedimint.org/blog/bitcoin-mag-mb</link>
-            <guid>bitcoin-mag-mb</guid>
+            <guid>https://fedimint.org/blog/bitcoin-mag-mb</guid>
             <pubDate>Fri, 15 Apr 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Marty Bent provides an overview of Eric Sirion's and Obi Nwosu's talks at Bitcoin Miami in 2022 and his excitement around the build out of the technology.]]></description>
-            <content:encoded><![CDATA[<p>Marty Bent provides an overview of Eric Sirion's and Obi Nwosu's talks at Bitcoin Miami in 2022 and his excitement around the build out of the technology.</p><p><img loading="lazy" alt="Article Header" src="/assets/images/bm-mb-22-6c21b99d7fcf556ef319d3a59a527e28.png" width="1265" height="573" class="img_ev3q"></p><p><a href="https://bitcoinmagazine.com/technical/chaumian-mints-distribute-trust-among-bitcoin-users" target="_blank" rel="noopener noreferrer">Check out the full article on Bitcoin Magazine.</a></p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>Marty Bent provides an overview of Eric Sirion's and Obi Nwosu's talks at Bitcoin Miami in 2022 and his excitement around the build out of the technology.</p>
+<p><img decoding="async" loading="lazy" alt="Article Header" src="https://fedimint.org/assets/images/bm-mb-22-6c21b99d7fcf556ef319d3a59a527e28.png" width="1265" height="573" class="img_ev3q"></p>
+<p><a href="https://bitcoinmagazine.com/technical/chaumian-mints-distribute-trust-among-bitcoin-users" target="_blank" rel="noopener noreferrer" class="">Check out the full article on Bitcoin Magazine.</a></p>]]></content:encoded>
             <category>fedimint</category>
             <category>Custody</category>
             <category>2022</category>
@@ -79,10 +139,12 @@ BitSacco is an open-source platform designed to bring community banking features
         <item>
             <title><![CDATA[Fedimint – The Evolution Of Bitcoin Custody]]></title>
             <link>https://fedimint.org/blog/BitcoinMag-ONFM</link>
-            <guid>BitcoinMag-ONFM</guid>
+            <guid>https://fedimint.org/blog/BitcoinMag-ONFM</guid>
             <pubDate>Sat, 12 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Obi Nwosu provides an overview of Fedimint as a second party custody model with the power to transform self custody and community banking.]]></description>
-            <content:encoded><![CDATA[<p>Obi Nwosu provides an overview of Fedimint as a second party custody model with the power to transform self custody and community banking.</p><p><img loading="lazy" alt="Article Header" src="/assets/images/bm-on-22-5dab380b46020128c9f60e0c547cbaec.png" width="1265" height="573" class="img_ev3q"></p><p><a href="https://blog.blockstream.com/fedimint-update/" target="_blank" rel="noopener noreferrer">Check out the full article here</a>.</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>Obi Nwosu provides an overview of Fedimint as a second party custody model with the power to transform self custody and community banking.</p>
+<p><img decoding="async" loading="lazy" alt="Article Header" src="https://fedimint.org/assets/images/bm-on-22-5dab380b46020128c9f60e0c547cbaec.png" width="1265" height="573" class="img_ev3q"></p>
+<p><a href="https://blog.blockstream.com/fedimint-update/" target="_blank" rel="noopener noreferrer" class="">Check out the full article here</a>.</p>]]></content:encoded>
             <category>Fedimint</category>
             <category>Bitocin Magazine</category>
             <category>2022</category>
@@ -90,10 +152,12 @@ BitSacco is an open-source platform designed to bring community banking features
         <item>
             <title><![CDATA[Bitcoin Explained with Ruben Somsen about federated e-cash]]></title>
             <link>https://fedimint.org/blog/bitcoin-explained-22</link>
-            <guid>bitcoin-explained-22</guid>
+            <guid>https://fedimint.org/blog/bitcoin-explained-22</guid>
             <pubDate>Sat, 15 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[An episode of Bitcoin Explained with Ruben Somsen, recorded in January 2022 all about federated eCash]]></description>
-            <content:encoded><![CDATA[<p>An episode of Bitcoin Explained with Ruben Somsen, recorded in January 2022 all about federated eCash</p><iframe width="560" height="315" src="https://www.youtube.com/embed/alyYNIX0m3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><p><a href="https://www.youtube.com/watch?v=alyYNIX0m3o" target="_blank" rel="noopener noreferrer">The You Tube page.</a></p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>An episode of Bitcoin Explained with Ruben Somsen, recorded in January 2022 all about federated eCash</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/alyYNIX0m3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<p><a href="https://www.youtube.com/watch?v=alyYNIX0m3o" target="_blank" rel="noopener noreferrer" class="">The You Tube page.</a></p>]]></content:encoded>
             <category>video</category>
             <category>podcast</category>
             <category>fedimint</category>
@@ -102,10 +166,12 @@ BitSacco is an open-source platform designed to bring community banking features
         <item>
             <title><![CDATA[Eric Sirion on Stephan Livera Podcast 331]]></title>
             <link>https://fedimint.org/blog/eric-slp331</link>
-            <guid>eric-slp331</guid>
+            <guid>https://fedimint.org/blog/eric-slp331</guid>
             <pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Eric discusses the latest progress on MiniMint and the use of Federated Mints for Bitcoin scaling and privacy, on Stephan Livera Podcast Episode 331.]]></description>
-            <content:encoded><![CDATA[<p>Eric discusses the latest progress on MiniMint and the use of Federated Mints for Bitcoin scaling and privacy, <a href="https://stephanlivera.com/episode/331/" target="blank" rel="noopener noreferrer">on Stephan Livera Podcast Episode 331.</a></p><iframe width="560" height="315" src="https://www.youtube.com/embed/5KbY4IX0-NQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><p><a href="https://www.youtube.com/watch?v=5KbY4IX0-NQ" target="_blank" rel="noopener noreferrer">You tube link</a>.</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>Eric discusses the latest progress on MiniMint and the use of Federated Mints for Bitcoin scaling and privacy, <a href="https://stephanlivera.com/episode/331/" target="blank">on Stephan Livera Podcast Episode 331.</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5KbY4IX0-NQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<p><a href="https://www.youtube.com/watch?v=5KbY4IX0-NQ" target="_blank" rel="noopener noreferrer" class="">You tube link</a>.</p>]]></content:encoded>
             <category>fedimint</category>
             <category>podcast</category>
             <category>2021</category>
@@ -113,10 +179,12 @@ BitSacco is an open-source platform designed to bring community banking features
         <item>
             <title><![CDATA[Federated Chaumian Mints on Lightning a Twitter Spaces Discussion]]></title>
             <link>https://fedimint.org/blog/fed-cm-spaces</link>
-            <guid>fed-cm-spaces</guid>
+            <guid>https://fedimint.org/blog/fed-cm-spaces</guid>
             <pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[A recording of a Bitcoin Magazine Twitter space exploring the use of Federated Chaumian Mints on lightning.]]></description>
-            <content:encoded><![CDATA[<p>A recording of a Bitcoin Magazine Twitter space exploring the use of Federated Chaumian Mints on lightning.</p><iframe width="560" height="315" src="https://www.youtube.com/embed/A_7-DsreUQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><p><a href="https://www.youtube.com/watch?v=A_7-DsreUQg" target="_blank" rel="noopener noreferrer">You tube link to a recorded twitter spaces in December 2021 on the operation of Chaumian Mints</a></p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>A recording of a Bitcoin Magazine Twitter space exploring the use of Federated Chaumian Mints on lightning.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A_7-DsreUQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<p><a href="https://www.youtube.com/watch?v=A_7-DsreUQg" target="_blank" rel="noopener noreferrer" class="">You tube link to a recorded twitter spaces in December 2021 on the operation of Chaumian Mints</a></p>]]></content:encoded>
             <category>fedimint</category>
             <category>bitcoin magazine</category>
             <category>twitter spaces</category>
@@ -125,10 +193,12 @@ BitSacco is an open-source platform designed to bring community banking features
         <item>
             <title><![CDATA[Citadel Dispatch 45 - The future of mobile lightning wallets]]></title>
             <link>https://fedimint.org/blog/Citadel-Dispatch-45</link>
-            <guid>Citadel-Dispatch-45</guid>
+            <guid>https://fedimint.org/blog/Citadel-Dispatch-45</guid>
             <pubDate>Wed, 24 Nov 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Eric Sirion (representing Fedimints) appeared alongside @fiatjaf and @akumaigorodski to discuss scaling mobile lightning wallets with eCash and hosted channels.]]></description>
-            <content:encoded><![CDATA[<p>Eric Sirion (representing Fedimints) appeared alongside @fiatjaf and @akumaigorodski to discuss scaling mobile lightning wallets with eCash and hosted channels. </p><iframe title="Citadel Dispatch e45 - the future of mobile lightning wallets with @ericsirion, @akumaigorodski, and @fiatjaf" src="https://bitcointv.com/videos/embed/e9efea85-1f1d-4579-8fdc-8b7a94a9a555" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe><p><a href="https://bitcointv.com/w/uTtKtUmfWZ7mZDztVXVRWv" target="_blank" rel="noopener noreferrer">Check out the full episode on Bitcoin TV here</a></p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>Eric Sirion (representing Fedimints) appeared alongside @fiatjaf and @akumaigorodski to discuss scaling mobile lightning wallets with eCash and hosted channels.</p>
+<iframe title="Citadel Dispatch e45 - the future of mobile lightning wallets with @ericsirion, @akumaigorodski, and @fiatjaf" src="https://bitcointv.com/videos/embed/e9efea85-1f1d-4579-8fdc-8b7a94a9a555" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
+<p><a href="https://bitcointv.com/w/uTtKtUmfWZ7mZDztVXVRWv" target="_blank" rel="noopener noreferrer" class="">Check out the full episode on Bitcoin TV here</a></p>]]></content:encoded>
             <category>podcast</category>
             <category>elsirion</category>
             <category>2021</category>
@@ -136,10 +206,12 @@ BitSacco is an open-source platform designed to bring community banking features
         <item>
             <title><![CDATA[Improving Bitcoin Privacy with Federated eCash @ Adopting Bitcoin]]></title>
             <link>https://fedimint.org/blog/adopting21</link>
-            <guid>adopting21</guid>
+            <guid>https://fedimint.org/blog/adopting21</guid>
             <pubDate>Wed, 17 Nov 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Eric Sirion, talks about the opportunities to improve bitcoin privacy through the adoption of Federated eCash systems and how integrating with lightning provides an interesting set of trade offs for privacy in spending and community banking.]]></description>
-            <content:encoded><![CDATA[<p>Eric Sirion, talks about the opportunities to improve bitcoin privacy through the adoption of Federated eCash systems and how integrating with lightning provides an interesting set of trade offs for privacy in spending and community banking.</p><iframe title="Improving Bitcoin Privacy with Federated E-Cash Mints - elsirion - Day 2 DEV Track - AB21" src="https://bitcointv.com/videos/embed/9fa9d4ed-6fde-4655-9807-4532799c712f" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe><p><a href="https://bitcointv.com/w/kHwmbLTWjsbaDTJpBewUmX" target="_blank" rel="noopener noreferrer">Check out the video on bitcoin TV here</a>.</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>Eric Sirion, talks about the opportunities to improve bitcoin privacy through the adoption of Federated eCash systems and how integrating with lightning provides an interesting set of trade offs for privacy in spending and community banking.</p>
+<iframe title="Improving Bitcoin Privacy with Federated E-Cash Mints - elsirion - Day 2 DEV Track - AB21" src="https://bitcointv.com/videos/embed/9fa9d4ed-6fde-4655-9807-4532799c712f" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
+<p><a href="https://bitcointv.com/w/kHwmbLTWjsbaDTJpBewUmX" target="_blank" rel="noopener noreferrer" class="">Check out the video on bitcoin TV here</a>.</p>]]></content:encoded>
             <category>talk</category>
             <category>conference</category>
             <category>2021</category>
@@ -147,10 +219,12 @@ BitSacco is an open-source platform designed to bring community banking features
         <item>
             <title><![CDATA[Blockstream Announces Support for Minimint!]]></title>
             <link>https://fedimint.org/blog/blockstream-mm</link>
-            <guid>blockstream-mm</guid>
+            <guid>https://fedimint.org/blog/blockstream-mm</guid>
             <pubDate>Wed, 27 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[This article provides an overview of the funding provided to Eric Sirion for the development of Minimint.]]></description>
-            <content:encoded><![CDATA[<p>This article provides an overview of the funding provided to Eric Sirion for the development of Minimint.</p><p><img loading="lazy" alt="image" src="/assets/images/blockstream-mm-10f92e285a2665f5e467fb70fd4c0988.png" width="1400" height="787" class="img_ev3q"></p><p><a href="https://medium.com/blockstream/blockstream-sponsors-federated-e-cash-as-a-bitcoin-scaling-technology-637ba05de7b3" target="_blank" rel="noopener noreferrer">Full link to the article on the Blockstream Medium Site</a></p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>This article provides an overview of the funding provided to Eric Sirion for the development of Minimint.</p>
+<p><img decoding="async" loading="lazy" alt="image" src="https://fedimint.org/assets/images/blockstream-mm-10f92e285a2665f5e467fb70fd4c0988.png" width="1400" height="787" class="img_ev3q"></p>
+<p><a href="https://medium.com/blockstream/blockstream-sponsors-federated-e-cash-as-a-bitcoin-scaling-technology-637ba05de7b3" target="_blank" rel="noopener noreferrer" class="">Full link to the article on the Blockstream Medium Site</a></p>]]></content:encoded>
             <category>minimint</category>
             <category>funding</category>
             <category>supporters</category>
@@ -161,10 +235,13 @@ BitSacco is an open-source platform designed to bring community banking features
         <item>
             <title><![CDATA[HCPP21 interview with elsirion and smuggler]]></title>
             <link>https://fedimint.org/blog/hcpp-21</link>
-            <guid>hcpp-21</guid>
+            <guid>https://fedimint.org/blog/hcpp-21</guid>
             <pubDate>Sun, 03 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[An interview from HCPP21 with smuggler and elsirion about both SCRIT and MiniMint.]]></description>
-            <content:encoded><![CDATA[<p>An interview from <a href="https://chaos.hcpp.cz/" target="_blank" rel="noopener noreferrer">HCPP21</a> with smuggler and elsirion about both SCRIT and MiniMint.</p><p>Covers the differences in design and philosophy, why these platforms should be considered and where this might go in the future. </p><iframe width="560" height="315" src="https://www.youtube.com/embed/JXGmzTbyuEw?start=5330" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><p><a href="https://www.youtube.com/watch?v=JXGmzTbyuEw&amp;t=5330s" target="_blank" rel="noopener noreferrer">The You Tube page.</a></p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>An interview from <a href="https://chaos.hcpp.cz/" target="_blank" rel="noopener noreferrer" class="">HCPP21</a> with smuggler and elsirion about both SCRIT and MiniMint.</p>
+<p>Covers the differences in design and philosophy, why these platforms should be considered and where this might go in the future.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JXGmzTbyuEw?start=5330" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<p><a href="https://www.youtube.com/watch?v=JXGmzTbyuEw&amp;t=5330s" target="_blank" rel="noopener noreferrer" class="">The You Tube page.</a></p>]]></content:encoded>
             <category>video</category>
             <category>fedimint</category>
             <category>scrit</category>

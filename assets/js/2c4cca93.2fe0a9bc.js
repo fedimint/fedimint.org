@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwiki_fedimint=self.webpackChunkwiki_fedimint||[]).push([[1891],{178:s=>{s.exports=JSON.parse('{"label":"supporters","permalink":"/blog/tags/supporters","allTagsPath":"/blog/tags","count":1}')}}]);
