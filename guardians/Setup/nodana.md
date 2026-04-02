@@ -41,7 +41,7 @@ Nodana also offers a **Fedimintd Pro** template ($25/month) with more resources.
 
 ## Verify Deployment
 
-After a few seconds, your app will show as **running**. The details panel shows the version (0.10.0) and status. Note that for the setup ceremony all guardians have to be on the same version. To open the admin UI click the link in the service box (highlighted in red).
+After a few seconds, your app will show as **running**. The details panel shows the version (0.10.0) and status. Note that for the setup ceremony all guardians have to be on the same version. To open the Guardian UI click the link in the service box (highlighted in red).
 
 <div className="img-row">
   <img src="/img/setup/nodana/app-running.png" alt="Running Fedimintd app details" />

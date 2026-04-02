@@ -14,7 +14,7 @@ import InfoCard from '@site/src/components/InfoCard';
 - Agree on the federation name, guardian count, enabled modules, and which guardian will set the global config.
 :::
 
-Founding a federation is the one-time ceremony where guardians configure the federation, exchange setup codes, and run distributed key generation (DKG). When the ceremony finishes, the federation is live and you can access the guardian admin UI.
+Founding a federation is the one-time ceremony where guardians configure the federation, exchange setup codes, and run distributed key generation (DKG). When the ceremony finishes, the federation is live and you can access the Guardian UI.
 
 ## 1. Set up your guardian
 
