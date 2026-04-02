@@ -175,6 +175,171 @@ section p {
 }
 **/
 
+/* Onboarding flow diagram */
+.onboarding-flow {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 12px;
+  flex-wrap: nowrap;
+  margin: 3rem auto 3.5rem auto;
+  max-width: 760px;
+  padding: 0 1rem;
+}
+
+.onboarding-flow .step-card {
+  flex: 1 1 0;
+  text-align: center;
+  min-width: 0;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  border: 1.5px solid rgba(46, 196, 241, 0.25);
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(46, 196, 241, 0.08);
+}
+
+.onboarding-flow .step-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px auto;
+}
+
+.onboarding-flow .step-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.onboarding-flow .step-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+  color: #181c24;
+}
+
+.onboarding-flow .step-desc {
+  font-size: 0.85rem;
+  color: #181c24;
+  opacity: 0.6;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.onboarding-flow .step-btn {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 6px;
+  background: #2ec4f1;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.onboarding-flow .step-btn:hover {
+  background: #1b7ca6;
+  color: #fff;
+  text-decoration: none;
+}
+
+.onboarding-flow .step-arrow {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 2px;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .onboarding-flow {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    max-width: 320px;
+  }
+
+  .onboarding-flow .step-card {
+    width: 100%;
+  }
+
+  .onboarding-flow .step-arrow {
+    margin-bottom: 0;
+    padding: 6px 0;
+    transform: rotate(90deg);
+  }
+}
+
+/* Privacy section side-by-side layout */
+.privacy-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.privacy-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.privacy-image {
+  flex: 0 0 280px;
+}
+
+.privacy-image img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .privacy-row {
+    flex-direction: column;
+  }
+
+  .privacy-image {
+    flex: none;
+    width: 100%;
+  }
+}
+
+/* Side-by-side image pairs in docs */
+.img-row {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.img-row img {
+  min-width: 0;
+  max-width: 50%;
+  height: 500px;
+  object-fit: contain;
+  object-position: top;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .img-row {
+    flex-direction: column;
+  }
+
+  .img-row img {
+    max-width: 100%;
+  }
+}
+
+/* Hide external link icon on navbar and footer items */
+.navbar__link[href*="sdk.fedimint.org"] svg,
+.footer__link-item[href*="sdk.fedimint.org"] svg {
+  display: none;
+}
+
 .header-github-link {
   display: inline-block;
   width: 24px;
@@ -188,3 +353,11 @@ section p {
 .header-github-link span {
   display: none;
 }
+
+/* Text following step/info cards — visually group with the card above */
+[data-card] + p,
+[data-card] + ul,
+[data-card] + ol {
+  margin-top: 0.4rem;
+}
+

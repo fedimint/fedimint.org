@@ -1,0 +1,30 @@
+.infoCard {
+  margin: 2rem 0 0.5rem 0;
+  padding: 1rem 1.25rem;
+  background: rgba(46, 196, 241, 0.03);
+  border: 1px solid rgba(46, 196, 241, 0.1);
+  border-radius: 10px;
+}
+
+[data-theme="dark"] .infoCard {
+  background: rgba(46, 196, 241, 0.05);
+  border-color: rgba(46, 196, 241, 0.12);
+}
+
+.infoTitle {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary-dark);
+}
+
+[data-theme="dark"] .infoTitle {
+  color: var(--ifm-color-primary-light);
+}
+
+.infoImage {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+}

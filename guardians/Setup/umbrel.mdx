@@ -1,0 +1,120 @@
+---
+sidebar_position: 3
+---
+
+import StepCard from '@site/src/components/StepCard';
+import InfoCard from '@site/src/components/InfoCard';
+
+# Umbrel
+
+[umbrelOS](https://umbrel.com/umbrelos) is a self-hosting operating system designed to run on your own hardware. Fedimint is available as an app — installation takes a few clicks and you'll be ready to run a federation.
+
+**Prerequisites:**
+
+- Access to an [umbrelOS](https://umbrel.com/umbrelos) instance
+
+## Install Fedimint
+
+<StepCard step={1} title="Open the App Store" images={[
+  { src: "/img/setup/umbrel/01-01-install.webp", alt: "Umbrel home screen showing installed apps" },
+  { src: "/img/setup/umbrel/01-02-install.webp", alt: "Umbrel dock with App Store icon" },
+  { src: "/img/setup/umbrel/01-03-install.webp", alt: "Umbrel App Store discover page" },
+]} />
+
+From your Umbrel home screen, open the **App Store** from the dock at the bottom of the screen.
+
+<StepCard step={2} title="Find Fedimint" images={[
+  { src: "/img/setup/umbrel/02-01-install.webp", alt: "App Store search bar" },
+  { src: "/img/setup/umbrel/02-02-install.webp", alt: "Search results showing Fedimint and Fedimint Lightning Gateway" },
+  { src: "/img/setup/umbrel/02-03-install.webp", alt: "Fedimint app page with Install button" },
+]} />
+
+Search for *fedimint*. You'll see two results: **Fedimint** (the guardian node) and **Fedimint Lightning Gateway**. Select **Fedimint** to open the app page.
+
+<StepCard step={3} title="Install" images={[
+  { src: "/img/setup/umbrel/03-01-install.webp", alt: "Dependency dialog showing Bitcoin Node is required" },
+  { src: "/img/setup/umbrel/03-02-install.webp", alt: "Fedimint installation in progress" },
+  { src: "/img/setup/umbrel/03-03-install.webp", alt: "Fedimint installed with Open button" },
+]} />
+
+Click **Install**. Fedimint requires a Bitcoin node — if one is already installed, confirm and continue. If not, you'll need to install a Bitcoin node app first (e.g. **Bitcoin Node**) from the App Store and return here. Once installation completes, the button changes to **Open**.
+
+:::info
+Fedimint requires the Bitcoin node to be **fully synced** before it can operate. If you just installed a Bitcoin node, initial sync may take hours to days depending on your hardware. This does not apply if you configure Fedimint to use an Esplora API instead.
+:::
+
+## Open the Guardian UI
+
+<StepCard step={1} title="Launch Fedimint" images={[
+  { src: "/img/setup/umbrel/01-01-open.webp", alt: "Fedimint app page with Open button" },
+  { src: "/img/setup/umbrel/01-02-open.webp", alt: "Umbrel home screen with Fedimint installed" },
+  { src: "/img/setup/guardian-ui/setup-landing.webp", alt: "Fedimint Guardian UI setup page" },
+]} />
+
+Click **Open** on the app page, or click the Fedimint icon on your home screen. This opens the **Guardian UI** — the web interface you'll use to set up and manage your federation.
+
+The first time you open Fedimint, the Guardian UI walks you through the founding process. Follow the [Founding a Federation](/guardians/founding) guide to complete this with your co-guardians.
+
+## Operate Fedimint
+
+Right-click the Fedimint icon on your home screen to access all management options.
+
+<InfoCard title="Management controls" image="/img/setup/umbrel/operation-detail.webp" alt="Fedimint right-click context menu showing Settings, Stop, Restart, Troubleshoot, View in App Store, and Uninstall" />
+
+The context menu gives you quick access to everything:
+
+- **Settings** — view and change the connected Bitcoin backend
+- **Stop / Restart** — stop or restart the Fedimint service
+- **Troubleshoot** — view logs and download them for debugging
+- **Uninstall** — remove Fedimint and all its data
+
+### Change configuration
+
+<InfoCard title="Bitcoin backend" image="/img/setup/umbrel/settings-detail.webp" alt="Settings dialog showing Bitcoin Node dependency with dropdown to switch backends" />
+
+Select **Settings** from the context menu to see which Bitcoin backend Fedimint is connected to. You can switch between **Bitcoin Node**, **Bitcoin Knots**, or **Libre Relay** using the dropdown.
+
+### View logs
+
+<InfoCard title="Troubleshoot" image="/img/setup/umbrel/logs.webp" alt="Troubleshoot page showing Fedimint service logs with Download button" />
+
+Select **Troubleshoot** from the context menu to view live service logs. Use the **Download Fedimint logs** button at the bottom to export them.
+
+### Remove Fedimint
+
+To uninstall, right-click the Fedimint icon and select **Uninstall**.
+
+:::warning
+Uninstalling permanently deletes all Fedimint data including federation keys. Make sure you have coordinated with your co-guardians before removing a guardian node.
+:::
+
+### Advanced access
+
+For advanced debugging, Umbrel provides terminal access to both the Fedimint container and the underlying umbrelOS system.
+
+<InfoCard title="Open the terminal" images={[
+  { src: "/img/setup/umbrel/home-settings-dock.webp", alt: "Umbrel home screen with Settings icon in the dock" },
+  { src: "/img/setup/umbrel/settings-find-advanced-settings.webp", alt: "umbrelOS Settings page showing Advanced settings" },
+  { src: "/img/setup/umbrel/settings-advanced.webp", alt: "Advanced settings with Terminal option" },
+  { src: "/img/setup/umbrel/settings-select-terminal.webp", alt: "Terminal selection dialog with umbrelOS and App options" },
+]} />
+
+Open **Settings** from the dock, scroll to **Advanced settings**, click **Open**, then select **Terminal**. From here you can choose between two shell types.
+
+<InfoCard title="Fedimint container shell" image="/img/setup/umbrel/fedimintd-container-shell.webp" alt="Fedimint container shell showing CLI tools" />
+
+Select **App** and choose **Fedimint** from the dropdown. This opens a shell inside the container with access to `fedimint-cli`, `fedimint-dbtool`, `fedimint-recoverytool`, and more.
+
+<InfoCard title="umbrelOS terminal" image="/img/setup/umbrel/umbrel-terminal.webp" alt="umbrelOS terminal showing Fedimint app data directory listing" />
+
+Select **umbrelOS** to get a system-level shell. Fedimint's data lives at `~/umbrel/app-data/fedimintd/`.
+
+:::tip[Custom configuration]
+You can edit `umbrel/app-data/fedimintd/docker-compose.yml` for more advanced customization. Add or override environment variables in the `environment` section of the `fedimintd` service — for example:
+
+- `FM_ESPLORA_URL` — use an Esplora API instead of the default Bitcoin Core RPC backend
+- `RUST_LOG` — adjust log verbosity (e.g. `RUST_LOG=info,fm::server=debug,fm::consensus=trace`)
+
+Note that updating or reinstalling Fedimint from the App Store will reset `docker-compose.yml` to its default — back up your changes before updating.
+:::
+

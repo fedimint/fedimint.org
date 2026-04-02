@@ -1,58 +1,68 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-const math = require("remark-math");
-const katex = require("rehype-katex");
+import { themes as prismThemes } from "prism-react-renderer";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Fedimint",
   tagline:
     "A modular open source protocol to custody and transact bitcoin in a community context, built on a strong foundation of privacy.",
-  url: "https://fedimint.org", // Set up for github pages FLAG Set to fedimint.org
-  baseUrl: "/", //FLAG - Set to /
+  url: "https://fedimint.org",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "favicon.ico",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "fedimint", // Usually your GitHub org/user name. FLAG set to "fedimint"
-  projectName: "fedimint.org", // Usually your repo name. FLAG set to "fedimint.org"
+  organizationName: "fedimint",
+  projectName: "fedimint.org",
   deploymentBranch: "gh-pages",
   trailingSlash: false,
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
-  // i18n: { cale: "en", locales: ["en"] },
 
   presets: [
     [
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/fedimint/wiki_fedimint/tree/main/",
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
-        },
+        // Disable the default docs plugin — we use multi-instance below
+        docs: false,
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/fedimint/wiki_fedimint/tree/main/",
+          editUrl: "https://github.com/fedimint/fedimint.org/tree/main/",
           blogSidebarTitle: "All posts",
           blogSidebarCount: "ALL",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: "./src/css/custom.css",
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "users",
+        path: "users",
+        routeBasePath: "users",
+        sidebarPath: "./sidebarsUsers.js",
+        editUrl: "https://github.com/fedimint/fedimint.org/tree/main/",
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "guardians",
+        path: "guardians",
+        routeBasePath: "guardians",
+        sidebarPath: "./sidebarsGuardians.js",
+        editUrl: "https://github.com/fedimint/fedimint.org/tree/main/",
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
+      },
     ],
   ],
 
@@ -71,7 +81,7 @@ const config = {
     ({
       colorMode: {
         defaultMode: "light",
-        disableSwitch: true, //FLAG - Curruntly set to avoid having to customise dark mode CSS
+        disableSwitch: true,
         respectPrefersColorScheme: false,
       },
       navbar: {
@@ -82,18 +92,27 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "intro",
+            to: "/users/intro",
+            label: "Users",
             position: "right",
-            label: "Docs",
           },
           {
-            to: "wallets",
+            to: "/guardians/intro",
+            label: "Guardians",
+            position: "right",
+          },
+          {
+            href: "https://sdk.fedimint.org",
+            label: "Developers",
+            position: "right",
+          },
+          {
+            to: "/wallets",
             label: "Wallets",
             position: "right",
           },
           {
-            to: "blog",
+            to: "/blog",
             label: "Blog",
             position: "right",
           },
@@ -108,19 +127,19 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Learn",
             items: [
               {
-                label: "Wiki",
-                to: "/docs/intro",
+                label: "Users",
+                to: "/users/intro",
               },
               {
-                label: "WebSDK",
-                to: "https://web.fedimint.org",
+                label: "Guardians",
+                to: "/guardians/intro",
               },
               {
-                label: "Rust Docs",
-                href: "https://docs.fedimint.org",
+                label: "Developers",
+                href: "https://sdk.fedimint.org",
               },
             ],
           },
@@ -129,7 +148,7 @@ const config = {
             items: [
               {
                 label: "Nostr",
-                href: "https://primal.net/p/nprofile1qqsgwgkrss7gthwkzc49edgxu895664setaevcp57snw2k3wlzdrghswflshg"
+                href: "https://primal.net/p/nprofile1qqsgwgkrss7gthwkzc49edgxu895664setaevcp57snw2k3wlzdrghswflshg",
               },
               {
                 label: "Twitter",
@@ -151,7 +170,7 @@ const config = {
               {
                 label: "GitHub",
                 href: "https://github.com/fedimint",
-              }
+              },
             ],
           },
           {
@@ -168,13 +187,12 @@ const config = {
             ],
           },
         ],
-        //copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`, //FLAG
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
     }),
-  plugins: [[require.resolve("docusaurus-lunr-search"), { excludeRoutes: [] }]],
 };
-module.exports = config;
+
+export default config;
