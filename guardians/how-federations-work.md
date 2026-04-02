@@ -22,7 +22,7 @@ To recover a federation's funds at least `t` of `n` keys and at least one of the
 
 Fedimint is built in a modular manner, the main modules are:
 
-- **Ecash module:** Handles blind signing, issuance, and redemption of ecash notes that allow users to prove to the federation that they own moeny in it without revealing their identity.
+- **Ecash module:** Handles blind signing, issuance, and redemption of ecash notes that allow users to prove to the federation that they own money in it without revealing their identity.
 - **Wallet module:** Manages the on-chain Bitcoin multi-sig and processes withdraw and deposit requests.
 - **Lightning module:** Implements HTLC-like smart contracts that allow making atomic payments via a Lightning Gateway. The smart contracts ensure that the gateway doesn't need to be trusted since it can't steal from users.
 

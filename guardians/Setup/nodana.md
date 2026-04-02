@@ -18,7 +18,7 @@ Go to [nodana.io](https://nodana.io/) and log in with either **Lightning** or **
 
 ## Add Balance
 
-After logging in, naviaget to the **Balance** page. Nodana charges per time of usage — the Fedimintd template costs approximately \$10/month (\$0.34/day). Use the slider to choose a top-up amount and click **Create Invoice** to get a Lightning invoice, then pay it with your wallet.
+After logging in, navigate to the **Balance** page. Nodana charges per time of usage — the Fedimintd template costs approximately \$10/month (\$0.34/day). Use the slider to choose a top-up amount and click **Create Invoice** to get a Lightning invoice, then pay it with your wallet.
 
 ## Create a Project
 
@@ -41,7 +41,7 @@ Nodana also offers a **Fedimintd Pro** template ($25/month) with more resources.
 
 ## Verify Deployment
 
-After a few seconds, your app will show as **running**. The details panel shows the version (0.10.0) and status. Note that for the setup ceremony all guardians have to be on the same version. To open the admin UI click the link in the service box (highighted in red).
+After a few seconds, your app will show as **running**. The details panel shows the version (0.10.0) and status. Note that for the setup ceremony all guardians have to be on the same version. To open the admin UI click the link in the service box (highlighted in red).
 
 <div className="img-row">
   <img src="/img/setup/nodana/app-running.png" alt="Running Fedimintd app details" />
