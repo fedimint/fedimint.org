@@ -19,7 +19,7 @@
   transition: opacity 0.35s ease;
 }
 
-.galleryImgActive {
+.galleryImg.galleryImgActive {
   opacity: 1;
 }
 
