@@ -21,22 +21,6 @@
   --accent-gradient: linear-gradient(90deg, #2e4af1 0%, #5a2ef1 100%);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme="dark"] {
-  --ifm-color-primary: #2ec4f1;
-  --ifm-color-primary-dark: #1b7ca6;
-  --ifm-color-primary-darker: #176b8a;
-  --ifm-color-primary-darkest: #124e66;
-  --ifm-color-primary-light: #5fd6f7;
-  --ifm-color-primary-lighter: #8fe7fd;
-  --ifm-color-primary-lightest: #c6f4ff;
-  --ifm-background-color: #181c24;
-  --docusaurus-highlighted-code-line-bg: rgba(46, 196, 241, 0.13);
-  --header-font-color: #f6fcff;
-  --body-background: #181c24;
-  --body-font-color: #f6fcff;
-  --accent-gradient: linear-gradient(90deg, #2e4af1 0%, #5a2ef1 100%);
-}
 
 .heroBanner_src-pages-index-module {
   padding: 10rem 0rem;
@@ -82,98 +66,6 @@ section p {
   font-weight: 600;
 }
 
-/** Copy of Fedimint Site CSS as a reference
-
-
-:root {
-    --header-background: #E8FFF2;
-    --header-font-color: #170022;
-
-    --body-background: #E8FFF2;
-    --body-font-color: #170022;
-
-    --accent-color: rgba(23, 0, 34, 0.05);
-    --accent-color-lite: rgba(23, 0, 34, 0.05);
-}
-
-:root,
-:root[color-mode="light"] {
-    --header-background: #E8FFF2;
-    --header-font-color: #170022;
-
-    --body-background: #E8FFF2;
-    --body-font-color: #170022;
-
-    --accent-color: rgba(23, 0, 34, 0.05);
-    --accent-color-lite: rgba(23, 0, 34, 0.05);
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --header-background: #E8FFF2;
-        --header-font-color: #170022;
-
-        --body-background: #E8FFF2;
-        --body-font-color: #170022;
-
-        --accent-color: rgba(23, 0, 34, 0.05);
-        --accent-color-lite: rgba(23, 0, 34, 0.05);
-    }
-}
-
-:root[color-mode="dark"] {
-    --header-background: #170022;
-    --header-font-color: #E8FFF2;
-
-    --body-background: #170022;
-    --body-font-color: #E8FFF2;
-
-    --accent-color: rgba(232, 255, 221, 0.1);
-    --accent-color-lite: rgba(232, 255, 221, 0.1);
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --header-background: #170022;
-        --header-font-color: #E8FFF2;
-
-        --body-background: #170022;
-        --body-font-color: #E8FFF2;
-
-        --accent-color: rgba(232, 255, 221, 0.1);
-        --accent-color-lite: rgba(232, 255, 221, 0.1);
-    }
-
-    .gdoc-brand_img{
-        content:url("fedimint-mark-light.svg");
-    }
-}
-
-.gdoc-brand_img{
-    margin-right: 1rem;
-    height: 2rem
-}
-
-:root[color-mode="dark"] .gdoc-brand_img{
-    content:url("fedimint-mark-light.svg");
-}
-
-:root[color-mode="light"] .gdoc-brand_img{
-    content:url("fedimint-mark.svg");
-}
-
-.gdoc-search__input {
-    background: transparent;
-    border: 2px solid rgba(23, 0, 34, 0.2);
-    border-radius: 4px;
-}
-
-:root[color-mode="dark"] .gdoc-search__input {
-    background: transparent;
-    border: 2px solid rgba(232, 255, 221, 0.2);
-    border-radius: 4px;
-}
-**/
 
 /* Onboarding flow diagram */
 .onboarding-flow {
