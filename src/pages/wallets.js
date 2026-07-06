@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useHistory, useLocation } from "@docusaurus/router";
 import Layout from "@theme/Layout";
 import styles from "./wallets.module.css";
-import { FaApple, FaAndroid, FaGlobe, FaDesktop, FaLinux, FaTerminal, FaDownload, FaFilter } from "react-icons/fa";
+import { FaApple, FaAndroid, FaGlobe, FaDesktop, FaLinux, FaBolt, FaTerminal, FaDownload, FaFilter } from "react-icons/fa";
 
 const MODULE_INFO = {
   "ln-v1":    { name: "Lightning", version: "v1", status: null },
@@ -33,6 +33,7 @@ function getPlatformIcon(platform) {
     Desktop: FaDesktop,
     Linux: FaLinux,
     macOS: FaApple,
+    Zapstore: FaBolt,
     CLI: FaTerminal,
   };
   const IconComponent = iconMap[platform];
@@ -95,7 +96,7 @@ function WalletCard({ wallet }) {
 }
 
 const ALL_MODULES = Object.keys(MODULE_INFO);
-const ALL_PLATFORMS = ["iOS", "Android", "APK", "Web", "Desktop", "Linux", "macOS"];
+const ALL_PLATFORMS = ["iOS", "Android", "APK", "Web", "Desktop", "Linux", "macOS", "Zapstore"];
 
 function parseParams(search) {
   const params = new URLSearchParams(search);
@@ -259,7 +260,7 @@ export default function Wallets() {
       name: "Ecash App",
       description: "Open source Fedimint wallet under active development. Built with a focus on power-users and exploration of new Fedimint features.",
       link: "https://ecash.love",
-      platforms: ["APK", "Linux", "macOS"],
+      platforms: ["Android", "APK", "Zapstore", "Linux", "macOS"],
       modules: [...DEFAULT_MODULES, "ln-v2", "wallet-v2", "mint-v2"],
       isBeta: false,
       screenshot: require("@site/static/img/wallets/ecash-app.png").default,
