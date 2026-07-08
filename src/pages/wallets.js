@@ -245,7 +245,7 @@ export default function Wallets() {
     {
       name: "Fedi",
       description: "Source-available mobile app for Fedimint with chat and community features. A fully-featured, production-ready wallet designed for everyday use.",
-      link: "https://www.fedi.xyz/product/",
+      link: "https://www.fedi.xyz/get-the-app",
       platforms: ["iOS", "Android", "APK"],
       modules: [...DEFAULT_MODULES, "sb-v1", "sb-v2"],
       isBeta: false,
