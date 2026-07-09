@@ -2,13 +2,15 @@ import React, { useState, useEffect } from "react";
 import { useHistory, useLocation } from "@docusaurus/router";
 import Layout from "@theme/Layout";
 import styles from "./wallets.module.css";
-import { FaApple, FaAndroid, FaGlobe, FaDesktop, FaTerminal, FaDownload, FaFilter } from "react-icons/fa";
+import { FaApple, FaAndroid, FaGlobe, FaDesktop, FaLinux, FaBolt, FaTerminal, FaDownload, FaFilter } from "react-icons/fa";
 
 const MODULE_INFO = {
   "ln-v1":    { name: "Lightning", version: "v1", status: null },
   "ln-v2":    { name: "Lightning", version: "v2", status: "experimental" },
   "wallet":   { name: "On-Chain",   version: null,  status: null },
+  "wallet-v2":{ name: "On-Chain",   version: "v2",  status: "experimental" },
   "mint":     { name: "Ecash",     version: null,  status: null },
+  "mint-v2":  { name: "Ecash",     version: "v2",  status: "experimental" },
   "meta":     { name: "Meta",      version: null,  status: null },
   "sb-v1":    { name: "Stable Balance", version: "v1", status: "deprecated" },
   "sb-v2":    { name: "Stable Balance", version: "v2", status: null },
@@ -29,6 +31,9 @@ function getPlatformIcon(platform) {
     APK: FaDownload,
     Web: FaGlobe,
     Desktop: FaDesktop,
+    Linux: FaLinux,
+    macOS: FaApple,
+    Zapstore: FaBolt,
     CLI: FaTerminal,
   };
   const IconComponent = iconMap[platform];
@@ -91,7 +96,7 @@ function WalletCard({ wallet }) {
 }
 
 const ALL_MODULES = Object.keys(MODULE_INFO);
-const ALL_PLATFORMS = ["iOS", "Android", "APK", "Web", "Desktop"];
+const ALL_PLATFORMS = ["iOS", "Android", "APK", "Web", "Desktop", "Linux", "macOS", "Zapstore"];
 
 function parseParams(search) {
   const params = new URLSearchParams(search);
@@ -255,8 +260,8 @@ export default function Wallets() {
       name: "Ecash App",
       description: "Open source Fedimint wallet under active development. Built with a focus on power-users and exploration of new Fedimint features.",
       link: "https://ecash.love",
-      platforms: ["APK", "Desktop"],
-      modules: [...DEFAULT_MODULES, "ln-v2"],
+      platforms: ["Android", "APK", "Zapstore", "Linux", "macOS"],
+      modules: [...DEFAULT_MODULES, "ln-v2", "wallet-v2", "mint-v2"],
       isBeta: false,
       screenshot: require("@site/static/img/wallets/ecash-app.png").default,
     },
