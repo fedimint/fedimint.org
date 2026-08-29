@@ -1,0 +1,36 @@
+# Fedimint
+
+> Fedimint is an open-source protocol for federated Bitcoin custody: a small group of guardians runs a community-operated ecash mint — a shared vault operated by people you trust (but may not know) — offering sub-second payments, fraction-of-a-cent fees, and cash-like privacy.
+
+Fedimint is a commons: an open protocol and codebase, not a company. Custody here is federated, not self-custodial and not trustless — a threshold of guardians (e.g. 3-of-4) jointly controls a Bitcoin multisig wallet, which puts Fedimint on a middle band of trust: more trust required than holding your own keys, less than depositing with a single custodian. Privacy comes from Chaumian blind-signature eCash: guardians can see federation-wide totals but not individual balances, transaction details, or who redeemed a note. Fedi is a separate company that builds a wallet app on top of Fedimint (listed on the Wallets page below); it is not the protocol itself.
+
+## Understanding Fedimint
+
+- [Getting Started](https://fedimint.org/users/intro): What Fedimint is and the three steps to start using it — install a wallet, join a federation via invite, send/receive bitcoin.
+- [How Fedimint Works](https://fedimint.org/users/how-it-works): What happens when you deposit bitcoin and receive eCash notes, how Lightning payments route through a gateway, and exactly what guardians can and cannot see.
+- [Privacy and Trust](https://fedimint.org/users/privacy-and-trust): Honest breakdown of the trust model — blind-signature privacy guarantees, custodial/debasement/regulatory/gateway risks, why federated custody sits between self-custody and a single-operator mint, and the "know your federation" principle.
+- [Frequently Asked Questions](https://fedimint.org/users/faq): Answers on joining multiple federations, why Fedimint uses "KYF" instead of KYC, recovering funds after losing your phone, what happens when a guardian goes offline, and exiting a federation.
+- [Fedimint Wallets](https://fedimint.org/wallets): Directory of Fedimint-compatible wallet apps (Fedi, Ecash App, Conduit, Vipr, Haze Wallet, Harbor) filterable by platform and supported module, plus the Fedimint CLI for developers.
+
+## For Guardians
+
+- [Becoming a Guardian](https://fedimint.org/guardians/intro): What a guardian does (holds a multisig key, runs a node, processes transactions), hardware requirements, and how guardian count affects fault tolerance (4/7/10-of-n configurations).
+- [Setup Overview](https://fedimint.org/guardians/Setup/overview): Roadmap for founding a federation — prerequisites (guardians, a Bitcoin node, a server), links to each hosting-platform guide, and where the founding ceremony fits in.
+- [Setup: Start9](https://fedimint.org/guardians/Setup/start9): Installing and running a Fedimint guardian node on a Start9 (StartOS) personal server via the Community Registry.
+- [Setup: Umbrel](https://fedimint.org/guardians/Setup/umbrel): Installing and running a Fedimint guardian node as an app on umbrelOS.
+- [Setup: Nodana](https://fedimint.org/guardians/Setup/nodana): Deploying a Fedimint guardian node on Nodana, a managed Bitcoin-app hosting platform.
+- [Setup: Docker](https://fedimint.org/guardians/Setup/docker): Running a Fedimint guardian node with Docker Compose and Caddy on any Linux server or VPS, including required firewall ports and automatic TLS.
+- [Founding a Federation](https://fedimint.org/guardians/founding): Step-by-step walkthrough of the one-time founding ceremony — setting the global config, exchanging setup codes between guardians, running distributed key generation (DKG), and downloading the guardian backup.
+
+## For Developers
+
+- [Fedimint SDK Documentation](https://sdk.fedimint.org): External developer documentation site (not hosted on fedimint.org) for building a wallet or integrating eCash payments into an application.
+
+## Technical Reference
+
+- [How Federations Work](https://fedimint.org/guardians/how-federations-work): Federation architecture for operators and developers — AlephBFT consensus and its latency characteristics, threshold multisig custody, the modular system (ecash, wallet, lightning, meta modules), and how the Lightning Gateway executes payments.
+
+## Optional
+
+- [Blog](https://fedimint.org/blog): Archive of project blog posts, podcast appearances, and press coverage.
+- [Homepage](https://fedimint.org/): Marketing overview with three entry paths (use, run, build) and a high-level how-it-works recap.
