@@ -1,0 +1,57 @@
+# fedimint.org is fully open to crawling. No paths are disallowed.
+#
+# The named Allow blocks below are redundant with the User-agent: *
+# block by spec (an explicit Allow: / has the same effect for any
+# crawler, named or not). They are kept here deliberately, as
+# documentation: AI answer-engine citation (ChatGPT, Claude, Perplexity,
+# Google AI Overviews, etc. citing fedimint.org) is a tracked business
+# metric for this site. If you're considering adding a blanket
+# Disallow, know that it will cut off that traffic/citation channel —
+# talk to the team first.
+
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+Sitemap: https://fedimint.org/sitemap.xml
