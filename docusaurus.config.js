@@ -41,6 +41,84 @@ const config = {
 
   plugins: [
     [
+      "@docusaurus/plugin-client-redirects",
+      {
+        // The site was restructured off of a single /docs/* tree in
+        // April 2026 (docs: restructure site around three-persona
+        // onboarding flow) into /users/*, /guardians/*, and an external
+        // developer docs site, but no redirects were added at the time.
+        // Google still has dozens of /docs/* URLs indexed, so without
+        // these they 404 for anyone following a search result or an
+        // AI crawler's citation. Mappings below were matched by content,
+        // not guessed from filenames — several old pages had no true
+        // successor (e.g. speculative/stale FAQ content) and fall back
+        // to the nearest relevant hub page rather than 404ing.
+        redirects: [
+          {
+            to: "/users/intro",
+            from: [
+              "/docs/intro",
+              "/docs/FAQs/FutureUseCases",
+              "/docs/FAQs/HistroyofFedimint",
+              "/docs/FAQs/JoiningAFederation",
+            ],
+          },
+          {
+            to: "/users/how-it-works",
+            from: [
+              "/docs/GettingStarted/Why-Fedimint",
+              "/docs/GettingStarted/What-is-a-Fedimint",
+              "/docs/GettingStarted/How-FM-Transactions-Work",
+              "/docs/FAQs/WhyCommunityCustody",
+            ],
+          },
+          {
+            to: "/users/privacy-and-trust",
+            from: [
+              "/docs/CommonTerms/Blind Signatures",
+              "/docs/FAQs/WhatIsChaumianMint",
+              "/docs/TradeOffs/Trust-Trade-Offs",
+              "/docs/TradeOffs/NotYourKeys",
+              "/docs/TradeOffs/DebasementRisk",
+              "/docs/TradeOffs/RegulatoryRisk",
+              "/docs/TradeOffs/TrustLNGateways",
+            ],
+          },
+          {
+            to: "/users/faq",
+            from: ["/docs/CommonTerms/eCashToken", "/docs/FAQs/Backups"],
+          },
+          {
+            to: "/guardians/intro",
+            from: [
+              "/docs/GettingStarted/Who-are-the-fms",
+              "/docs/MiniMintDetails/MinimintDemo",
+            ],
+          },
+          {
+            to: "/guardians/how-federations-work",
+            from: [
+              "/docs/GettingStarted/TechCompontents",
+              "/docs/MiniMintDetails/Architecture",
+              "/docs/MiniMintDetails/Consensus",
+              "/docs/MiniMintDetails/Wallet",
+              "/docs/CommonTerms/AlephBFTConsensus",
+              "/docs/FAQs/TheFederation",
+              "/docs/TradeOffs/Transaction-Contract-Fulfilment",
+            ],
+          },
+          {
+            to: "/guardians/Setup/overview",
+            from: ["/docs/GettingStarted/Running-a-Fedimint"],
+          },
+          {
+            to: "/guardians/founding",
+            from: ["/docs/CommonTerms/ShamirSecret"],
+          },
+        ],
+      },
+    ],
+    [
       "@docusaurus/plugin-content-docs",
       {
         id: "users",
