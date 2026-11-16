@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useHistory, useLocation } from "@docusaurus/router";
 import Layout from "@theme/Layout";
 import styles from "./wallets.module.css";
-import { FaApple, FaAndroid, FaGlobe, FaDesktop, FaLinux, FaBolt, FaTerminal, FaDownload, FaFilter } from "react-icons/fa";
+import { FaApple, FaAndroid, FaGlobe, FaDesktop, FaLinux, FaBolt, FaTerminal, FaDownload, FaFilter, FaCreditCard } from "react-icons/fa";
 
 const MODULE_INFO = {
   "ln-v1":    { name: "Lightning", version: "v1", status: null },
@@ -35,6 +35,7 @@ function getPlatformIcon(platform) {
     macOS: FaApple,
     Zapstore: FaBolt,
     CLI: FaTerminal,
+    "NFC Card": FaCreditCard,
   };
   const IconComponent = iconMap[platform];
   return IconComponent ? <IconComponent className={styles.platformIcon} /> : null;
@@ -96,7 +97,7 @@ function WalletCard({ wallet }) {
 }
 
 const ALL_MODULES = Object.keys(MODULE_INFO);
-const ALL_PLATFORMS = ["iOS", "Android", "APK", "Web", "Desktop", "Linux", "macOS", "Zapstore"];
+const ALL_PLATFORMS = ["iOS", "Android", "APK", "Web", "Desktop", "Linux", "macOS", "Zapstore", "NFC Card"];
 
 function parseParams(search) {
   const params = new URLSearchParams(search);
@@ -300,6 +301,15 @@ export default function Wallets() {
       modules: [...DEFAULT_MODULES],
       isBeta: true,
       screenshot: require("@site/static/img/wallets/harbor.png").default,
+    },
+    {
+      name: "Fedimint Card",
+      description: "Open source contactless card that holds Fedimint ecash spend keys on its own chip and pays by tap and PIN. An experimental prototype with no outside security review yet, so use it only with small amounts.",
+      link: "https://fedimintcard.org/",
+      platforms: ["NFC Card", "iOS", "Android"],
+      modules: ["ln-v1", "mint-v2"],
+      isBeta: true,
+      screenshot: require("@site/static/img/wallets/fedimint-card.png").default,
     },
   ];
 
